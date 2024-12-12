@@ -44,7 +44,7 @@ github:
   posts_dir: articles
   default_branch: main
   # show last update and contributors from GitHub API and show in post header
-  show_additional_info: false
+  show_additional_info: true
 
 skip_render:
   - '_data/*.png'
@@ -145,4 +145,4 @@ toc:
 # date: 2020-04-30 10:00
 # disableDisclaimer: true
 # ---
-disclaimer: ※本情報の内容（添付文書、リンク先などを含む）は、作成日時点でのものであり、予告なく変更される場合があります。
+disclaimer: ※本情報の内容（添付文書、リンク先などを含む）は、作成日時点でのものであり、予告なく変更される場合があります。より詳細な情報が必要な場合は、テクニカル サポート, アカウント マネージャー, ソリューション アーキテクト, FastTrack までお問い合わせください。
