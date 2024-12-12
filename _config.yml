@@ -5,16 +5,21 @@
 # Title (display)
 title: Japan Dynamics ERP Support Team Blog
 # Sub Title (display)
-subtitle: Japan CSS Support Example Blog
+subtitle: 日本マイクロソフトの Dynamics ERP テクニカル サポート チームより、様々な情報をお届けします。
 # Description
-description: Japan CSS Support Example Blog
+description: 日本マイクロソフトの Dynamics ERP テクニカル サポート チームより、様々な情報をお届けします。
 
 # Keywords
 keywords:
-  - Information
-  - Example
+  - Dynamics
+  - Dynamics 365 for Finance and Operations
+  - Dynamics 365 Finance&Operations
+  - Dynamics 365F&O
+  - Dynamics 365fo
+  - D365FO
+  - Dynamics ERP
 
-author: CSS Japan
+author: Japan Dynamics ERP Support Japan
 
 # Tag (hexo helper)
 root_tag_generator:

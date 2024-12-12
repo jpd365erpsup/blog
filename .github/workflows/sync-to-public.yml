@@ -1,0 +1,78 @@
+name: Sync blog-draft to blog with PR
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '.github/workflows/sync-to-public.yml'
+
+jobs:
+  sync:
+    name: Sync to Public Repository with PR
+    runs-on: ubuntu-latest
+
+    env:
+      GIT_USER_NAME: "github-actions[bot]"
+      GIT_USER_EMAIL: "github-actions[bot]@users.noreply.github.com"
+      NEW_BRANCH_NAME: "new-release-${{ github.run_id }}-${{ github.run_number }}"
+      BLOG_DRAFT_REPO: "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/jpd365erpsup/blog-draft.git"
+      BLOG_REPO: "https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/jpd365erpsup/blog.git"
+
+    steps:
+      # 1. blog-draft と blog のリポジトリをクローン
+      - name: Clone blog-draft and blog repositories
+        run: |
+          # 作業ディレクトリ設定
+          WORK_DIR="${{ github.workspace }}"
+          echo "Cloning blog-draft..."
+          git clone $BLOG_DRAFT_REPO "$WORK_DIR/blog-draft"
+
+          echo "Cloning blog..."
+          git clone $BLOG_REPO "$WORK_DIR/blog"
+
+      # 2. blog-draft の変更を blog に反映
+      - name: Merge blog-draft changes into blog
+        run: |
+          WORK_DIR="${{ github.workspace }}"
+          cd "$WORK_DIR/blog"
+
+          # Git 設定
+          git config user.name "${GIT_USER_NAME}"
+          git config user.email "${GIT_USER_EMAIL}"
+
+          # 新しいブランチ作成
+          git checkout -b "${NEW_BRANCH_NAME}"
+          git remote add blog-draft "$WORK_DIR/blog-draft"
+          git fetch blog-draft
+
+          # blog-draft/main の変更をマージ（競合時に blog-draft の内容を優先）
+          echo "Merging blog-draft changes..."
+          git merge --squash --strategy-option=theirs --allow-unrelated-histories blog-draft/main || true
+
+          # 競合があれば blog-draft 側の変更を強制的に採用
+          git checkout --theirs .
+          git add -A
+
+          # コミット作成
+          git commit -m "Sync changes from blog-draft (resolved conflicts by preferring blog-draft changes)"
+
+      # 3. blog に新しいブランチをプッシュ
+      - name: Push to blog repository
+        run: |
+          WORK_DIR="${{ github.workspace }}"
+          cd "$WORK_DIR/blog"
+
+          echo "Pushing to blog repository..."
+          git push origin "${NEW_BRANCH_NAME}"
+
+      # 4. Pull Request を作成
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          commit-message: "Sync blog-draft changes"
+          title: "New Release: Sync blog-draft changes"
+          body: "This PR includes the latest changes from blog-draft."
+          branch: "${NEW_BRANCH_NAME}"
+          base: main
