@@ -25,6 +25,12 @@ Dynamics 365 for Finance and Operations では、稼働中一時的に接続が�
 再試行処理の例としましては、以下の公開資料にてバッチジョブの再試行処理をご案内していますのでご参考にしていただけますと幸いでございます。
 https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch
 
+
+
+以下の公開資料にてバッチジョブの再起動例をご案内していますのでご参考にしていただけますと幸いでございます。
+https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-server-overview#understanding-batch-server-restarts
+
+
 また、セキュリティ、可用性、信頼性を確保するため計画メンテナンスも実施致しております。メンテナンスが実施される日時につきましては以下の公開資料をご確認お願いします。
 https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#windows
 
