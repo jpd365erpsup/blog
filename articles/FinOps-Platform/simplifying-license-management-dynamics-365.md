@@ -45,5 +45,5 @@ Dynamics 365 Finance and Operations のユーザーライセンス管理を一�
 ---
 ## おわりに  
 
-以上、 2025 年 3 月 28 日に Dynamics 365 Blog で公開された英語記事 [Simplifying License Management for Dynamics 365 Finance and Operations: Improved User License Validation](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) を基にしたものです。
+以上、 2025 年 3 月 28 日に Dynamics 365 Blog で公開された英語記事 [Simplifying License Management for Dynamics 365 Finance and Operations: Improved User License Validation](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) を基にした、Dynamics 365 Finance and Operations のライセンスの重要な変更点についてお知らせしました。
 なお、上記の通知やアクセス不可が適用される日付はあくまで現時点での予定となり、予告なしに変更されることがございます。
