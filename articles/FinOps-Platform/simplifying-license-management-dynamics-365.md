@@ -21,6 +21,11 @@ disableDisclaimer: false
 ---
 Dynamics 365 Finance and Operations のユーザーライセンス管理を一元化し、管理者にとってわかりやすくするためのアップデートをご紹介します。
 
+> [!NOTE]
+> 以下の弊社公開資料にて、よくある質問 (FAQ) を公開しましたので、ぜひご確認ください。
+> 
+> https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/user-security-report-technical-validation-faq
+
 2025 年 4 月 30 日以降、まだライセンスが割り当てられていないユーザーには、ライセンス割り当てをリクエストするために管理者に連絡するよう求める製品内通知が表示されるようになる予定です。
 
  ![](./simplifying-license-management-dynamics-365/notification.png)
