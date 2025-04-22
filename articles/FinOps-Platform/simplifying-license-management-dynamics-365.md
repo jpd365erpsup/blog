@@ -19,6 +19,10 @@ disableDisclaimer: false
 
 <!-- more -->
 ---
+更新履歴
+2025 年 4 月 21 日 : よくある質問 (FAQ) のリンクを追加しました。
+
+
 Dynamics 365 Finance and Operations のユーザーライセンス管理を一元化し、管理者にとってわかりやすくするためのアップデートをご紹介します。
 
 > [!NOTE]
