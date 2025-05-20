@@ -21,9 +21,15 @@ disableDisclaimer: false
 ---
 更新履歴
 2025 年 4 月 21 日 : よくある質問 (FAQ) のリンクを追加しました。
+2025 年 5 月 20 日 : 日程の変更を追加しました。
 
 
 Dynamics 365 Finance and Operations のユーザーライセンス管理を一元化し、管理者にとってわかりやすくするためのアップデートをご紹介します。
+
+> [!NOTE]
+> 英語記事にてアナウンスされました通り、通知が表示されるようになる日付は 2025 年 9 月 1 日 に変更されました。また、ライセンスの割り当てが必要となる日付は 2025 年 11 月 1 日 に変更されました。
+> 
+> 抜粋: Updated May 15: in-product notifications have been pushed to September 1, 2025, and license assignment to November 1, 2025, so customers have sufficient time to be able to assign licenses in admin.microsoft.com. 
 
 > [!NOTE]
 > 以下の弊社公開資料にて、よくある質問 (FAQ) を公開しましたので、ぜひご確認ください。
