@@ -25,7 +25,7 @@ disableDisclaimer: false
 <a id='overview'></a>
 
 # はじめに
-本記事は Dynamics 365 Finance and Operations および Business Central のテクニカル サポートをご利用いただく際に留意いただきたいことを記載しています。  
+本記事は Dynamics 365 Finance and Operations のテクニカル サポートをご利用いただく際に留意いただきたいことを記載しています。  
 全てのサポート リクエストにおいて、本記事の内容が必ず適用されるものではないことをあらかじめご了承ください。  
 また、各サポート リクエストにおけるゴールや対応方針は担当のサポート エンジニアとご相談ください。  
 
