@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/information/what-is-repro-steps/</loc>
-    
-    <lastmod>2025-05-23</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpd365erpsup.github.io/blog/information/ideas-list/</loc>
     
     <lastmod>2025-05-23</lastmod>
@@ -16,7 +9,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/information/infomation/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/information/information/</loc>
     
     <lastmod>2025-05-23</lastmod>
     
@@ -30,14 +23,14 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/information/test/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/information/what-is-business-impact/</loc>
     
     <lastmod>2025-05-23</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/information/what-is-business-impact/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/information/what-is-repro-steps/</loc>
     
     <lastmod>2025-05-23</lastmod>
     
@@ -52,13 +45,6 @@
   
   <url>
     <loc>https://jpd365erpsup.github.io/blog/information/business-centra-support-case-handling/</loc>
-    
-    <lastmod>2025-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpd365erpsup.github.io/blog/information/example/</loc>
     
     <lastmod>2025-05-23</lastmod>
     
@@ -156,13 +142,6 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/change-mrp-engine-from-32/</loc>
-    
-    <lastmod>2025-05-23</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/how-to-change-purchase-order-status/</loc>
     
     <lastmod>2025-05-23</lastmod>
@@ -170,7 +149,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/cancel-productreceipt-linkso/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/change-mrp-engine-from-32/</loc>
     
     <lastmod>2025-05-23</lastmod>
     
@@ -205,6 +184,13 @@
   </url>
   
   <url>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/cancel-productreceipt-linkso/</loc>
+    
+    <lastmod>2025-05-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/temporary-change-language-d365fo/</loc>
     
     <lastmod>2025-05-23</lastmod>
@@ -227,13 +213,6 @@
   
   <url>
     <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/simplifying-license-management-dynamics-365/</loc>
-    
-    <lastmod>2025-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/powerbi-feature-difference/</loc>
     
     <lastmod>2025-05-23</lastmod>
     
@@ -269,6 +248,13 @@
   
   <url>
     <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/peap-retire/</loc>
+    
+    <lastmod>2025-05-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/powerbi-feature-difference/</loc>
     
     <lastmod>2025-05-23</lastmod>
     
@@ -359,6 +345,13 @@
   </url>
   
   <url>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/environments/</loc>
+    
+    <lastmod>2025-05-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/export-to-data-lake-yammer-group/</loc>
     
     <lastmod>2025-05-23</lastmod>
@@ -374,13 +367,6 @@
   
   <url>
     <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/get-environment-id/</loc>
-    
-    <lastmod>2025-05-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/environments/</loc>
     
     <lastmod>2025-05-23</lastmod>
     
@@ -548,14 +534,14 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/BusCen-Platform/how-to-check-table-data-d365bc/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/BusCen-Platform/how-to-check-servicehealth-d365bc/</loc>
     
     <lastmod>2025-05-23</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/BusCen-Platform/how-to-check-servicehealth-d365bc/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/BusCen-Platform/how-to-check-table-data-d365bc/</loc>
     
     <lastmod>2025-05-23</lastmod>
     
@@ -1027,13 +1013,6 @@
   
   <url>
     <loc>https://jpd365erpsup.github.io/blog/tags/D365FO/</loc>
-    <lastmod>2025-05-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/Example/</loc>
     <lastmod>2025-05-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
