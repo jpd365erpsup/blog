@@ -6,12 +6,12 @@
   
   <title>Power Automate の Fin&amp;Ops Apps (Dynamics 365) コネクタにおけるフィルターの設定方法 | Japan Dynamics ERP Support Team Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="こんにちは、日本マイクロソフトの佐藤です。この記事では、Power Automate の Fin&amp;Ops Apps (Dynamics 365) コネクタにおけるフィルターの設定方法をご案内します。この手順により、Power Automate から Dynamics 365 for Finance and Operations (D365FO) 環境にアクセスしてテーブル情報を取得する際に">
+  <meta name="description" content="こんにちは、日本マイクロソフトの佐藤です。この記事では、Power Automate の Fin&amp;Ops Apps (Dynamics 365) コネクタにおけるフィルターの設定方法をご案内します。この手順により、Power Automate から Dynamics 365 Finance and Operations (D365FO) 環境にアクセスしてテーブル情報を取得する際に、フィル">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Power Automate の Fin&amp;Ops Apps (Dynamics 365) コネクタにおけるフィルターの設定方法">
 <meta property="og:url" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-powerautomateapi/index.html">
 <meta property="og:site_name" content="Japan Dynamics ERP Support Team Blog">
-<meta property="og:description" content="こんにちは、日本マイクロソフトの佐藤です。この記事では、Power Automate の Fin&amp;Ops Apps (Dynamics 365) コネクタにおけるフィルターの設定方法をご案内します。この手順により、Power Automate から Dynamics 365 for Finance and Operations (D365FO) 環境にアクセスしてテーブル情報を取得する際に">
+<meta property="og:description" content="こんにちは、日本マイクロソフトの佐藤です。この記事では、Power Automate の Fin&amp;Ops Apps (Dynamics 365) コネクタにおけるフィルターの設定方法をご案内します。この手順により、Power Automate から Dynamics 365 Finance and Operations (D365FO) 環境にアクセスしてテーブル情報を取得する際に、フィル">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-powerautomateapi/automate1.png">
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-powerautomateapi/automate2.png">
@@ -21,7 +21,7 @@
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-powerautomateapi/automate6.png">
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-powerautomateapi/automate1.png">
 <meta property="article:published_time" content="2023-01-15T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-05-23T09:20:48.009Z">
+<meta property="article:modified_time" content="2025-06-05T07:22:56.135Z">
 <meta property="article:author" content="Japan Dynamics ERP Support Japan">
 <meta property="article:tag" content="FinOps-Platform">
 <meta property="article:tag" content="Power Automate">
@@ -164,12 +164,12 @@
         
         <a href="https://github.com/jpd365erpsup/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+d054d79d-164c-5541-831d-7d7664e73dbc%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BPower+Automate+%E3%81%AE+Fin%26Ops+Apps+%28Dynamics+365%29+%E3%82%B3%E3%83%8D%E3%82%AF%E3%82%BF%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E3%81%AE%E8%A8%AD%E5%AE%9A%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpd365erpsup.github.io%2Fblog%2FFinOps-Platform%2Fhow-to-powerautomateapi%2F%29%0A*+Content+Source%3A+%5Barticles%2FFinOps-Platform%2Fhow-to-powerautomateapi.md%5D%28https%3A%2F%2Fgithub.com%2Fjpd365erpsup%2Fblob%2Fmain%2Farticles%2FFinOps-Platform%2Fhow-to-powerautomateapi.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-powerautomateapi/" data-id="cmb0lc47u001t0nkgbhsa36em" class="article-share-link">共有</a>
+        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-powerautomateapi/" data-id="cmbj1umke001t0nuo8w63h1wu" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>こんにちは、日本マイクロソフトの佐藤です。<br>この記事では、Power Automate の Fin&amp;Ops Apps (Dynamics 365) コネクタにおけるフィルターの設定方法をご案内します。<br>この手順により、Power Automate から Dynamics 365 for Finance and Operations (D365FO) 環境にアクセスしてテーブル情報を取得する際に、フィルターを適用し、必要な情報だけを取得することができます。  </p>
+        <p>こんにちは、日本マイクロソフトの佐藤です。<br>この記事では、Power Automate の Fin&amp;Ops Apps (Dynamics 365) コネクタにおけるフィルターの設定方法をご案内します。<br>この手順により、Power Automate から Dynamics 365 Finance and Operations (D365FO) 環境にアクセスしてテーブル情報を取得する際に、フィルターを適用し、必要な情報だけを取得することができます。  </p>
 <span id="more"></span>
 <h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.33<br>Platform version: PU57</p>
 <h2 id="PowerAutomate-の-Fin-amp-Ops-Apps-Dynamics365-コネクタにおけるフィルターの設定方法"><a href="#PowerAutomate-の-Fin-amp-Ops-Apps-Dynamics365-コネクタにおけるフィルターの設定方法" class="headerlink" title="PowerAutomate の Fin&amp;Ops Apps(Dynamics365) コネクタにおけるフィルターの設定方法"></a>PowerAutomate の Fin&amp;Ops Apps(Dynamics365) コネクタにおけるフィルターの設定方法</h2><p>例えば、ステータスが ‘エラー’ である Batch ジョブだけの情報を取得したい場合は、下記のようにフローを設定することで、情報を取得できます。</p>
@@ -267,7 +267,7 @@
           </li>
         
           <li>
-            <a href="../environments/">Dynamics 365 for Finance and Operations の環境ごとの違い</a>
+            <a href="../environments/">Dynamics 365 Finance and Operations の環境ごとの違い</a>
           </li>
         
           <li>
