@@ -11,7 +11,7 @@ disableDisclaimer: false
 
 こんにちは、日本マイクロソフトの佐藤です。
 この記事では、Power Automate の Fin&Ops Apps (Dynamics 365) コネクタにおけるフィルターの設定方法をご案内します。
-この手順により、Power Automate から Dynamics 365 for Finance and Operations (D365FO) 環境にアクセスしてテーブル情報を取得する際に、フィルターを適用し、必要な情報だけを取得することができます。  
+この手順により、Power Automate から Dynamics 365 Finance and Operations (D365FO) 環境にアクセスしてテーブル情報を取得する際に、フィルターを適用し、必要な情報だけを取得することができます。  
 
 <!-- more -->
 ## 検証に用いた製品・バージョン

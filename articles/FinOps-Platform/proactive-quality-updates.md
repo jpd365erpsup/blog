@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 for Finance and Operations のプロアクティブな品質更新プログラムの適用について
+title: Dynamics 365 Finance and Operations のプロアクティブな品質更新プログラムの適用について
 date: 2022-09-15
 tags:
   - FinOps-Platform
@@ -71,4 +71,4 @@ https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/q
 ---
 ## おわりに  
 
-以上、 Dynamics 365 for Finance and Operations のプロアクティブな品質更新プログラムの適用についてご紹介しました。
+以上、 Dynamics 365 Finance and Operations のプロアクティブな品質更新プログラムの適用についてご紹介しました。

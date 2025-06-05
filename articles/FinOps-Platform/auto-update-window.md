@@ -10,7 +10,7 @@ disableDisclaimer: false
 ---
 
 こんにちは、日本マイクロソフトの福原です。  
-Dynamics 365 for Finance and Operations のバージョン 10.0.39 より導入されたサービス更新 (Service Update) の自動更新ウィンドウ (autoupdate window) のオプションについてご案内いたします。
+Dynamics 365 Finance and Operations のバージョン 10.0.39 より導入されたサービス更新 (Service Update) の自動更新ウィンドウ (autoupdate window) のオプションについてご案内いたします。
 このオプションにより自動更新の日程をより柔軟に選択できることができます。
 <!-- more -->
 
@@ -32,7 +32,7 @@ Platform version: PU63
 
 
 ## サービス更新の自動更新ウィンドウのオプション
-2024 年 3 月 19 日より、Dynamics 365 for Finance and Operations のバージョン 10.0.39 以降にて、サービス更新 (Service Update) の自動更新ウィンドウ (autoupdate window) のオプションが導入されました。
+2024 年 3 月 19 日より、Dynamics 365 Finance and Operations のバージョン 10.0.39 以降にて、サービス更新 (Service Update) の自動更新ウィンドウ (autoupdate window) のオプションが導入されました。
 今までのバージョンでは、Microsoft によって設定された日程から 1 ヶ月以内に自動更新が適用されていましたが、このオプションにより自動更新の日程をより柔軟に選択できることができます。
 
 例として、バージョン 10.0.38 では、2024 年 2 月 2 日から自動更新が開始され、 1 ヶ月以内に自動更新が適用されることになっていました。
@@ -56,4 +56,4 @@ https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started
 ---
 ## おわりに  
 
-以上、Dynamics 365 for Finance and Operations のバージョン 10.0.39 より導入されたサービス更新 (Service Update) の自動更新ウィンドウ (autoupdate window) のオプションをご紹介いたしました。  
+以上、Dynamics 365 Finance and Operations のバージョン 10.0.39 より導入されたサービス更新 (Service Update) の自動更新ウィンドウ (autoupdate window) のオプションをご紹介いたしました。  
