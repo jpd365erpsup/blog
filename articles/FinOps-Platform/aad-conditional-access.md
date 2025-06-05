@@ -8,7 +8,7 @@ disableDisclaimer: false
 ---
 
 こんにちは、Dynamics ERP サポートチームの福原です。  
-この記事では、 Microsoft Entra ID 条件付きアクセスを使用して Dynamics 365 for Finance and Operations (D365FO) へのアクセスを制御する方法をご案内します。
+この記事では、 Microsoft Entra ID 条件付きアクセスを使用して Dynamics 365 Finance and Operations (D365FO) へのアクセスを制御する方法をご案内します。
 Microsoft Entra ID の条件付きアクセス により、ユーザー、デバイス、場所などを基にして、 D365FO の環境へのアクセスを制御することが可能となります。
 
 <!-- more -->

@@ -26,7 +26,7 @@ Microsoft は Dynamics 365 Finance and Operaitons (以下 D365FO) の問題に�
 お客様による手動での品質更新プログラムの適用、弊社による自動での品質更新プログラムの適用の 2 種類がございます。  
 以下の弊社のブログ記事にてそれぞれの適用に関してご案内しておりますのでご参考いただけますと幸いです。  
 [D365FOで品質更新プログラムを適用する方法](https://jpdynamicserp.github.io/blog/FinOps-Platform/apply-quality-update-d365fo/)  
-[Dynamics 365 for Finance and Operations のプロアクティブな品質更新プログラムの適用について](https://jpdynamicserp.github.io/blog/FinOps-Platform/proactive-quality-updates/)
+[Dynamics 365 Finance and Operations のプロアクティブな品質更新プログラムの適用について](https://jpdynamicserp.github.io/blog/FinOps-Platform/proactive-quality-updates/)
 
 ### オープンのままになっている Issue の状態を知ることはできますか
 弊社までお問い合わせいただきましたら、Issue の調査状況を弊社内部にて確認し、その結果をご案内いたします。

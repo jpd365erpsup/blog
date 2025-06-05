@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 for Finance and Operations の環境ごとの違い
+title: Dynamics 365 Finance and Operations の環境ごとの違い
 date: 2024-07-01
 tags:
   - FinOps-Platform
@@ -67,4 +67,4 @@ disableDisclaimer: false
 ---
 ## おわりに  
 
-以上、 Dynamics 365 for Finance and Operations (D365FO) の環境ごとの違いについてご紹介しました。
+以上、 Dynamics 365 Finance and Operations (D365FO) の環境ごとの違いについてご紹介しました。

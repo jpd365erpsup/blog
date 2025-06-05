@@ -10,7 +10,7 @@ disableDisclaimer: false
 ---
 
 こんにちは、日本マイクロソフトの佐藤です。
-この記事では、Dynamics 365 for Finance and Operations (D365FO) の Business Event の機能を用いて、Power Automate で Executing のままになっているバッチ　ジョブを検知する方法をご案内します。
+この記事では、Dynamics 365 Finance and Operations (D365FO) の Business Event の機能を用いて、Power Automate で Executing のままになっているバッチ　ジョブを検知する方法をご案内します。
 
 バッチ ジョブの通常の処理時間が分かっている場合、この手順により、通常よりも長い時間 Executing のままになっているバッチ ジョブを検知することができます。  
 
