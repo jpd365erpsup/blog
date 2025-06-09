@@ -1,6 +1,6 @@
 ---
 title: 月次締め請求書の作成手順
-date: 2022-07-01
+date: 2025-06-06
 tags:
   - FinOps-Finance
   - Invoice
@@ -8,13 +8,18 @@ tags:
 disableDisclaimer: false
 ---
 
-こんにちは、Dynamics ERP サポートチームの尾崎です。  
-この記事では、Dynamics 365 Finance and Operations (D365FO) の日本向けローカライゼーション機能である月次締め請求書作成手順を紹介します。  
+こんにちは、Dynamics ERP サポートチームの木村です。  
+この記事では、Dynamics 365 Finance (D365FO) の日本向けローカライゼーション機能である月次締め請求書作成手順を紹介します。  
+
 <!-- more -->
+## 更新履歴
+2022 年 7 月 1 日 : ブログ公開しました。  
+2025 年 6 月 6 日 : 最新バージョンでの検証及び、手順など追記しました。
+
 ## 検証に用いた製品・バージョン
 Dynamics 365 Finance and Operations      
-Application version : 10.0.33
-Platform version : PU 57
+Application version : 10.0.43
+Platform version : PU 67
 Legal entity : JPMF  
   
 # 支払期日の設定
@@ -36,7 +41,8 @@ Legal entity : JPMF
 # 月次締めグループの登録
 月次締め請求書出力時に使用する顧客の月次締め日を登録します。手順は以下のようになります。
 1. [売掛金管理] > [顧客] > [すべての顧客] を開く
-1. 対象の顧客を選択し、[支払の既定値] > [月次締めグループ] > [月次締め日] に顧客の月次締め日を入力
+1. 対象の顧客を選択し、[支払の既定値] > [月次締めグループ] > [月次締め日] に顧客の月次締め日を入力  
+※ デモデータ: JPMF-000001 を選択し実施
 1. [支払の既定値] > [支払] > [支払い条件] に作成したものを入力
 ![](./create-consolidated-invoice/CreateConsolidatedInvoice3.png)
 
@@ -54,13 +60,16 @@ Legal entity : JPMF
    1. 月次締め日を手動で設定したい場合、 [以下で指定する月次締め日の使用] を [Yes] に変更
    1. [対象に含めるレコード] > [フィルター] を押下し、条件を指定する
 1. データの取得に成功すると一覧に表示されるので、データを選択した状態で [月次締め請求書] > [印刷] > [月次締め請求書] ボタンより印刷
-1. 出力結果について確定する場合は[確認] ボタンを押下（確認済のものを変更する場合は [再オープン] を押下する）
 ![](./create-consolidated-invoice/CreateConsolidatedInvoice4.png)
-
+1. 出力結果について確定する場合は[確認] ボタンを押下（確認済のものを変更する場合は [再オープン] を押下する）
+![](./create-consolidated-invoice/CreateConsolidatedInvoice5.png)
+※ 月次締め請求書の印刷言語設定の参照先については、顧客の [言語] に依存します。
+![](./create-consolidated-invoice/CreateConsolidatedInvoice6.png)
 
 参考資料    
 [顧客月次締め請求書の作成および確認 - Finance | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/tasks/create-confirm-customer-consolidated-invoice)  
 [日本向け月次締め請求書 - Finance | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/apac-jpn-consolidate-invoices)  
+[月次締め請求書のパラメーターの構成と買掛金勘定の設定 - Finance | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/japan/consolidated-invoice-parameters-setup-accounts-payable)  
 
 ---  
 # おわりに  
