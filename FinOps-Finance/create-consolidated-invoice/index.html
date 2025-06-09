@@ -6,19 +6,21 @@
   
   <title>月次締め請求書の作成手順 | Japan Dynamics ERP Support Team Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="こんにちは、Dynamics ERP サポートチームの尾崎です。この記事では、Dynamics 365 Finance and Operations (D365FO) の日本向けローカライゼーション機能である月次締め請求書作成手順を紹介します。">
+  <meta name="description" content="こんにちは、Dynamics ERP サポートチームの木村です。この記事では、Dynamics 365 Finance (D365FO) の日本向けローカライゼーション機能である月次締め請求書作成手順を紹介します。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="月次締め請求書の作成手順">
 <meta property="og:url" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-consolidated-invoice/index.html">
 <meta property="og:site_name" content="Japan Dynamics ERP Support Team Blog">
-<meta property="og:description" content="こんにちは、Dynamics ERP サポートチームの尾崎です。この記事では、Dynamics 365 Finance and Operations (D365FO) の日本向けローカライゼーション機能である月次締め請求書作成手順を紹介します。">
+<meta property="og:description" content="こんにちは、Dynamics ERP サポートチームの木村です。この記事では、Dynamics 365 Finance (D365FO) の日本向けローカライゼーション機能である月次締め請求書作成手順を紹介します。">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-consolidated-invoice/CreateConsolidatedInvoice1.png">
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-consolidated-invoice/CreateConsolidatedInvoice2.png">
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-consolidated-invoice/CreateConsolidatedInvoice3.png">
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-consolidated-invoice/CreateConsolidatedInvoice4.png">
-<meta property="article:published_time" content="2022-06-30T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-06-05T07:22:55.988Z">
+<meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-consolidated-invoice/CreateConsolidatedInvoice5.png">
+<meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-consolidated-invoice/CreateConsolidatedInvoice6.png">
+<meta property="article:published_time" content="2025-06-05T15:00:00.000Z">
+<meta property="article:modified_time" content="2025-06-09T05:19:16.152Z">
 <meta property="article:author" content="Japan Dynamics ERP Support Japan">
 <meta property="article:tag" content="FinOps-Finance">
 <meta property="article:tag" content="Japan localization">
@@ -104,7 +106,7 @@
       <div class="article-share">
         Published: 
         <a href="" class="article-date-single">
-  <time datetime="2022-06-30T15:00:00.000Z" itemprop="datePublished">2022-07-01</time>
+  <time datetime="2025-06-05T15:00:00.000Z" itemprop="datePublished">2025-06-06</time>
 </a>
         
           / Last update: <a id="update-time" class="article-date-single"></a>
@@ -161,14 +163,15 @@
         
         <a href="https://github.com/jpd365erpsup/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+58384848-c262-5499-8de0-164b0e181ec5%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E6%9C%88%E6%AC%A1%E7%B7%A0%E3%82%81%E8%AB%8B%E6%B1%82%E6%9B%B8%E3%81%AE%E4%BD%9C%E6%88%90%E6%89%8B%E9%A0%86%5D%28https%3A%2F%2Fjpd365erpsup.github.io%2Fblog%2FFinOps-Finance%2Fcreate-consolidated-invoice%2F%29%0A*+Content+Source%3A+%5Barticles%2FFinOps-Finance%2Fcreate-consolidated-invoice.md%5D%28https%3A%2F%2Fgithub.com%2Fjpd365erpsup%2Fblob%2Fmain%2Farticles%2FFinOps-Finance%2Fcreate-consolidated-invoice.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-consolidated-invoice/" data-id="cmbj1umjo000a0nuo0lxf215x" class="article-share-link">共有</a>
+        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-consolidated-invoice/" data-id="cmbon6zw7000a0no60eye88dd" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>こんにちは、Dynamics ERP サポートチームの尾崎です。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) の日本向けローカライゼーション機能である月次締め請求書作成手順を紹介します。  </p>
+        <p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、Dynamics 365 Finance (D365FO) の日本向けローカライゼーション機能である月次締め請求書作成手順を紹介します。  </p>
 <span id="more"></span>
-<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version : 10.0.33<br>Platform version : PU 57<br>Legal entity : JPMF  </p>
+<h2 id="更新履歴"><a href="#更新履歴" class="headerlink" title="更新履歴"></a>更新履歴</h2><p>2022 年 7 月 1 日 : ブログ公開しました。<br>2025 年 6 月 6 日 : 最新バージョンでの検証及び、手順など追記しました。</p>
+<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version : 10.0.43<br>Platform version : PU 67<br>Legal entity : JPMF  </p>
 <p>請求書に記載する毎月の支払予定日の情報を入力します。手順は以下のようになります。</p>
 <ol>
 <li>[売掛金管理] &gt; [支払の設定] &gt; [支払期日] を開く</li>
@@ -184,7 +187,7 @@
 <h1 id="月次締めグループの登録"><a href="#月次締めグループの登録" class="headerlink" title="月次締めグループの登録"></a>月次締めグループの登録</h1><p>月次締め請求書出力時に使用する顧客の月次締め日を登録します。手順は以下のようになります。</p>
 <ol>
 <li>[売掛金管理] &gt; [顧客] &gt; [すべての顧客] を開く</li>
-<li>対象の顧客を選択し、[支払の既定値] &gt; [月次締めグループ] &gt; [月次締め日] に顧客の月次締め日を入力</li>
+<li>対象の顧客を選択し、[支払の既定値] &gt; [月次締めグループ] &gt; [月次締め日] に顧客の月次締め日を入力<br>※ デモデータ: JPMF-000001 を選択し実施</li>
 <li>[支払の既定値] &gt; [支払] &gt; [支払い条件] に作成したものを入力<br><img src="/blog/FinOps-Finance/create-consolidated-invoice/CreateConsolidatedInvoice3.png"></li>
 </ol>
 <h1 id="販売注文の作成および請求"><a href="#販売注文の作成および請求" class="headerlink" title="販売注文の作成および請求"></a>販売注文の作成および請求</h1><p>販売注文は通常の手順で作成したものを使用できます。月次締め日を登録した顧客について販売注文を作成し、請求書の転記まで行います。<br>参考ブログ : <a target="_blank" rel="noopener" href="https://jpdynamicserp.github.io/blog/FinOps-SCM/how-to-create-sales-order/">販売注文作成の一連の流れ</a>  </p>
@@ -197,10 +200,10 @@
 <li>[対象に含めるレコード] &gt; [フィルター] を押下し、条件を指定する</li>
 </ol>
 </li>
-<li>データの取得に成功すると一覧に表示されるので、データを選択した状態で [月次締め請求書] &gt; [印刷] &gt; [月次締め請求書] ボタンより印刷</li>
-<li>出力結果について確定する場合は[確認] ボタンを押下（確認済のものを変更する場合は [再オープン] を押下する）<br><img src="/blog/FinOps-Finance/create-consolidated-invoice/CreateConsolidatedInvoice4.png"></li>
+<li>データの取得に成功すると一覧に表示されるので、データを選択した状態で [月次締め請求書] &gt; [印刷] &gt; [月次締め請求書] ボタンより印刷<br><img src="/blog/FinOps-Finance/create-consolidated-invoice/CreateConsolidatedInvoice4.png"></li>
+<li>出力結果について確定する場合は[確認] ボタンを押下（確認済のものを変更する場合は [再オープン] を押下する）<br><img src="/blog/FinOps-Finance/create-consolidated-invoice/CreateConsolidatedInvoice5.png"><br>※ 月次締め請求書の印刷言語設定の参照先については、顧客の [言語] に依存します。<br><img src="/blog/FinOps-Finance/create-consolidated-invoice/CreateConsolidatedInvoice6.png"></li>
 </ol>
-<p>参考資料<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/tasks/create-confirm-customer-consolidated-invoice">顧客月次締め請求書の作成および確認 - Finance | Dynamics 365 | Microsoft Learn</a><br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/apac-jpn-consolidate-invoices">日本向け月次締め請求書 - Finance | Dynamics 365 | Microsoft Learn</a>  </p>
+<p>参考資料<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/tasks/create-confirm-customer-consolidated-invoice">顧客月次締め請求書の作成および確認 - Finance | Dynamics 365 | Microsoft Learn</a><br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/apac-jpn-consolidate-invoices">日本向け月次締め請求書 - Finance | Dynamics 365 | Microsoft Learn</a><br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/japan/consolidated-invoice-parameters-setup-accounts-payable">月次締め請求書のパラメーターの構成と買掛金勘定の設定 - Finance | Dynamics 365 | Microsoft Learn</a>  </p>
 <hr>
 <h1 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h1><p>以上、月次締め請求書の事前設定と出力の手順についてご紹介しました。</p>
 
@@ -227,19 +230,10 @@
     
 <nav id="article-nav">
   
-    <a href="../../FinOps-Platform/how-to-update-winrm/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          クラウドホスト環境でWinRM 証明書をアップデートする方法
-        
-      </div>
-    </a>
   
-  
-    <a href="../../FinOps-SCM/inventory-counting-group/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../../FinOps-Platform/simplifying-license-management-dynamics-365/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">棚卸グループを使用した棚卸の実施方法</div>
+      <div class="article-nav-title">Dynamics 365 Finance and Operationsのライセンス管理の簡素化：ユーザーライセンス検証の改善</div>
     </a>
   
 </nav>
@@ -258,6 +252,10 @@
       <ul>
         
           <li>
+            <a href="">月次締め請求書の作成手順</a>
+          </li>
+        
+          <li>
             <a href="../../FinOps-Platform/simplifying-license-management-dynamics-365/">Dynamics 365 Finance and Operationsのライセンス管理の簡素化：ユーザーライセンス検証の改善</a>
           </li>
         
@@ -271,10 +269,6 @@
         
           <li>
             <a href="../../FinOps-Platform/environments/">Dynamics 365 Finance and Operations の環境ごとの違い</a>
-          </li>
-        
-          <li>
-            <a href="../../FinOps-Platform/auto-update-window/">サービス更新の自動更新ウィンドウのオプションについて</a>
           </li>
         
       </ul>
@@ -297,7 +291,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">アーカイブ</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2025/04/">2025 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2024/08/">2024 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2024/07/">2024 / 07</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2024/03/">2024 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/12/">2023 / 12</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/11/">2023 / 11</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/10/">2023 / 10</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/08/">2023 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/06/">2023 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/04/">2023 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/03/">2023 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/02/">2023 / 02</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/01/">2023 / 01</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/11/">2022 / 11</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/10/">2022 / 10</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/09/">2022 / 09</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/08/">2022 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/07/">2022 / 07</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/06/">2022 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/05/">2022 / 05</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/04/">2022 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/03/">2022 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/02/">2022 / 02</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2025/06/">2025 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2025/04/">2025 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2024/08/">2024 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2024/07/">2024 / 07</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2024/03/">2024 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/12/">2023 / 12</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/11/">2023 / 11</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/10/">2023 / 10</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/08/">2023 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/06/">2023 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/04/">2023 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/03/">2023 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/02/">2023 / 02</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/01/">2023 / 01</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/11/">2022 / 11</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/10/">2022 / 10</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/09/">2022 / 09</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/08/">2022 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/07/">2022 / 07</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/06/">2022 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/05/">2022 / 05</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/04/">2022 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/03/">2022 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/02/">2022 / 02</a></li></ul>
     </div>
   </div>
 
