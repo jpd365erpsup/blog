@@ -1,6 +1,6 @@
 ---
 title: 固定資産の減価償却プロファイルを変更する方法
-date: 2022-06-14
+date: 2025-06-18
 tags: 
   - FinOps-Finance
   - Fixed assets

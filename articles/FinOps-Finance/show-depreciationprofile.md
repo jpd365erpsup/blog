@@ -27,7 +27,7 @@ Legal entity : JPMF
 ![](./show-depreciationprofile/show-depreciationprofile_1.png)
 1. [固定資産] > [固定資産] > [固定資産] を開く 
 1. 任意の固定資産を開き、[帳簿] を押下する
-**-> [機能] > [減価償却プロファイルの変更] が表示され、[減価償却] > [減価償却プロファイル] が表示されなくなる**
+**-> [機能] > [減価償却プロファイルの変更] が表示され、[減価償却] > [減価償却プロファイル] が表示される**
 ![](./show-depreciationprofile/show-depreciationprofile_2.png)
 ***  
 
@@ -35,7 +35,7 @@ Legal entity : JPMF
 ![](./show-depreciationprofile/show-depreciationprofile_3.png)
 1. [固定資産] > [固定資産] > [固定資産] を開く 
 1. 任意の固定資産を開き、[帳簿] を押下する
-**-> [機能] > [減価償却プロファイルの変更] が表示されず、[減価償却] > [減価償却プロファイル] が表示される**
+**-> [機能] > [減価償却プロファイルの変更] が表示されず、[減価償却] > [減価償却プロファイル] が表示されない**
 ![](./show-depreciationprofile/show-depreciationprofile_4.png)
 
 ## おわりに
