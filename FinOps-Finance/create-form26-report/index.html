@@ -6,23 +6,20 @@
   
   <title>償却資産申告書の作成手順 | Japan Dynamics ERP Support Team Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="こんにちは、Dynamics ERP サポートチームの尾崎です。この記事では、Dynamics 365 Finance and Operations (D365FO) の日本向けローカライゼーション機能である償却資産申告書の作成に必要な設定手順を紹介します。">
+  <meta name="description" content="こんにちは、Dynamics ERP サポートチームの永吉です。この記事では、Dynamics 365 Finance で償却資産申告書(第 26 号様式) の作成に必要な設定手順を紹介します。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="償却資産申告書の作成手順">
 <meta property="og:url" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-form26-report/index.html">
 <meta property="og:site_name" content="Japan Dynamics ERP Support Team Blog">
-<meta property="og:description" content="こんにちは、Dynamics ERP サポートチームの尾崎です。この記事では、Dynamics 365 Finance and Operations (D365FO) の日本向けローカライゼーション機能である償却資産申告書の作成に必要な設定手順を紹介します。">
+<meta property="og:description" content="こんにちは、Dynamics ERP サポートチームの永吉です。この記事では、Dynamics 365 Finance で償却資産申告書(第 26 号様式) の作成に必要な設定手順を紹介します。">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-form26-report/CreateForm26Report1.png">
-<meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-form26-report/CreateForm26Report2.png">
 <meta property="article:published_time" content="2022-08-24T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-06-18T01:22:49.318Z">
+<meta property="article:modified_time" content="2025-06-18T05:46:19.406Z">
 <meta property="article:author" content="Japan Dynamics ERP Support Japan">
 <meta property="article:tag" content="FinOps-Finance">
 <meta property="article:tag" content="Japan localization">
 <meta property="article:tag" content="Fixed assets">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-form26-report/CreateForm26Report1.png">
   
     <link rel="alternate" href="../../atom.xml" title="Japan Dynamics ERP Support Team Blog" type="application/atom+xml">
   
@@ -159,43 +156,67 @@
         
         <a href="https://github.com/jpd365erpsup/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+303440d1-0f50-574a-83e7-54e6f63c5087%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E5%84%9F%E5%8D%B4%E8%B3%87%E7%94%A3%E7%94%B3%E5%91%8A%E6%9B%B8%E3%81%AE%E4%BD%9C%E6%88%90%E6%89%8B%E9%A0%86%5D%28https%3A%2F%2Fjpd365erpsup.github.io%2Fblog%2FFinOps-Finance%2Fcreate-form26-report%2F%29%0A*+Content+Source%3A+%5Barticles%2FFinOps-Finance%2Fcreate-form26-report.md%5D%28https%3A%2F%2Fgithub.com%2Fjpd365erpsup%2Fblob%2Fmain%2Farticles%2FFinOps-Finance%2Fcreate-form26-report.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-form26-report/" data-id="cmc19pkw3000f0npmetdi0slk" class="article-share-link">共有</a>
+        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-form26-report/" data-id="cmc1j4gbm000f0nnxesg27p48" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>こんにちは、Dynamics ERP サポートチームの尾崎です。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) の日本向けローカライゼーション機能である償却資産申告書の作成に必要な設定手順を紹介します。</p>
+        <p>こんにちは、Dynamics ERP サポートチームの永吉です。<br>この記事では、Dynamics 365 Finance で償却資産申告書(第 26 号様式) の作成に必要な設定手順を紹介します。</p>
 <span id="more"></span>
 
-<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン:"></a>検証に用いた製品・バージョン:</h2><p>Dynamics 365 Finance and Operations<br>Application version : 10.0.29<br>Platform version : PU 53<br>Legal entity : JPMF  </p>
-<h2 id="機能管理の設定"><a href="#機能管理の設定" class="headerlink" title="機能管理の設定"></a>機能管理の設定</h2><p>機能管理にて “(日本) 減価償却資産申告レポートの計算には資産減価償却率を使用します。” を有効にします。手順は以下のようになります。</p>
-<ol>
-<li>[システム管理] &gt; [ワークスペース] &gt; [機能管理] を開く</li>
-<li>[すべて] タブをクリックし、”(日本) 減価償却資産申告レポートの計算には資産減価償却率を使用します。” を選択し、[今すぐ有効化] をクリックする</li>
-</ol>
-<h2 id="帳簿の設定"><a href="#帳簿の設定" class="headerlink" title="帳簿の設定"></a>帳簿の設定</h2><p>固定資産帳簿にて償却資産税申告用の帳簿を設定します。手順は以下のようになります。</p>
-<ol>
-<li><p>[固定資産] &gt; [設定] &gt; [帳簿] を開く</p>
-</li>
-<li><p>“減価償却プロファイル” が “Electronic” の帳簿を選択<br><img src="/blog/FinOps-Finance/create-form26-report/CreateForm26Report1.png"></p>
-</li>
-<li><p>[固定資産グループ] を選択し、帳簿に紐づく固定資産グループを追加<br><img src="/blog/FinOps-Finance/create-form26-report/CreateForm26Report2.png"></p>
-</li>
-</ol>
-<h2 id="固定資産の作成、取得、減価償却の転記"><a href="#固定資産の作成、取得、減価償却の転記" class="headerlink" title="固定資産の作成、取得、減価償却の転記"></a>固定資産の作成、取得、減価償却の転記</h2><p>固定資産の作成と取得、減価償却費の転記を行います。会計帳簿や税務帳簿に加え、今回追加した償却資産税申告用の帳簿についても転記を行います。</p>
-<h2 id="償却資産税申告書の出力"><a href="#償却資産税申告書の出力" class="headerlink" title="償却資産税申告書の出力"></a>償却資産税申告書の出力</h2><p>償却資産税申告書を出力します。レポートの出力例は以下のようになります。</p>
-<ol>
-<li>[固定資産] &gt; [照会およびレポート] &gt; [減価償却資産申告レポート] &gt; [申告26:償却資産税の元帳レポート] を起動</li>
-<li>パラメーターとレコードを選択して実行<ol>
-<li>暦年＝出力対象年を選択</li>
-<li>登録番号＝法人または事象所に紐づく税務登録番号を選択（組織管理＞組織＞法人＞住所＞詳細オプション＞詳細より確認可能）</li>
-<li>事業所用家屋資産番号＝事業所に該当する固定資産を選択</li>
+<h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン:"></a>検証に用いた製品・バージョン:</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.43<br>Platform version: PU67<br>Legal entity: JPMF  </p>
+<h2 id="手順"><a href="#手順" class="headerlink" title="手順"></a>手順</h2><ol>
+<li>固定資産を作成する  <ol>
+<li>[モジュール] &gt; [固定資産] &gt; [固定資産] &gt; [固定資産]  </li>
+<li>[+新規] &gt; {以下の 1 を入力} &gt; [帳簿]  </li>
+<li>[Form26] &gt; {以下の 2 から 3 を入力} &gt; [保存]  <ol>
+<li>固定資産グループ: STRU-M</li>
+<li>取得日付: 4/1/2020</li>
+<li>取得価格: 480,000</li>
 </ol>
 </li>
 </ol>
-<p>“申告26-1: 全資産および増加資産のタイプごとの詳細レポート”, “申告26-2: 減少資産のタイプごとの詳細レポート” より<br>増加資産や減少資産の種類別明細書についても出力することが可能です。</p>
-<p>(参考URL)<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamicsax-2012/appuser-itpro/jpn-generate-fixed-assets-reports">(JPN) 固定資産レポートの生成 | Microsoft Learn</a></p>
-<p>以上、償却資産申告書の事前設定と出力の手順についてご紹介しました。</p>
+</li>
+<li>固定資産を取得する<ol>
+<li>[モジュール] &gt; [固定資産] &gt; [仕訳入力] &gt; [固定資産仕訳帳]</li>
+<li>[+新規] &gt; {以下の 1 を入力} &gt; [明細行]</li>
+<li>[提案] &gt; [取得提案] &gt; {以下の 2 を入力} &gt; [OK]</li>
+<li>[転記]<ol>
+<li>名前: Dep</li>
+<li>固定資産番号: 上記で作成した固定資産の番号</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>固定資産を減価償却する<ol>
+<li>[モジュール] &gt; [固定資産] &gt; [仕訳入力] &gt; [固定資産仕訳帳]</li>
+<li>[+新規] &gt; {以下の 1 を入力} &gt; [明細行]</li>
+<li>[提案] &gt; [償却提案] &gt; {以下の 2 から 3 を入力} &gt; [OK]</li>
+<li>[転記]<ol>
+<li>名前: Dep</li>
+<li>終了日: 12/31/2021</li>
+<li>固定資産番号: 上記で作成した固定資産の番号</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>償却資産税申告書の出力する<ol>
+<li>[モジュール] &gt; [固定資産] &gt; [照会およびレポート] &gt; [減価償却資産申告レポート] &gt; [申告26: 償却資産税の元帳レポート]</li>
+<li>{以下の 1 から 6 を入力} &gt; [OK]<ol>
+<li>暦年: 2020</li>
+<li>登録番号: 1234567</li>
+<li>事業所用家屋資産番号: BUILM-000001</li>
+<li>別表の印刷: いいえ</li>
+<li>固定資産番号: 上記で作成した固定資産の番号</li>
+<li>転記階層: なし</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>“申告26-1: 全資産および増加資産のタイプごとの詳細レポート”, “申告26-2: 減少資産のタイプごとの詳細レポート” より全資産、増加資産、減少資産の種類別明細書についても出力できます。</p>
+<h2 id="参考資料"><a href="#参考資料" class="headerlink" title="参考資料"></a>参考資料</h2><p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/previous-versions/dynamicsax-2012/appuser-itpro/jpn-generate-fixed-assets-reports#2-generate-the-no-26-form-depreciable-asset-report">(JPN) 固定資産レポートの生成 | Microsoft Learn</a><br><a target="_blank" rel="noopener" href="https://www.tax.metro.tokyo.lg.jp/kazei/work/shokyak_sis">固定資産税 (償却資産) (東京都 主税局)</a></p>
+<p>以上、償却資産申告書の出力手順をご紹介しました。</p>
 
       
       
