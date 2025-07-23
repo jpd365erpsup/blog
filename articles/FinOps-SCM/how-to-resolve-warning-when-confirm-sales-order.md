@@ -52,7 +52,7 @@ Platform version: PU53
 
 ## 参考
 手順4以降の処理につきましては、下記の「販売注文作成の一連の流れ」の記事に記載しておりますので、ご参照ください。
-https://jpdynamicserp.github.io/blog/FinOps-SCM/how-to-create-sales-order/#more
+https://jpd365erpsup.github.io/blog/FinOps-SCM/how-to-create-sales-order/#more
 
 
 

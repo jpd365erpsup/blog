@@ -28,7 +28,7 @@ https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/
 
 ## 今まで
 今までは、セキュリティ、プライバシー、信頼性、可用性、パフォーマンスなどの基本的な要素に対する修正プログラム (Hotfix) の累積である品質更新プログラム (Quality update program) は、LCS にて公開されるごとに、以下のブログの手順よりお客様が手動でサンドボックス環境、本番環境に適用して頂く必要がございました。
-https://jpdynamicserp.github.io/blog/FinOps-Platform/apply-quality-update-d365fo/
+https://jpd365erpsup.github.io/blog/FinOps-Platform/apply-quality-update-d365fo/
 そのため、公開された品質更新プログラムを手動で適用していない環境では、修正プログラムにて対処されているはずの問題が発生するということが発生しておりました。
 
 ## 今後

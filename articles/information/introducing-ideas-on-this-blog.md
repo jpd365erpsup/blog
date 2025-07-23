@@ -23,13 +23,13 @@ disableDisclaimer: false
 標準機能の変更や追加機能の実装に関するご要望は、「Ideas」という専用サイトを通じて受け付けております。  
 その後、ユーザーの皆様からの賛成票（Vote）を一定量集めた要望については開発チームで検討し、実装の可否を判断させていただきます。  
 Ideas の詳細につきましては、以下のブログをご参照ください。  
-[Dynamics 365 製品のフィードバックサイト Ideas について | Japan Dynamics ERP Support Blog (jpdynamicserp.github.io)](https://jpdynamicserp.github.io/blog/information/how-to-post-ideas/)  
+[Dynamics 365 製品のフィードバックサイト Ideas について | Japan Dynamics ERP Support Blog (jpd365erpsup.github.io)](https://jpd365erpsup.github.io/blog/information/how-to-post-ideas/)  
 
 一方で、「英語で起票しても同じ悩みを抱える日本のお客様に見てもらえない」「日本固有の要件に関してはグローバルの標準要件と比べて賛成票 (Vote) が得られにくい」といったお声も多く頂戴しています。  
 
 そのような状況を改善すべく、本ブログにてお客様からサポート リクエストにてご要望いただいた Ideas のリストを日本語の概要を含めて一覧をご紹介します。  
 是非本ブログの読者の皆様におかれましては、以下のリンクにてリストされている Ideas をご一読いただき、共感いただける要望があれば賛成票 (Vote) を投じていただけますと幸いです。  
-[Ideas のリスト | Japan Dynamics ERP Support Blog (jpdynamicserp.github.io)](https://jpdynamicserp.github.io/blog/information/ideas-list/)
+[Ideas のリスト | Japan Dynamics ERP Support Blog (jpd365erpsup.github.io)](https://jpd365erpsup.github.io/blog/information/ideas-list/)
 
 > [!NOTE]  
 > 本活動は日本のテクニカル サポート独自の活動となりますため、Ideas のトリアージ プロセス等が変わることもなく、引き続きテクニカル サポートからは Ideas を元に直接開発チームにエスカレーションすることが難しいこと、ご了承ください。  

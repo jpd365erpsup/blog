@@ -8,18 +8,15 @@ tags:
 disableDisclaimer: false
 ---
 
-こんにちは、Dynamics ERP サポートチームの尾崎です。  
-この記事では、Dynamics 365 Finance and Operations (D365FO) の日本向けローカライゼーション機能である一括償却資産の償却について、
-総額から算出した当期の償却額を転記する手順を紹介します。
-2022 年 8 月現在このシナリオはサポートされておらず、償却提案時には各一括償却資産から個別に算出された償却額を積み上げた値が提案されております。
-例えば、165,100 円の固定資産が3つ登録されている場合、総額から算出すると 165,100 円となりますが、各資産の償却額を積み上げた場合、165100 / 3 ≒ 55033 * 3 = 165,099 となり 1 円のズレが生じます。
+こんにちは、Dynamics ERP サポートチームの永吉です。  
+この記事では、Dynamics 365 Finance の日本向けローカライゼーション機能である一括償却資産の償却について紹介します。
 
 <!-- more -->
 ## 検証に用いた製品・バージョン:
 Dynamics 365 Finance and Operations  
-Application version : 10.0.27  
-Platform version : PU 51
-Legal entity : JPMF 
+Application version: 10.0.43  
+Platform version: PU 51  
+Legal entity: JPMF 
 
 # 固定資産の作成、取得
 

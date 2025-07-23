@@ -13,7 +13,7 @@ disableDisclaimer: false
 固定資産パラメーターにて「減価償却方法を手動での変更を許可」を "はい" に設定している場合、[固定資産の帳簿画面] および [減価償却] タブ内に耐用年数が表示されなくなります。その際の耐用年数の変更手順について紹介します。
 <!-- more -->
 固定資産パラメーターについては以下のブログ記事をご参照ください。
-[固定資産の帳簿に減価償却プロファイルを表示する方法](https://jpdynamicserp.github.io/blog/FinOps-Finance/show-depreciationprofile/)
+[固定資産の帳簿に減価償却プロファイルを表示する方法](https://jpd365erpsup.github.io/blog/FinOps-Finance/show-depreciationprofile/)
 
 ## 検証に用いた製品・バージョン
 Dynamics 365 Finance and Operations

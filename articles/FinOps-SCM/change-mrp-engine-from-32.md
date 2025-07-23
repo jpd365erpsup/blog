@@ -48,7 +48,7 @@ disableDisclaimer: false
   ※ 以下[*](#anchor-po-migration) でもご紹介しますが、同一環境の法人ごとに計画最適化を有効化できるため、再現検証用に法人をコピーしていただき、そこで検証した結果を基にお問い合わせいただくことを推奨いたします。
 - マイクロソフトにて調査した結果、想定挙動ではないと判断した場合、計画最適化に対してのみ修正を提供します
 - お問い合わせの事象が既存 MRP エンジンにおけるクリティカルな問題の場合には、事前にビジネス インパクトも併せてご提供ください  
-  関連ブログ : [お客様のビジネスインパクトをお伺いする目的や算出について](https://jpdynamicserp.github.io/blog/information/what-is-business-impact/)
+  関連ブログ : [お客様のビジネスインパクトをお伺いする目的や算出について](https://jpd365erpsup.github.io/blog/information/what-is-business-impact/)
 
 <a id='anchor-po'></a>
 
@@ -61,7 +61,7 @@ disableDisclaimer: false
 - 既存 MRP エンジンとの差分機能や設定については、新規お問い合わせにて計画最適化への追加希望をご依頼いただくことで実装可否を検討するリストへ追加されます
 - 計画最適化の内部処理へのカスタマイズは基本的に実装できないため、お客様の運用を計画最適化に合わせていただくことを検討ください
 - 内部処理のカスタマイズを希望する箇所がある際には、Ideas に投稿ください  
-  関連ブログ : [Dynamics 365 製品のフィードバックサイト Ideas について](https://jpdynamicserp.github.io/blog/information/how-to-post-ideas/)
+  関連ブログ : [Dynamics 365 製品のフィードバックサイト Ideas について](https://jpd365erpsup.github.io/blog/information/how-to-post-ideas/)
 
 <a id='anchor-po-migration'></a>
 

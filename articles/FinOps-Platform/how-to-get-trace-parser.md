@@ -13,7 +13,7 @@ disableDisclaimer: false
 
 <!-- more -->
 > 注意点
-> - Trace Parser によりトレースを取得する際には、トレースの取得前または取得後にて、Web ブラウザーのページを更新せずに、[ブラウザーセッション ID の取得](https://jpdynamicserp.github.io/blog/FinOps-Platform/browser-session-id/) をお願いします。
+> - Trace Parser によりトレースを取得する際には、トレースの取得前または取得後にて、Web ブラウザーのページを更新せずに、[ブラウザーセッション ID の取得](https://jpd365erpsup.github.io/blog/FinOps-Platform/browser-session-id/) をお願いします。
 > - バッチサーバー上での処理はトレースに記録されませんので、バッチサーバー上での処理のトラブルシューティングに Trace Parser をご利用いただくことはできません。
 
 ## 検証に用いた製品・バージョン
