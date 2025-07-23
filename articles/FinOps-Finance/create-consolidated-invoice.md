@@ -49,7 +49,7 @@ Legal entity : JPMF
 
 # 販売注文の作成および請求
 販売注文は通常の手順で作成したものを使用できます。月次締め日を登録した顧客について販売注文を作成し、請求書の転記まで行います。  
-参考ブログ : [販売注文作成の一連の流れ](https://jpdynamicserp.github.io/blog/FinOps-SCM/how-to-create-sales-order/)  
+参考ブログ : [販売注文作成の一連の流れ](https://jpd365erpsup.github.io/blog/FinOps-SCM/how-to-create-sales-order/)  
 
 
 # 月次締め請求書の出力  

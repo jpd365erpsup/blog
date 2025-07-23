@@ -42,7 +42,7 @@ Platform version: PU53
 
 ## 参考
 梱包明細の転記を行う前にピッキングの生成を行う場合は、弊社が公開している「販売注文作成の一連の流れ」に方法を記載していますので、合わせてご参照ください。 
-https://jpdynamicserp.github.io/blog/FinOps-SCM/how-to-create-sales-order/
+https://jpd365erpsup.github.io/blog/FinOps-SCM/how-to-create-sales-order/
 
 ---
 ## おわりに  

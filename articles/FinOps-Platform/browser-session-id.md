@@ -14,7 +14,7 @@ D365FO の UI 上にてエラー等が発生した際に、ブラウザーセッ
 <!-- more -->
 > [!NOTE]
 > 注意点としまして、Web ブラウザーのページを更新しますと、ブラウザーセッション ID は変わってしまいますので、事象の再現時および、ブラウザーセッション ID の取得時には Web ブラウザーのページを更新しないようにお願いします。
-> Trace Parser によりトレースを取得 ([Trace Parserを使用したトレースの実行方法](https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-get-trace-parser/))  する際にも、トレースの取得前または取得後にて、ブラウザーを更新せずに、ブラウザーセッション ID の取得をお願いします。
+> Trace Parser によりトレースを取得 ([Trace Parserを使用したトレースの実行方法](https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-get-trace-parser/))  する際にも、トレースの取得前または取得後にて、ブラウザーを更新せずに、ブラウザーセッション ID の取得をお願いします。
 
 
 ## 検証に用いた製品・バージョン

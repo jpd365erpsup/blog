@@ -87,7 +87,7 @@ disableDisclaimer: false
 Ideas は、ユーザー様からのご要望/製品フィードバックを承っているサイトとなります。  
 Ideas に投稿された内容は弊社開発部門に直接送付され、投票数に応じて今後の実装計画に含めるかどうかの検討をさせて頂いています。詳細は下記の URL にて、紹介していますのでご参照ください。
 
-[Dynamics 365 製品のフィードバックサイト Ideas について | Japan Dynamics ERP Support Blog (jpdynamicserp.github.io)](https://jpdynamicserp.github.io/blog/information/how-to-post-ideas/)
+[Dynamics 365 製品のフィードバックサイト Ideas について | Japan Dynamics ERP Support Blog (jpd365erpsup.github.io)](https://jpd365erpsup.github.io/blog/information/how-to-post-ideas/)
 
 
 

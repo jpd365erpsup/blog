@@ -62,7 +62,7 @@ disableDisclaimer: false
 #### 具体的な内容
 USMF や JPMF などのデモデータの法人にて、何度実行しても事象が発生する手順を step-by-steps で確立します。  
 テクニカル サポートで使用している法人や各法人の特徴については以下のサポート チームのブログを参照ください。  
-[D365FO でデモデータを含んだ環境の構築方法と検証シナリオ毎のおすすめ法人](https://jpdynamicserp.github.io/blog/FinOps-Platform/how-to-create-env-with-sample-data/)  
+[D365FO でデモデータを含んだ環境の構築方法と検証シナリオ毎のおすすめ法人](https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-create-env-with-sample-data/)  
 また、提供する情報には「期待する挙動」と「実際の挙動」をそれぞれ明記ください。  
 
 #### 本情報によって分かること
@@ -89,7 +89,7 @@ USMF や JPMF などのデモデータの法人にて、何度実行しても事
 #### テクニカル サポートから依頼する事項
 この調査において、テクニカル サポートからはシャドウ コピー環境を提供を依頼する場合があります。  
 シャドウ コピー環境については以下のサポート チームのブログを参照ください。  
-[Dynamics 365 Finance and Operations の調査に用いるシャドウ コピー環境について](https://jpdynamicserp.github.io/blog/FinOps-Platform/what-shadow-copy-environment/)  
+[Dynamics 365 Finance and Operations の調査に用いるシャドウ コピー環境について](https://jpd365erpsup.github.io/blog/FinOps-Platform/what-shadow-copy-environment/)  
 また、提供する情報には「期待する挙動」と「実際の挙動」をそれぞれ明記ください。  
 
 #### 注意点
