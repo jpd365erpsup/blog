@@ -18,12 +18,12 @@
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-appended-table16-report/CreateAppendedTable16Report3.png">
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-appended-table16-report/CreateAppendedTable16Report4.png">
 <meta property="article:published_time" content="2022-09-08T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-07-23T14:12:43.633Z">
+<meta property="article:modified_time" content="2026-06-10T09:01:00.023Z">
 <meta property="article:author" content="Japan Dynamics ERP Support Japan">
-<meta property="article:tag" content="FinOps-Finance">
-<meta property="article:tag" content="Japan localization">
-<meta property="article:tag" content="Fixed assets">
 <meta property="article:tag" content="Appended table 16 series">
+<meta property="article:tag" content="FinOps-Finance">
+<meta property="article:tag" content="Fixed assets">
+<meta property="article:tag" content="Japan localization">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-appended-table16-report/CreateAppendedTable16Report1.png">
   
@@ -45,7 +45,7 @@
 <link rel="stylesheet" href="../../css/style.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 8.1.1"></head>
 
 <body>
   <div id="container">
@@ -63,7 +63,7 @@
         
           <a class="main-nav-link" href="/blog/archives">Archives</a>
         
-        <a class="main-nav-link" target="_blank" rel="noopener" href="https://cssjpn.github.io/">サポート情報</a>
+        <a class="main-nav-link" href="https://cssjpn.github.io/">サポート情報</a>
       </nav>
       <nav id="sub-nav">
         
@@ -153,7 +153,7 @@
     $("#update-time").text(localDate);
     $("#update-time").href = commit.html_url;
     Array.from(contributors, ([_, value]) => value).reverse().forEach(function (contributor) {
-      $("#contributors").append(`<li class="contributor-avatar"><a target="_blank" rel="noopener" href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
+      $("#contributors").append(`<li class="contributor-avatar"><a href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
     });
   });
 </script>
@@ -162,7 +162,7 @@
         
         <a href="https://github.com/jpd365erpsup/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+0d0a98ac-7616-5af0-a339-104f9a791556%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E5%9B%BA%E5%AE%9A%E8%B3%87%E7%94%A3%E5%88%A5%E8%A1%A816%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%81%AE%E4%BD%9C%E6%88%90%E6%89%8B%E9%A0%86%5D%28https%3A%2F%2Fjpd365erpsup.github.io%2Fblog%2FFinOps-Finance%2Fcreate-appended-table16-report%2F%29%0A*+Content+Source%3A+%5Barticles%2FFinOps-Finance%2Fcreate-appended-table16-report.md%5D%28https%3A%2F%2Fgithub.com%2Fjpd365erpsup%2Fblob%2Fmain%2Farticles%2FFinOps-Finance%2Fcreate-appended-table16-report.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-appended-table16-report/" data-id="cmdg1mhxx000a0noa49jtadmp" class="article-share-link">共有</a>
+        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Finance/create-appended-table16-report/" data-id="cuid-fxhvzuj-Yo-iXL1iT7hl" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -190,9 +190,9 @@
 </ol>
 <p><img src="/blog/FinOps-Finance/create-appended-table16-report/CreateAppendedTable16Report3.png"></p>
 <h1 id="固定資産の作成、取得、減価償却の転記"><a href="#固定資産の作成、取得、減価償却の転記" class="headerlink" title="固定資産の作成、取得、減価償却の転記"></a>固定資産の作成、取得、減価償却の転記</h1><p>固定資産の作成と取得、減価償却費の転記を行います。派生帳簿の設定を行っている場合には会計帳簿を転記することで税務帳簿まで転記することが可能です。</p>
-<h1 id="償却超過-償却不足額の決済"><a href="#償却超過-償却不足額の決済" class="headerlink" title="償却超過/償却不足額の決済"></a>償却超過/償却不足額の決済</h1><p>帳簿間の取得金額・償却金額の差異を計算します。</p>
+<h1 id="償却超過-償却不足額の決済"><a href="#償却超過-償却不足額の決済" class="headerlink" title="償却超過&#x2F;償却不足額の決済"></a>償却超過&#x2F;償却不足額の決済</h1><p>帳簿間の取得金額・償却金額の差異を計算します。</p>
 <ol>
-<li>[固定資産] &gt; [定期処理のタスク] &gt; [償却超過/償却不足額の決済] を開く</li>
+<li>[固定資産] &gt; [定期処理のタスク] &gt; [償却超過&#x2F;償却不足額の決済] を開く</li>
 <li>[新規] を押下し、パラメーターとレコードを選択して実行<ol>
 <li>パラメーターの終了日は会計年度の終了日を選択</li>
 </ol>
@@ -206,7 +206,7 @@
 <li>[固定資産] &gt; [照会およびレポート] &gt; [法人税別表 16 シリーズ] &gt; [別表 1 レポート] を起動</li>
 <li>パラメーターとレコードを選択して実行</li>
 </ol>
-<p>(参考URL)<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/finance/fixed-assets/derived-books">派生帳簿 - Finance | Dynamics 365 | Microsoft Learn</a><br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/finance/fixed-assets/post-derived-value-models">派生帳簿を転記する - Finance | Dynamics 365 | Microsoft Learn</a><br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/tasks/periodic-settlement-over-under-depreciation">償却超過額/償却不足額の定期決済 - Finance | Dynamics 365 | Microsoft Learn</a><br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamicsax-2012/appuser-itpro/jpn-generate-fixed-assets-reports">(JPN) 固定資産レポートの生成 | Microsoft Learn</a></p>
+<p>(参考URL)<br><a href="https://learn.microsoft.com/ja-jp/dynamics365/finance/fixed-assets/derived-books">派生帳簿 - Finance | Dynamics 365 | Microsoft Learn</a><br><a href="https://learn.microsoft.com/ja-jp/dynamics365/finance/fixed-assets/post-derived-value-models">派生帳簿を転記する - Finance | Dynamics 365 | Microsoft Learn</a><br><a href="https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/tasks/periodic-settlement-over-under-depreciation">償却超過額&#x2F;償却不足額の定期決済 - Finance | Dynamics 365 | Microsoft Learn</a><br><a href="https://learn.microsoft.com/ja-jp/dynamicsax-2012/appuser-itpro/jpn-generate-fixed-assets-reports">(JPN) 固定資産レポートの生成 | Microsoft Learn</a></p>
 <h1 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h1><p>以上、固定資産別表 16 シリーズの事前設定と出力の手順についてご紹介しました。</p>
 
       
@@ -327,7 +327,7 @@
       <a href="https://privacy.microsoft.com/ja-jp/privacystatement" target="_blank" rel=”noopener”>Privacy & Cookies</a> |  
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/copyright" target="_blank" rel=”noopener”>Terms of use</a> |
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/trademarks" target="_blank" rel=”noopener”>Trademarks</a> |
-      &copy; 2025 Japan Dynamics ERP Support Japan<br>
+      &copy; 2026 Japan Dynamics ERP Support Japan<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

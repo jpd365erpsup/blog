@@ -66,10 +66,10 @@
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-pipeline/CreateDeploy13.png">
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-pipeline/CreateDeploy14.png">
 <meta property="article:published_time" content="2022-09-05T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-07-23T14:12:43.764Z">
+<meta property="article:modified_time" content="2026-06-10T09:01:00.148Z">
 <meta property="article:author" content="Japan Dynamics ERP Support Japan">
-<meta property="article:tag" content="FinOps-Platform">
 <meta property="article:tag" content="Azure DevOps">
+<meta property="article:tag" content="FinOps-Platform">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-pipeline/CreateProject1.png">
   
@@ -91,7 +91,7 @@
 <link rel="stylesheet" href="../../css/style.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 8.1.1"></head>
 
 <body>
   <div id="container">
@@ -109,7 +109,7 @@
         
           <a class="main-nav-link" href="/blog/archives">Archives</a>
         
-        <a class="main-nav-link" target="_blank" rel="noopener" href="https://cssjpn.github.io/">サポート情報</a>
+        <a class="main-nav-link" href="https://cssjpn.github.io/">サポート情報</a>
       </nav>
       <nav id="sub-nav">
         
@@ -199,7 +199,7 @@
     $("#update-time").text(localDate);
     $("#update-time").href = commit.html_url;
     Array.from(contributors, ([_, value]) => value).reverse().forEach(function (contributor) {
-      $("#contributors").append(`<li class="contributor-avatar"><a target="_blank" rel="noopener" href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
+      $("#contributors").append(`<li class="contributor-avatar"><a href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
     });
   });
 </script>
@@ -208,7 +208,7 @@
         
         <a href="https://github.com/jpd365erpsup/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+5714e273-49f3-5f6b-bb9e-706888f5fdc4%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BAzure+Pipelines+%E3%81%A8+Microsoft-hosted+agents+%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9F%E3%83%93%E3%83%AB%E3%83%89%E3%81%AE%E6%89%8B%E9%A0%86%5D%28https%3A%2F%2Fjpd365erpsup.github.io%2Fblog%2FFinOps-Platform%2Fhow-to-pipeline%2F%29%0A*+Content+Source%3A+%5Barticles%2FFinOps-Platform%2Fhow-to-pipeline.md%5D%28https%3A%2F%2Fgithub.com%2Fjpd365erpsup%2Fblob%2Fmain%2Farticles%2FFinOps-Platform%2Fhow-to-pipeline.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-pipeline/" data-id="cmdg1mi1j00cf0noa4w814pta" class="article-share-link">共有</a>
+        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-pipeline/" data-id="cuidcNIEXEEhZYNcSgwFWuL05" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -224,8 +224,8 @@
 <p><a href="#ReleasePipeline%E3%81%A7%E8%B5%B7%E3%81%93%E3%82%8B%E5%8F%AF%E8%83%BD%E6%80%A7%E3%81%AE%E3%81%82%E3%82%8B%E3%82%A8%E3%83%A9%E3%83%BC">Release Pipelineで起こる可能性のあるエラー</a></p>
 <hr>
 <h2 id="AzureDevOpsでプロジェクトの作成"><a href="#AzureDevOpsでプロジェクトの作成" class="headerlink" title="AzureDevOpsでプロジェクトの作成"></a>AzureDevOpsでプロジェクトの作成</h2><p>以下の手順は、下記の docs に記載されている内容を参照とした手順となっております。</p>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=browser">Azure DevOpsでのプロジェクト作成</a></p>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/dev-tools/version-control-metadata-navigation">バージョン コントロール、メタデータ検索、およびナビゲーション</a></p>
+<p><a href="https://learn.microsoft.com/ja-jp/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=browser">Azure DevOpsでのプロジェクト作成</a></p>
+<p><a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/dev-tools/version-control-metadata-navigation">バージョン コントロール、メタデータ検索、およびナビゲーション</a></p>
 <ol>
 <li><p>Organization を作成します。</p>
 </li>
@@ -233,13 +233,14 @@
  <img src="./CreateProject1.png" style="border: 1px black solid;">
  </li>
 <li><p>[Repos] で下記のようにフォルダ構成を作成します。<br>本記事では [Trunk] &gt; [Main] &gt; [Metadata] のような構成とします。</p>
- <img src="./CreateProject2.png" style="border: 1px black solid;"></li>
+ <img src="./CreateProject2.png" style="border: 1px black solid;">
+</li>
 <li><p>Visual Studio を開き、Team Explorer から DevOps と VM のプロジェクトとソリューション、モデルを同期します。</p>
 </li>
 </ol>
 <p>サンプルとして Model Management から Model1 を作成します。名前と Publisher 以外の設定は変更しません。<br>    <img src="./CreateProject3.png" style="border: 1px black solid;"><br>    <img src="./CreateProject4.png" style="border: 1px black solid;"></p>
 <p>Model1 を使用して、プロジェクトを作成し、プロジェクト内にサンプルとして下記のコードを用いたクラスを作成します。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">RunnableClass1</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    public <span class="keyword">static</span> <span class="keyword">void</span> <span class="function"><span class="title">main</span>(<span class="params">Args _args</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        Info(<span class="string">&quot;Hello World!_Motoki&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">RunnableClass1</span></span><br><span class="line">&#123;</span><br><span class="line">    public <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span>(<span class="params">Args _args</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="title class_">Info</span>(<span class="string">&quot;Hello World!_Motoki&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>クラス名は RunnableClass1 としています。<br>    <img src="./CreateProject5.png" style="border: 1px black solid;"></p>
 <p>作成したクラスは Team Explorer から Azure DevOps に接続します。<br>    <img src="./CreateProject6.png" style="border: 1px black solid;"></p>
 <p>Source Control Explorer から Workspace を作成し、Azure DevOps と連携させます。<br>本記事では下記のように Workspace を作成します。<br>    <img src="./CreateProject7.png" style="border: 1px black solid;"></p>
@@ -247,7 +248,7 @@
 <li>DevOps の画面に戻り、[Repos] の構成を確認すると、下記ように配置されています。Nuget.config と packages.config については後ほど説明いたします。 <img src="./CreateProject8.png" style="border: 1px black solid;"></li>
 </ol>
 <h2 id="AzureDevOpsのFeedの作成"><a href="#AzureDevOpsのFeedの作成" class="headerlink" title="AzureDevOpsのFeedの作成"></a>AzureDevOpsのFeedの作成</h2><p>以下の手順は、下記の docs に記載されている手順となっております。</p>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation">Microsoft ホステッド エージェントと Azure Pipelines を使用するビルドの自動化</a></p>
+<p><a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation">Microsoft ホステッド エージェントと Azure Pipelines を使用するビルドの自動化</a></p>
 <ol>
 <li><p>まず VM で下記のファイルをまとめるようなフォルダを作成します。ここではフォルダ名を Nugets とします。</p>
  <img src="./CreateFeed1.png" style="border: 1px black solid;">
@@ -267,7 +268,8 @@
 <p> これらのファイル、フォルダに関しては後ほど手順を記載します。</p>
 </li>
 <li><p>次に DevOps の [Artifacts] から [Feed] の作成を行います。名前以外、設定の変更は特にしません（今回の Feed 名は “D365FOAutoBuild” とします）。</p>
- <img src="./CreateFeed2.png" style="border: 1px black solid;"></li>
+ <img src="./CreateFeed2.png" style="border: 1px black solid;">
+</li>
 <li><p>作成した [Feed] で、[Connect to Feed] &gt; [Nuget.exe] &gt; [Project setup] の内容をそのままコピーし、nuget.config を VM フォルダ（Nugets）に作成します。</p>
  <img src="./CreateFeed3.png" style="border: 1px black solid;">
 
@@ -275,25 +277,25 @@
  Nuget.config
  <img src="./CreateFeed5.png" style="border: 1px black solid;">
  </li>
-<li><p>VM フォルダ（Nugets）に下記のリンクから nuget.exe をダウンロードします。<br> <a target="_blank" rel="noopener" href="https://www.nuget.org/downloads">https://www.nuget.org/downloads</a></p>
- <img src="./CreateFeed6.png" style="border: 1px black solid;"></li>
+<li><p>VM フォルダ（Nugets）に下記のリンクから nuget.exe をダウンロードします。<br> <a href="https://www.nuget.org/downloads">https://www.nuget.org/downloads</a></p>
+ <img src="./CreateFeed6.png" style="border: 1px black solid;">
+</li>
 <li><p>下記の github から installcredprovider.ps1 を作成し、ローカルの Powershell で実行します。スクリプトが資格情報を要求し続けて失敗する場合は、パラメーターとして -AddNetfx を追加してみてください。</p>
-<p> <a target="_blank" rel="noopener" href="https://github.com/Microsoft/artifacts-credprovider/blob/master/helpers/installcredprovider.ps1">https://github.com/Microsoft/artifacts-credprovider/blob/master/helpers/installcredprovider.ps1</a></p>
+<p> <a href="https://github.com/Microsoft/artifacts-credprovider/blob/master/helpers/installcredprovider.ps1">https://github.com/Microsoft/artifacts-credprovider/blob/master/helpers/installcredprovider.ps1</a></p>
  <img src="./CreateFeed1-2.png" style="border: 1px black solid;"></li>
 </ol>
 <p>実行したら plugin の netcore, netfx のフォルダが作成されるので、Nugets フォルダにコピーします。</p>
 <ol start="6">
-<li><p>LCS プロジェクトの [資産ライブラリ] &gt; [NuGet packages] &gt; [インポート] でデプロイ先のバージョンの .nupkg ファイルを4種類ダウンロードします。また、このときの [追加の詳細] の [説明] からそれぞれの Version を記録しておきます。</p>
- <img src="./CreateFeed7.png" style="border: 1px black solid;">
+<li>LCS プロジェクトの [資産ライブラリ] &gt; [NuGet packages] &gt; [インポート] でデプロイ先のバージョンの .nupkg ファイルを4種類ダウンロードします。また、このときの [追加の詳細] の [説明] からそれぞれの Version を記録しておきます。 <img src="./CreateFeed7.png" style="border: 1px black solid;">
 
  <img src="./CreateFeed8.png" style="border: 1px black solid;"></li>
 </ol>
 <p>ダウンロードした .nupkg ファイルの Version に沿って Packages.config を作成します。下記のコードの Version は .nupkg ファイルの情報によって随時変更してください。<br>    <img src="./CreateFeed9.png" style="border: 1px black solid;"></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;utf-8&quot;</span>?&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">packages</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">id</span>=<span class="string">&quot;Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp&quot;</span> <span class="attr">version</span>=<span class="string">&quot;7.0.6395.47&quot;</span> <span class="attr">targetFramework</span>=<span class="string">&quot;net40&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">id</span>=<span class="string">&quot;Microsoft.Dynamics.AX.Application.DevALM.BuildXpp&quot;</span> <span class="attr">version</span>=<span class="string">&quot;10.0.1227.52&quot;</span> <span class="attr">targetFramework</span>=<span class="string">&quot;net40&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">id</span>=<span class="string">&quot;Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp&quot;</span> <span class="attr">version</span>=<span class="string">&quot;10.0.1227.52&quot;</span> <span class="attr">targetFramework</span>=<span class="string">&quot;net40&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">id</span>=<span class="string">&quot;Microsoft.Dynamics.AX.Platform.CompilerPackage&quot;</span> <span class="attr">version</span>=<span class="string">&quot;7.0.6395.47&quot;</span> <span class="attr">targetFramework</span>=<span class="string">&quot;net40&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">packages</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;utf-8&quot;</span>?&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">packages</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">id</span>=<span class="string">&quot;Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp&quot;</span> <span class="attr">version</span>=<span class="string">&quot;7.0.6395.47&quot;</span> <span class="attr">targetFramework</span>=<span class="string">&quot;net40&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">id</span>=<span class="string">&quot;Microsoft.Dynamics.AX.Application.DevALM.BuildXpp&quot;</span> <span class="attr">version</span>=<span class="string">&quot;10.0.1227.52&quot;</span> <span class="attr">targetFramework</span>=<span class="string">&quot;net40&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">id</span>=<span class="string">&quot;Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp&quot;</span> <span class="attr">version</span>=<span class="string">&quot;10.0.1227.52&quot;</span> <span class="attr">targetFramework</span>=<span class="string">&quot;net40&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">package</span> <span class="attr">id</span>=<span class="string">&quot;Microsoft.Dynamics.AX.Platform.CompilerPackage&quot;</span> <span class="attr">version</span>=<span class="string">&quot;7.0.6395.47&quot;</span> <span class="attr">targetFramework</span>=<span class="string">&quot;net40&quot;</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">packages</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <ol start="7">
 <li>Powershell から Azure DevOps の Feed に .nupkg ファイルを送ります。<br>※このときにリモートデスクトップ画面から行うと通信速度が早い可能性があります。 <img src="./CreateFeed10.png" style="border: 1px black solid;"></li>
 </ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.\nuget.exe push -Source <span class="string">&quot;対象のFeed名&quot;</span> -ApiKey az Microsoft.Dynamics.AX.Application.DevALM.BuildXpp.nupkg -Timeout <span class="number">3600</span></span><br><span class="line">.\nuget.exe push -Source <span class="string">&quot;対象のFeed名&quot;</span> -ApiKey az Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp.nupkg -Timeout <span class="number">3600</span></span><br><span class="line">.\nuget.exe push -Source <span class="string">&quot;対象のFeed名&quot;</span> -ApiKey az Microsoft.Dynamics.AX.Platform.CompilerPackage.nupkg -Timeout <span class="number">3600</span></span><br><span class="line">   .\nuget.exe push -Source <span class="string">&quot;対象のFeed名&quot;</span> -ApiKey az Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp.nupkg -Timeout <span class="number">3600</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.\nuget.<span class="property">exe</span> push -<span class="title class_">Source</span> <span class="string">&quot;対象のFeed名&quot;</span> -<span class="title class_">ApiKey</span> az <span class="title class_">Microsoft</span>.<span class="property">Dynamics</span>.<span class="property">AX</span>.<span class="property">Application</span>.<span class="property">DevALM</span>.<span class="property">BuildXpp</span>.<span class="property">nupkg</span> -<span class="title class_">Timeout</span> <span class="number">3600</span></span><br><span class="line">.\nuget.<span class="property">exe</span> push -<span class="title class_">Source</span> <span class="string">&quot;対象のFeed名&quot;</span> -<span class="title class_">ApiKey</span> az <span class="title class_">Microsoft</span>.<span class="property">Dynamics</span>.<span class="property">AX</span>.<span class="property">Platform</span>.<span class="property">DevALM</span>.<span class="property">BuildXpp</span>.<span class="property">nupkg</span> -<span class="title class_">Timeout</span> <span class="number">3600</span></span><br><span class="line">.\nuget.<span class="property">exe</span> push -<span class="title class_">Source</span> <span class="string">&quot;対象のFeed名&quot;</span> -<span class="title class_">ApiKey</span> az <span class="title class_">Microsoft</span>.<span class="property">Dynamics</span>.<span class="property">AX</span>.<span class="property">Platform</span>.<span class="property">CompilerPackage</span>.<span class="property">nupkg</span> -<span class="title class_">Timeout</span> <span class="number">3600</span></span><br><span class="line">   .\nuget.<span class="property">exe</span> push -<span class="title class_">Source</span> <span class="string">&quot;対象のFeed名&quot;</span> -<span class="title class_">ApiKey</span> az <span class="title class_">Microsoft</span>.<span class="property">Dynamics</span>.<span class="property">AX</span>.<span class="property">ApplicationSuite</span>.<span class="property">DevALM</span>.<span class="property">BuildXpp</span>.<span class="property">nupkg</span> -<span class="title class_">Timeout</span> <span class="number">3600</span></span><br></pre></td></tr></table></figure>
 
 <p>UserName とPassword を求められます</p>
 <ul>
@@ -301,10 +303,12 @@
 <li>Password は Personal Access Token で作成  <img src="./CreateFeed13.png" style="border: 1px black solid;"></li>
 </ul>
 <h2 id="AzurePipelinesの設定"><a href="#AzurePipelinesの設定" class="headerlink" title="AzurePipelinesの設定"></a>AzurePipelinesの設定</h2><ol>
-<li><p>下記から、定義済みのパイプラインのダウンロードを行います（xpp-classic-ci.json）<br><a target="_blank" rel="noopener" href="https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples">https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples</a></p>
- <img src="./CreatePipe1.png" style="border: 1px black solid;"></li>
+<li><p>下記から、定義済みのパイプラインのダウンロードを行います（xpp-classic-ci.json）<br><a href="https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples">https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples</a></p>
+ <img src="./CreatePipe1.png" style="border: 1px black solid;">
+</li>
 <li><p>Pipeline を作成します。</p>
- <img src="./CreatePipe2.png" style="border: 1px black solid;"></li>
+ <img src="./CreatePipe2.png" style="border: 1px black solid;">
+</li>
 <li><p>先ほどダウンロードした xpp-classic-ci.json を [Import a pipeline] で選択します。</p>
  <img src="./CreatePipe3.png" style="border: 1px black solid;">
  </li>
@@ -312,29 +316,38 @@
  <img src="./CreatePipe4-0.png" style="border: 1px black solid;"></li>
 </ol>
 <p>スクリーンショットの赤文字は、タスクIDの不一致により、テンプレート内の古いタスクが認識されていないことを示します。そのため、古いタスクを削除し、同じ新しいタスクを1つ追加してください。以下のスクリーンショットが今回作成するパイプラインになります。<br>    <img src="./CreatePipe4.png" style="border: 1px black solid;"></p>
-<p>該当のタスクが見つからない場合、下記の Dynamics 365 Finance and Operations Tools のインストールを確認してください。<br><a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools">https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools</a><br>    <img src="./CreatePipe4-1.png" style="border: 1px black solid;"></p>
+<p>該当のタスクが見つからない場合、下記の Dynamics 365 Finance and Operations Tools のインストールを確認してください。<br><a href="https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools">https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools</a><br>    <img src="./CreatePipe4-1.png" style="border: 1px black solid;"></p>
 <ol start="5">
 <li>各タスクを設定していきます。</li>
 </ol>
 <ul>
 <li><p>Pipeline</p>
-  <img src="./CreatePipe5.png" style="border: 1px black solid;"></li>
+  <img src="./CreatePipe5.png" style="border: 1px black solid;">
+</li>
 <li><p>Get sources</p>
-  <img src="./CreatePipe7.png" style="border: 1px black solid;"></li>
+  <img src="./CreatePipe7.png" style="border: 1px black solid;">
+</li>
 <li><p>Nuget installer</p>
-  <img src="./CreatePipe8.png" style="border: 1px black solid;"></li>
+  <img src="./CreatePipe8.png" style="border: 1px black solid;">
+</li>
 <li><p>Update Model Version</p>
-  <img src="./CreatePipe9.png" style="border: 1px black solid;"></li>
+  <img src="./CreatePipe9.png" style="border: 1px black solid;">
+</li>
 <li><p>Visual Studio Build<br>MSBuild Arguments には下記を入力します</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/p:BuildTasksDirectory=<span class="string">&quot;$(NugetsPath)\$(ToolsPackage)\DevAlm&quot;</span>  /p:MetadataDirectory=<span class="string">&quot;$(MetadataPath)&quot;</span>  /p:FrameworkDirectory=<span class="string">&quot;$(NuGetsPath)\$(ToolsPackage)&quot;</span>  /p:ReferenceFolder=<span class="string">&quot;$(NuGetsPath)\$(PlatPackage)\ref\net40;$(NuGetsPath)\$(AppPackage)\ref\net40;$(NuGetsPath)\$(AppSuitePackage)\ref\net40;$(MetadataPath);$(Build.BinariesDirectory)&quot;</span>  /p:ReferencePath=<span class="string">&quot;$(NuGetsPath)\$(ToolsPackage)&quot;</span>  /p:OutputDirectory=<span class="string">&quot;$(Build.BinariesDirectory)&quot;</span></span><br></pre></td></tr></table></figure>
-<p>その他はスクリーンショットをご参照ください</p>
-  <img src="./CreatePipe10.png" style="border: 1px black solid;"></li>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/<span class="attr">p</span>:<span class="title class_">BuildTasksDirectory</span>=<span class="string">&quot;$(NugetsPath)\$(ToolsPackage)\DevAlm&quot;</span>  /<span class="attr">p</span>:<span class="title class_">MetadataDirectory</span>=<span class="string">&quot;$(MetadataPath)&quot;</span>  /<span class="attr">p</span>:<span class="title class_">FrameworkDirectory</span>=<span class="string">&quot;$(NuGetsPath)\$(ToolsPackage)&quot;</span>  /<span class="attr">p</span>:<span class="title class_">ReferenceFolder</span>=<span class="string">&quot;$(NuGetsPath)\$(PlatPackage)\ref\net40;$(NuGetsPath)\$(AppPackage)\ref\net40;$(NuGetsPath)\$(AppSuitePackage)\ref\net40;$(MetadataPath);$(Build.BinariesDirectory)&quot;</span>  /<span class="attr">p</span>:<span class="title class_">ReferencePath</span>=<span class="string">&quot;$(NuGetsPath)\$(ToolsPackage)&quot;</span>  /<span class="attr">p</span>:<span class="title class_">OutputDirectory</span>=<span class="string">&quot;$(Build.BinariesDirectory)&quot;</span></span><br></pre></td></tr></table></figure>
+<p>その他はスクリーンショットをご参照ください<br>    <img src="./CreatePipe10.png" style="border: 1px black solid;"></p>
+<ul>
 <li><p>Copy Files</p>
-  <img src="./CreatePipe11.png" style="border: 1px black solid;"></li>
+  <img src="./CreatePipe11.png" style="border: 1px black solid;">
+</li>
 <li><p>NuGet Tool Installer</p>
-  <img src="./CreatePipe12.png" style="border: 1px black solid;"></li>
+  <img src="./CreatePipe12.png" style="border: 1px black solid;">
+</li>
 <li><p>Create Deployable Package</p>
-  <img src="./CreatePipe13-1.png" style="border: 1px black solid;"></li>
+  <img src="./CreatePipe13-1.png" style="border: 1px black solid;">
+</li>
 <li><p>Publish Artifact: drop</p>
   <img src="./CreatePipe14.png" style="border: 1px black solid;"></li>
 </ul>
@@ -342,14 +355,14 @@
 <li><p>[Save &amp; Queue]を実行します。Artifactができれば成功です。</p>
  <img src="./CreatePipe15.png" style="border: 1px black solid;"></li>
 </ol>
-<h2 id="ReleasePipelineで自動アップロード・資産のデプロイを設定"><a href="#ReleasePipelineで自動アップロード・資産のデプロイを設定" class="headerlink" title="ReleasePipelineで自動アップロード・資産のデプロイを設定"></a>ReleasePipelineで自動アップロード・資産のデプロイを設定</h2><p>2022/08/29 の時点で、LCS 認証には、多要素認証 (MFA) が有効になっていない AAD アカウントが必要です。現在、LCS の新しい認証機能として、サービス間認証などのオプションを検討中です。また以下の手順は、下記の docs に記載されている手順となっております。</p>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/dev-tools/pipeline-lcs-connection">Azure Pipelines で LCS 接続を作成する</a></p>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload">Azure Pipelines を使用した資産のアップロード</a></p>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/dev-tools/pipeline-deploy-asset">Azure Pipelines を使用した資産のデプロイ</a></p>
+<h2 id="ReleasePipelineで自動アップロード・資産のデプロイを設定"><a href="#ReleasePipelineで自動アップロード・資産のデプロイを設定" class="headerlink" title="ReleasePipelineで自動アップロード・資産のデプロイを設定"></a>ReleasePipelineで自動アップロード・資産のデプロイを設定</h2><p>2022&#x2F;08&#x2F;29 の時点で、LCS 認証には、多要素認証 (MFA) が有効になっていない AAD アカウントが必要です。現在、LCS の新しい認証機能として、サービス間認証などのオプションを検討中です。また以下の手順は、下記の docs に記載されている手順となっております。</p>
+<p><a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/dev-tools/pipeline-lcs-connection">Azure Pipelines で LCS 接続を作成する</a></p>
+<p><a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/dev-tools/pipeline-asset-upload">Azure Pipelines を使用した資産のアップロード</a></p>
+<p><a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/dev-tools/pipeline-deploy-asset">Azure Pipelines を使用した資産のデプロイ</a></p>
 <ol>
 <li><p>Azure Active Directory アプリケーションを作成します</p>
 <ol>
-<li>Azure ポータル(<a target="_blank" rel="noopener" href="https://portal.azure.com/#home">https://portal.azure.com/#home</a>) &gt; Azure Active Directory &gt; 管理 &gt; アプリの登録 に移動します。</li>
+<li>Azure ポータル(<a href="https://portal.azure.com/#home">https://portal.azure.com/#home</a>) &gt; Azure Active Directory &gt; 管理 &gt; アプリの登録 に移動します。</li>
 <li>[新規登録] をクリックし、名前を入力して [登録]をクリックします。</li>
 <li>アプリケーションの詳細画面から、[管理] &gt; [API のアクセス許可] &gt; [構成されたアクセス許可] &gt; [アクセス許可の追加] に移動します</li>
 <li>[所属する組織で使用している API] の下の[ Dynamics Lifecycle services] を選択します。</li>
@@ -362,7 +375,8 @@
 <li>アプリケーションの詳細画面の [管理] &gt; [認証] に移動します</li>
 <li>[詳細設定] &gt; [パブリック クライアント フローを許可する] で、[次のモバイルおよびデスクトップ フローを有効にする]を [はい] に構成します。</li>
 </ol>
- <img src="./CreateDeploy2.png" style="border: 1px black solid;"></li>
+ <img src="./CreateDeploy2.png" style="border: 1px black solid;">
+</li>
 <li><p>Azure DevOps で LCS へのサービス接続を作成します</p>
 <ol>
 <li>DevOps プロジェクトの [プロジェクト設定] &gt; [パイプライン] &gt; [サービス接続] に移動します。</li>
@@ -373,13 +387,16 @@
 <ol start="3">
 <li><p>[Dynamics Lifecycle Services] を選択します</p>
 </li>
-<li><p>次の詳細を入力します。<br> ユーザー名:プロジェクトとアセット ライブラリにアクセスできる LCS 資格情報<br> パスワード:ユーザー名で使用したアカウントのパスワード<br> アプリケーション ID:これは、前のステップで作成されたアプリケーションのアプリ/クライアント ID です。<br> サービス接続名:任意の名前を指定します</p>
+<li><p>次の詳細を入力します。<br> ユーザー名:プロジェクトとアセット ライブラリにアクセスできる LCS 資格情報<br> パスワード:ユーザー名で使用したアカウントのパスワード<br> アプリケーション ID:これは、前のステップで作成されたアプリケーションのアプリ&#x2F;クライアント ID です。<br> サービス接続名:任意の名前を指定します</p>
 <p> 下記のスクリーンショットの黄色の四角には同じドメインを入力してください。</p>
 </li>
 </ol>
  <img src="./CreateDeploy4.png" style="border: 1px black solid;">
  
- 5. [保存] をクリック</li>
+<ol start="5">
+<li>[保存] をクリック</li>
+</ol>
+</li>
 <li><p>リリースパイプラインを作成します</p>
 <ol>
 <li>[Pipeline] &gt; [Releases] &gt; [New] &gt; [New Release pipeline] を開きます。（名前を “Upload and Deploy” としています）</li>
@@ -406,20 +423,23 @@
 <li><p>Dynamics Lifecycle Servicies (LCS) Asset Upload</p>
 </li>
 </ul>
-<p>LCS Project ID は、デプロイ対象の環境をブラウザで開いた際の URL の末尾にある数字 7 桁を入力します<br>    <img src="./CreateDeploy10.png" style="border: 1px black solid;"><br>    <img src="./CreateDeploy9.png" style="border: 1px black solid;"></p>
+<p>LCS Project ID は、デプロイ対象の環境をブラウザで開いた際の URL の末尾にある数字 7 桁を入力します<br>    <img src="./CreateDeploy10.png" style="border: 1px black solid;"><br>    <img src="./CreateDeploy9.png" style="border: 1px black solid;">
+	</p>
 <ul>
-<li>Dynamics Lifecycle Servicies (LCS) Asset Deployment  <img src="./CreateDeploy11.png" style="border: 1px black solid;">
-  </li>
+<li><p>Dynamics Lifecycle Servicies (LCS) Asset Deployment</p>
+  <img src="./CreateDeploy11.png" style="border: 1px black solid;"></li>
 </ul>
 <ol start="4">
 <li><p>Artifact の右上のマークから [Continuous deployment trigger]を[Enabled] に設定して、[Create release] をすると、Pipeline のビルドが終わったときに自動的にリリースパイプラインが実行されます。</p>
- <img src="./CreateDeploy12.png" style="border: 1px black solid;"></li>
+ <img src="./CreateDeploy12.png" style="border: 1px black solid;">
+</li>
 <li><p>リリースパイプラインが成功したら、[Releases] から今回実行したパイプラインを選択すると、下記のような Succeeded の表記が確認されます。</p>
- <img src="./CreateDeploy12-1.png" style="border: 1px black solid;"></li>
+ <img src="./CreateDeploy12-1.png" style="border: 1px black solid;">
+</li>
 <li><p>今回の場合、対象の環境にてURLの .dynamics.com の後ろに下記を張り付けると、メッセージが表示され、開発したコードの内容が反映されていることが分かります。</p>
 </li>
 </ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/?cmp=DAT&amp;mi=SysClassRunner&amp;cls=RunnableClass1</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/?cmp=<span class="variable constant_">DAT</span>&amp;mi=<span class="title class_">SysClassRunner</span>&amp;cls=<span class="title class_">RunnableClass1</span></span><br></pre></td></tr></table></figure>
 
  <img src="./CreateDeploy12-2.png" style="border: 1px black solid;">
 
@@ -427,12 +447,13 @@
 <li><p>環境の不一致では下記のエラーが確認されます</p>
   <img src="./CreateDeploy13.png" style="border: 1px black solid;"></li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">##[error]<span class="built_in">Error</span> <span class="keyword">in</span> request to deploy file asset: <span class="string">&#x27;Deployable package environment validation failed&#x27;</span> (Operation Activity Id: <span class="string">&#x27;~~~~~~~~~~~~~~~~~~~&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">##[error]<span class="title class_">Error</span> <span class="keyword">in</span> request to deploy file <span class="attr">asset</span>: <span class="string">&#x27;Deployable package environment validation failed&#x27;</span> (<span class="title class_">Operation</span> <span class="title class_">Activity</span> <span class="title class_">Id</span>: <span class="string">&#x27;~~~~~~~~~~~~~~~~~~~&#x27;</span>)</span><br></pre></td></tr></table></figure>
 <p>.nupkg の対象のバージョンと、デプロイ先の環境のバージョンが一致することを確かめてください。</p>
 <ul>
-<li>LCS への接続で下記のようなエラーが発生することがあります。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">##[error]The process <span class="string">&#x27;/usr/bin/docker&#x27;</span> failed <span class="keyword">with</span> exit code <span class="number">1</span></span><br></pre></td></tr></table></figure>
-その際は [Feed] &gt; [Feed Setting] &gt; [Add users/group] で『”プロジェクト名”（組織名）』で “Contributor” を選択すると解決する可能性がございます。  <img src="./CreateDeploy14.png" style="border: 1px black solid;"></li>
+<li>LCS への接続で下記のようなエラーが発生することがあります。</li>
 </ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">##[error]<span class="title class_">The</span> process <span class="string">&#x27;/usr/bin/docker&#x27;</span> failed <span class="keyword">with</span> exit code <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>その際は [Feed] &gt; [Feed Setting] &gt; [Add users&#x2F;group] で『”プロジェクト名”（組織名）』で “Contributor” を選択すると解決する可能性がございます。<br>    <img src="./CreateDeploy14.png" style="border: 1px black solid;"></p>
 <hr>
 <h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、Dynamics 365 Finance and Operations にて、Azure Pipelines と Microsoft-hosted agents を使用したビルドの手順をご紹介させていただきました。</p>
 
@@ -554,7 +575,7 @@
       <a href="https://privacy.microsoft.com/ja-jp/privacystatement" target="_blank" rel=”noopener”>Privacy & Cookies</a> |  
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/copyright" target="_blank" rel=”noopener”>Terms of use</a> |
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/trademarks" target="_blank" rel=”noopener”>Trademarks</a> |
-      &copy; 2025 Japan Dynamics ERP Support Japan<br>
+      &copy; 2026 Japan Dynamics ERP Support Japan<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

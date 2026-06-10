@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/aad-conditional-access/image5.png">
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/aad-conditional-access/image6.png">
 <meta property="article:published_time" content="2022-10-03T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-07-23T14:12:43.714Z">
+<meta property="article:modified_time" content="2026-06-10T09:01:00.100Z">
 <meta property="article:author" content="Japan Dynamics ERP Support Japan">
 <meta property="article:tag" content="FinOps-Platform">
 <meta property="article:tag" content="Microsoft Entra ID">
@@ -45,7 +45,7 @@
 <link rel="stylesheet" href="../../css/style.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 8.1.1"></head>
 
 <body>
   <div id="container">
@@ -63,7 +63,7 @@
         
           <a class="main-nav-link" href="/blog/archives">Archives</a>
         
-        <a class="main-nav-link" target="_blank" rel="noopener" href="https://cssjpn.github.io/">サポート情報</a>
+        <a class="main-nav-link" href="https://cssjpn.github.io/">サポート情報</a>
       </nav>
       <nav id="sub-nav">
         
@@ -153,7 +153,7 @@
     $("#update-time").text(localDate);
     $("#update-time").href = commit.html_url;
     Array.from(contributors, ([_, value]) => value).reverse().forEach(function (contributor) {
-      $("#contributors").append(`<li class="contributor-avatar"><a target="_blank" rel="noopener" href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
+      $("#contributors").append(`<li class="contributor-avatar"><a href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
     });
   });
 </script>
@@ -162,7 +162,7 @@
         
         <a href="https://github.com/jpd365erpsup/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+7e3b637e-e466-5296-b73d-677479e8aa96%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BMicrosoft+Entra+ID+%E6%9D%A1%E4%BB%B6%E4%BB%98%E3%81%8D%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6+D365FO+%E3%81%B8%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%82%92%E5%88%B6%E5%BE%A1%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpd365erpsup.github.io%2Fblog%2FFinOps-Platform%2Faad-conditional-access%2F%29%0A*+Content+Source%3A+%5Barticles%2FFinOps-Platform%2Faad-conditional-access.md%5D%28https%3A%2F%2Fgithub.com%2Fjpd365erpsup%2Fblob%2Fmain%2Farticles%2FFinOps-Platform%2Faad-conditional-access.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Platform/aad-conditional-access/" data-id="cmdg1mhyc000z0noa9n6m7puc" class="article-share-link">共有</a>
+        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Platform/aad-conditional-access/" data-id="cuid21tf4sK3WN6UNEymAmrtz" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -170,9 +170,9 @@
         <p>こんにちは、Dynamics ERP サポートチームの福原です。<br>この記事では、 Microsoft Entra ID 条件付きアクセスを使用して Dynamics 365 Finance and Operations (D365FO) へのアクセスを制御する方法をご案内します。<br>Microsoft Entra ID の条件付きアクセス により、ユーザー、デバイス、場所などを基にして、 D365FO の環境へのアクセスを制御することが可能となります。</p>
 <span id="more"></span>
 <h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.31<br>Platform version: PU55<br>Microsoft Entra ID Premium P2 ライセンス</p>
-<h2 id="はじめに"><a href="#はじめに" class="headerlink" title="はじめに"></a>はじめに</h2><p>以下の弊社 FastTrack の記事及び公開資料にも、 Microsoft Entra ID 条件付きアクセスによる D365FO へのアクセス制御の手順が同様にご案内致しておりますのでご参考にして頂けますと幸いでございます。<br>FastTrack の記事:<br><a target="_blank" rel="noopener" href="https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/CloudSecurity/ConditionalAccess">https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/CloudSecurity/ConditionalAccess</a><br>公開資料:<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&amp;bc=/dynamics365/breadcrumb/toc.json">https://learn.microsoft.com/ja-jp/power-platform/admin/restrict-access-online-trusted-ip-rules?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&amp;bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json</a>  </p>
+<h2 id="はじめに"><a href="#はじめに" class="headerlink" title="はじめに"></a>はじめに</h2><p>以下の弊社 FastTrack の記事及び公開資料にも、 Microsoft Entra ID 条件付きアクセスによる D365FO へのアクセス制御の手順が同様にご案内致しておりますのでご参考にして頂けますと幸いでございます。<br>FastTrack の記事:<br><a href="https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/CloudSecurity/ConditionalAccess">https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/CloudSecurity/ConditionalAccess</a><br>公開資料:<br><a href="https://learn.microsoft.com/ja-jp/power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json">https://learn.microsoft.com/ja-jp/power-platform/admin/restrict-access-online-trusted-ip-rules?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&amp;bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json</a>  </p>
 <h2 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h2><ul>
-<li>Microsoft Entra ID 条件付きアクセスをご利用いただくには、Microsoft Entra ID Premium (<a target="_blank" rel="noopener" href="https://azure.microsoft.com/ja-jp/pricing/details/active-directory/">https://azure.microsoft.com/ja-jp/pricing/details/active-directory/</a>) の ライセンスが必要となります。</li>
+<li>Microsoft Entra ID 条件付きアクセスをご利用いただくには、Microsoft Entra ID Premium (<a href="https://azure.microsoft.com/ja-jp/pricing/details/active-directory/">https://azure.microsoft.com/ja-jp/pricing/details/active-directory/</a>) の ライセンスが必要となります。</li>
 <li>Microsoft Entra ID 条件付きアクセスにより設定されるアクセス制御は Microsoft Entra ID テナント内の全ての D365FO の環境 (本番環境、サンドボックス環境、クラウドホスト環境等) に適用されます。個別の環境のみに限ったアクセス制御を設定することはできません。</li>
 </ul>
 <h2 id="手順"><a href="#手順" class="headerlink" title="手順"></a>手順</h2><p>以下の手順では、 Windows を使用しているすべてのユーザーからの D365FO へのアクセスをブロックするようなポリシーを作成します。<br>もし、別のデバイスからのブロックや、対象ユーザーの変更をご要望の場合には、ポリシー内の各対象の設定を変更することが可能です。</p>
@@ -187,9 +187,8 @@
 </li>
 <li><p>このポリシーが対象に合致するようなアクセスをブロックするために、ブロックを選択し、ポリシーの有効化のオンを選択します。<br> <img src="/blog/FinOps-Platform/aad-conditional-access/image5.png"></p>
 </li>
-</ol>
-<ol start="6">
-<li>上記のポリシーの設定後、 Windows のクライアント端末から D365FO の環境にアクセスしようとすると、アカウントの認証後に以下のようなエラーが表示され、 D365FO の環境にアクセスできないようになります。<br> <img src="/blog/FinOps-Platform/aad-conditional-access/image6.png"></li>
+<li><p>上記のポリシーの設定後、 Windows のクライアント端末から D365FO の環境にアクセスしようとすると、アカウントの認証後に以下のようなエラーが表示され、 D365FO の環境にアクセスできないようになります。<br> <img src="/blog/FinOps-Platform/aad-conditional-access/image6.png"></p>
+</li>
 </ol>
 <hr>
 <h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、Microsoft Entra ID 条件付きアクセスを使用して D365FO へのアクセスを制御する方法を紹介いたしました。  </p>
@@ -312,7 +311,7 @@
       <a href="https://privacy.microsoft.com/ja-jp/privacystatement" target="_blank" rel=”noopener”>Privacy & Cookies</a> |  
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/copyright" target="_blank" rel=”noopener”>Terms of use</a> |
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/trademarks" target="_blank" rel=”noopener”>Trademarks</a> |
-      &copy; 2025 Japan Dynamics ERP Support Japan<br>
+      &copy; 2026 Japan Dynamics ERP Support Japan<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

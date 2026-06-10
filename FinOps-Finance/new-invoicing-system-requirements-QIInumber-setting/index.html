@@ -23,11 +23,11 @@
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting8.png">
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting9.png">
 <meta property="article:published_time" content="2023-04-24T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-07-23T14:12:43.706Z">
+<meta property="article:modified_time" content="2026-06-10T09:01:00.092Z">
 <meta property="article:author" content="Japan Dynamics ERP Support Japan">
 <meta property="article:tag" content="FinOps-Finance">
-<meta property="article:tag" content="Japan localization">
 <meta property="article:tag" content="Invoice">
+<meta property="article:tag" content="Japan localization">
 <meta property="article:tag" content="New Invoicing system requirements">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://jpd365erpsup.github.io/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting1.png">
@@ -50,7 +50,7 @@
 <link rel="stylesheet" href="../../css/style.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 8.1.1"></head>
 
 <body>
   <div id="container">
@@ -68,7 +68,7 @@
         
           <a class="main-nav-link" href="/blog/archives">Archives</a>
         
-        <a class="main-nav-link" target="_blank" rel="noopener" href="https://cssjpn.github.io/">サポート情報</a>
+        <a class="main-nav-link" href="https://cssjpn.github.io/">サポート情報</a>
       </nav>
       <nav id="sub-nav">
         
@@ -158,7 +158,7 @@
     $("#update-time").text(localDate);
     $("#update-time").href = commit.html_url;
     Array.from(contributors, ([_, value]) => value).reverse().forEach(function (contributor) {
-      $("#contributors").append(`<li class="contributor-avatar"><a target="_blank" rel="noopener" href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
+      $("#contributors").append(`<li class="contributor-avatar"><a href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
     });
   });
 </script>
@@ -167,13 +167,13 @@
         
         <a href="https://github.com/jpd365erpsup/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+976bbf3c-e2e0-5c64-8392-a87c88f4896f%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E9%81%A9%E6%A0%BC%E8%AB%8B%E6%B1%82%E6%9B%B8%E7%AD%89%E4%BF%9D%E5%AD%98%E6%96%B9%E5%BC%8F+%28%E3%82%A4%E3%83%B3%E3%83%9C%E3%82%A4%E3%82%B9%E5%88%B6%E5%BA%A6%29+%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E4%BA%8B%E6%A5%AD%E8%80%85%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BB%E9%8C%B2%E3%81%8A%E3%82%88%E3%81%B3%E8%AB%8B%E6%B1%82%E6%9B%B8%E3%81%B8%E3%81%AE%E5%8D%B0%E5%AD%97%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%5D%28https%3A%2F%2Fjpd365erpsup.github.io%2Fblog%2FFinOps-Finance%2Fnew-invoicing-system-requirements-QIInumber-setting%2F%29%0A*+Content+Source%3A+%5Barticles%2FFinOps-Finance%2Fnew-invoicing-system-requirements-QIInumber-setting.md%5D%28https%3A%2F%2Fgithub.com%2Fjpd365erpsup%2Fblob%2Fmain%2Farticles%2FFinOps-Finance%2Fnew-invoicing-system-requirements-QIInumber-setting.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/" data-id="cmdg1mhy8000q0noa4gqp0ne4" class="article-share-link">共有</a>
+        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/" data-id="cuidbDVT41o9mgwT3a-klj-lb" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
         <p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、 2023 年 10 月 1 日より開始される適格請求書等保存方式 (インボイス制度) における<br>事業者番号を Dynamics 365 Finance に登録する方法および請求書に事業者番号を印字する方法をご紹介します。  </p>
-<p>なお制度の詳細については国税庁ホームページをご確認ください。<br><a target="_blank" rel="noopener" href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm">No.6498 適格請求書等保存方式（インボイス制度）</a>  </p>
+<p>なお制度の詳細については国税庁ホームページをご確認ください。<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm">No.6498 適格請求書等保存方式（インボイス制度）</a>  </p>
 <span id="more"></span>
 
 <h2 id="目次"><a href="#目次" class="headerlink" title="目次"></a>目次</h2><ol>
@@ -184,20 +184,20 @@
 <p><a id='anchor-version'></a></p>
 <h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version : 10.0.37<br>Platform version : PU 61<br>Legal entity : JPMF  </p>
 <p><a id='about-public-information'></a></p>
-<h2 id="公開資料について"><a href="#公開資料について" class="headerlink" title="公開資料について"></a>公開資料について</h2><p>下記にてご紹介した内容は、公開資料にも記載しております。<br>英語のみの資料とはなりますが、併せてご参照ください。<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/dynamics365/finance/localizations/europe/emea-registration-ids">Registration IDs - Finance | Dynamics 365 | Microsoft Learn</a><br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/dynamics365/finance/localizations/japan/apac-jpn-qualified-invoice-system">Qualified Invoice System in Japan - Finance | Dynamics 365 | Microsoft Learn</a>  </p>
+<h2 id="公開資料について"><a href="#公開資料について" class="headerlink" title="公開資料について"></a>公開資料について</h2><p>下記にてご紹介した内容は、公開資料にも記載しております。<br>英語のみの資料とはなりますが、併せてご参照ください。<br><a href="https://learn.microsoft.com/en-us/dynamics365/finance/localizations/europe/emea-registration-ids">Registration IDs - Finance | Dynamics 365 | Microsoft Learn</a><br><a href="https://learn.microsoft.com/en-us/dynamics365/finance/localizations/japan/apac-jpn-qualified-invoice-system">Qualified Invoice System in Japan - Finance | Dynamics 365 | Microsoft Learn</a>  </p>
 <p><a id='how-to-setup-qii'></a></p>
 <h2 id="手順"><a href="#手順" class="headerlink" title="手順"></a>手順</h2><h3 id="登録タイプの追加"><a href="#登録タイプの追加" class="headerlink" title="登録タイプの追加"></a>登録タイプの追加</h3><ol>
 <li>[組織管理] &gt; [グローバル アドレス帳] &gt; [登録タイプ] &gt; [登録タイプ] を起動します  </li>
-<li>[＋新規] より [名前]、[国/地域]、[更新可能] を設定し作成します<br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting1.png">  </li>
+<li>[＋新規] より [名前]、[国&#x2F;地域]、[更新可能] を設定し作成します<br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting1.png"></li>
 </ol>
 <h3 id="登録カテゴリの追加"><a href="#登録カテゴリの追加" class="headerlink" title="登録カテゴリの追加"></a>登録カテゴリの追加</h3><ol>
 <li>[組織管理] &gt; [グローバル アドレス帳] &gt; [登録タイプ] &gt; [登録カテゴリ] を起動します  </li>
-<li>[＋新規] より [登録タイプ] に「登録タイプの追加」で追加した名前を選択し、[登録カテゴリ] に “適格請求書発行者” を設定します<br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting2.png">  </li>
+<li>[＋新規] より [登録タイプ] に「登録タイプの追加」で追加した名前を選択し、[登録カテゴリ] に “適格請求書発行者” を設定します<br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting2.png"></li>
 </ol>
 <h3 id="法人への登録番号の追加"><a href="#法人への登録番号の追加" class="headerlink" title="法人への登録番号の追加"></a>法人への登録番号の追加</h3><ol>
 <li>[組織管理] &gt; [組織] &gt; [法人] を起動します  </li>
 <li>ナビゲーション バーより [登録 ID] を開きます  </li>
-<li>[登録 ID] タブより [＋追加] をクリックし、[登録タイプ] に「登録タイプの追加」で追加した名前を選択し、登録番号に適格請求書発行事業者としての登録番号を入力します<br>　※ 仕入先についても登録番号を同様の手順で追加することが可能になっています。<br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting3.png">  </li>
+<li>[登録 ID] タブより [＋追加] をクリックし、[登録タイプ] に「登録タイプの追加」で追加した名前を選択し、登録番号に適格請求書発行事業者としての登録番号を入力します<br>　※ 仕入先についても登録番号を同様の手順で追加することが可能になっています。<br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting3.png"></li>
 </ol>
 <h3 id="請求書への出力設定"><a href="#請求書への出力設定" class="headerlink" title="請求書への出力設定"></a>請求書への出力設定</h3><ol>
 <li>[売掛金管理] &gt; [設定] &gt; [フォーム] &gt; [フォームの設定] を起動します  </li>
@@ -206,7 +206,7 @@
 <li>[請求書] タブに戻り、[印刷の管理] を起動します<br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting4.png"></li>
 <li>[自由書式の請求書] から [オリジナル &lt;既定&gt;] を選択し、[レポート形式] に “FreeTextInvoice.Report_JP” を選択します<br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting5.png">  </li>
 <li>[顧客請求書] でも同様に [オリジナル &lt;既定&gt;] を選択し、[レポート形式] に “SalesInvoice.Report_JP” を選択します<br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting6.png"><br>　※ 本記事の執筆時点のバージョン 10.0.37 では上記 2 種類の請求書以外の請求書については <strong>未対応</strong> です。</li>
-<li>月次締め請求書に適格請求書発行者の番号を印字したい場合には、[月次締め請求書] タブを選択し、[はい] を選択します<br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting7.png">  </li>
+<li>月次締め請求書に適格請求書発行者の番号を印字したい場合には、[月次締め請求書] タブを選択し、[はい] を選択します<br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting7.png"></li>
 </ol>
 <h3 id="設定結果"><a href="#設定結果" class="headerlink" title="設定結果"></a>設定結果</h3><p>上記設定を元に請求書を出力すると以下のように登録した番号が印刷されることをご確認いただけます。<br><strong>請求書の場合</strong><br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting8.png">  </p>
 <p><strong>月次締め請求書の場合</strong><br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-QIInumber-setting/new-invoicing-system-requirements-QIInumber-setting9.png">  </p>
@@ -330,7 +330,7 @@
       <a href="https://privacy.microsoft.com/ja-jp/privacystatement" target="_blank" rel=”noopener”>Privacy & Cookies</a> |  
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/copyright" target="_blank" rel=”noopener”>Terms of use</a> |
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/trademarks" target="_blank" rel=”noopener”>Trademarks</a> |
-      &copy; 2025 Japan Dynamics ERP Support Japan<br>
+      &copy; 2026 Japan Dynamics ERP Support Japan<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

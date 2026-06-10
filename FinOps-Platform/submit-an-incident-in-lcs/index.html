@@ -23,7 +23,7 @@
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/submit-an-incident-in-lcs/step8a.png">
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/submit-an-incident-in-lcs/step9.png">
 <meta property="article:published_time" content="2024-03-03T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-07-23T14:12:43.870Z">
+<meta property="article:modified_time" content="2026-06-10T09:01:00.248Z">
 <meta property="article:author" content="Japan Dynamics ERP Support Japan">
 <meta property="article:tag" content="FinOps-Platform">
 <meta property="article:tag" content="LCS">
@@ -49,7 +49,7 @@
 <link rel="stylesheet" href="../../css/style.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 8.1.1"></head>
 
 <body>
   <div id="container">
@@ -67,7 +67,7 @@
         
           <a class="main-nav-link" href="/blog/archives">Archives</a>
         
-        <a class="main-nav-link" target="_blank" rel="noopener" href="https://cssjpn.github.io/">サポート情報</a>
+        <a class="main-nav-link" href="https://cssjpn.github.io/">サポート情報</a>
       </nav>
       <nav id="sub-nav">
         
@@ -157,7 +157,7 @@
     $("#update-time").text(localDate);
     $("#update-time").href = commit.html_url;
     Array.from(contributors, ([_, value]) => value).reverse().forEach(function (contributor) {
-      $("#contributors").append(`<li class="contributor-avatar"><a target="_blank" rel="noopener" href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
+      $("#contributors").append(`<li class="contributor-avatar"><a href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
     });
   });
 </script>
@@ -166,38 +166,38 @@
         
         <a href="https://github.com/jpd365erpsup/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+de5cb4f8-1a61-505c-8038-f6b31aaf1346%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5BLCS%E3%81%AB%E3%81%A6Dynamics+365+Finance+and+Operations%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%82%92%E8%B5%B7%E7%A5%A8%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%5D%28https%3A%2F%2Fjpd365erpsup.github.io%2Fblog%2FFinOps-Platform%2Fsubmit-an-incident-in-lcs%2F%29%0A*+Content+Source%3A+%5Barticles%2FFinOps-Platform%2Fsubmit-an-incident-in-lcs.md%5D%28https%3A%2F%2Fgithub.com%2Fjpd365erpsup%2Fblob%2Fmain%2Farticles%2FFinOps-Platform%2Fsubmit-an-incident-in-lcs.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Platform/submit-an-incident-in-lcs/" data-id="cmdg1mhyz002k0noagj1ccq8v" class="article-share-link">共有</a>
+        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Platform/submit-an-incident-in-lcs/" data-id="cuidL1bbN4FcNxy18GqsXHMZd" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
       
         <p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、LCS にて Dynamics 365 Finance and Operations に関するサポートリクエストを起票する方法を紹介します。</p>
 <span id="more"></span>
-<div class="alert is-info"><p class="alert-title">Note</p><p>今後、サポートリクエストは LCS からではなく Power Platform 管理センターから起票いただくよう変更されます。当初、2023 年 11 月中には移行される予定でしたが予定は変更されました。移行に関しましては以下の公開資料をご確認いただきますようお願いいたします。</p><p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/support-migration-to-ppac">Migration of the Lifecycle Services Support experience to Power Platform admin center - Finance &amp; Operations | Dynamics 365 | Microsoft Learn</a></p><p>また、以下の Yammer でもご案内しておりますのでご参考にしていただけますと幸いでございます。</p><p><a target="_blank" rel="noopener" href="https://www.yammer.com/dynamicsaxfeedbackprograms/threads/2690219038474240">https://www.yammer.com/dynamicsaxfeedbackprograms/threads/2690219038474240</a></p></div>
+<div class="alert is-info"><p class="alert-title">Note</p><p>今後、サポートリクエストは LCS からではなく Power Platform 管理センターから起票いただくよう変更されます。当初、2023 年 11 月中には移行される予定でしたが予定は変更されました。移行に関しましては以下の公開資料をご確認いただきますようお願いいたします。</p><p><a href="https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/support-migration-to-ppac">Migration of the Lifecycle Services Support experience to Power Platform admin center - Finance &amp; Operations | Dynamics 365 | Microsoft Learn</a></p><p>また、以下の Yammer でもご案内しておりますのでご参考にしていただけますと幸いでございます。</p><p><a href="https://www.yammer.com/dynamicsaxfeedbackprograms/threads/2690219038474240">https://www.yammer.com/dynamicsaxfeedbackprograms/threads/2690219038474240</a></p></div>
 <h2 id="更新履歴"><a href="#更新履歴" class="headerlink" title="更新履歴"></a>更新履歴</h2><p>2022 年 10 月 13 日 (木) : Advanced Diagnostic Information 箇所を追記しました。<br>2023 年 11 月 2 日 (木) : LCS から Power Platform 管理センターへの移行について追加しました。<br>2023 年 11 月 10 日 (金) : LCS から Power Platform 管理センターへの移行の予定の変更について追加しました。<br>2024 年 3 月 4 日 (月) : LCS から Power Platform 管理センターへの移行の予定に関する公開資料のリンクを追加しました。</p>
 <h2 id="手順"><a href="#手順" class="headerlink" title="手順"></a>手順</h2><ol>
-<li><p> LCSにログインする</p>
+<li><p>LCSにログインする</p>
 </li>
-<li><p>サポートリクエストを起票したい環境の含まれているプロジェクトを選択する<br> <img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step2.png"></p>
+<li><p>サポートリクエストを起票したい環境の含まれているプロジェクトを選択する<br><img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step2.png"></p>
 </li>
-<li><p>画面上部の三本線より、「サポート」を選択する<br> <img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step3.png"></p>
+<li><p>画面上部の三本線より、「サポート」を選択する<br><img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step3.png"></p>
 </li>
-<li><p>画面左部より、「サポート案件」 &gt; 「Microsoftに送信済み」 &gt; 「インシデントの送信」を選択する<br> <img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step4.png"></p>
+<li><p>画面左部より、「サポート案件」 &gt; 「Microsoftに送信済み」 &gt; 「インシデントの送信」を選択する<br><img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step4.png"></p>
 </li>
-<li><p>画面右部に「新しいサポート要求」画面が表示されるので、各項目を入力・選択し、「ソリューションを見る」を選択する<br> <img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step5.png"></p>
+<li><p>画面右部に「新しいサポート要求」画面が表示されるので、各項目を入力・選択し、「ソリューションを見る」を選択する<br><img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step5.png"></p>
 </li>
-<li><p>表示された詳細情報にて解決できない場合、「次へ」を選択する<br> <img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step6.png"></p>
+<li><p>表示された詳細情報にて解決できない場合、「次へ」を選択する<br><img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step6.png"></p>
 </li>
-<li><p>「サポートプラン情報」画面が表示されるので、サポートプランを選択する<br>※ 主要アクセスIDおよび契約IDを持っていない場合、サポートプランにて ”Dynamics AX - Subscription” を選択いただくことで、サポートサービスを受けることができます。<br>※ ”Dynamics AX - Subscription” を選択した場合、貴社サポート契約に紐づかない形でのサポートリクエストとなり、貴社にて有償サポート契約を持っていた場合でも、その契約に応じたサポートサービスを適切に受けられない可能性がございます。予めご了承ください。<br> <img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step7.png"></p>
+<li><p>「サポートプラン情報」画面が表示されるので、サポートプランを選択する<br>※ 主要アクセスIDおよび契約IDを持っていない場合、サポートプランにて ”Dynamics AX - Subscription” を選択いただくことで、サポートサービスを受けることができます。<br>※ ”Dynamics AX - Subscription” を選択した場合、貴社サポート契約に紐づかない形でのサポートリクエストとなり、貴社にて有償サポート契約を持っていた場合でも、その契約に応じたサポートサービスを適切に受けられない可能性がございます。予めご了承ください。<br><img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step7.png"></p>
 </li>
-<li><p>サポートプランを選択する<br>※ 20 MB以上のファイルを添付したい場合、サポートリクエストでのやり取りにて、弊社よりファイルアップロードリンクを提供いたします。<br> <img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step8.png"></p>
+<li><p>サポートプランを選択する<br>※ 20 MB以上のファイルを添付したい場合、サポートリクエストでのやり取りにて、弊社よりファイルアップロードリンクを提供いたします。<br><img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step8.png"></p>
 </li>
-<li><p>Advanced Diagnostic Information を一読し、 「Allow Access to Diagnostix Information」 を選択する<br>※ 本項目は Microsoft にて管理している環境情報等を、本件の調査にて確認することに関する同意となりますため、 Allow をご選択いただけますと幸いです。<br> <img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step8a.png"></p>
+<li><p>Advanced Diagnostic Information を一読し、 「Allow Access to Diagnostix Information」 を選択する<br>※ 本項目は Microsoft にて管理している環境情報等を、本件の調査にて確認することに関する同意となりますため、 Allow をご選択いただけますと幸いです。<br><img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step8a.png"></p>
 </li>
-<li><p>「この要求に関する連絡先の情報」画面が表示されるので、国/地域、メールアドレス (TO, CC) 、電話番号、希望の連絡方法を選択し、「送信」を選択する<br><img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step9.png"></p>
+<li><p>「この要求に関する連絡先の情報」画面が表示されるので、国&#x2F;地域、メールアドレス (TO, CC) 、電話番号、希望の連絡方法を選択し、「送信」を選択する<br><img src="/blog/FinOps-Platform/submit-an-incident-in-lcs/step9.png"></p>
 </li>
 </ol>
-<p>（関連情報）<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident">https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident</a>  </p>
+<p>（関連情報）<br><a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident">https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident</a>  </p>
 <hr>
 <h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2>
       
@@ -318,7 +318,7 @@
       <a href="https://privacy.microsoft.com/ja-jp/privacystatement" target="_blank" rel=”noopener”>Privacy & Cookies</a> |  
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/copyright" target="_blank" rel=”noopener”>Terms of use</a> |
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/trademarks" target="_blank" rel=”noopener”>Trademarks</a> |
-      &copy; 2025 Japan Dynamics ERP Support Japan<br>
+      &copy; 2026 Japan Dynamics ERP Support Japan<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

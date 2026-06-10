@@ -14,7 +14,7 @@
 <meta property="og:description" content="こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。この記事では、 Dynamics 365 Finance and Operations における MRP エンジンの変更のロードマップや注意点をご案内します。">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2023-02-28T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-07-23T14:12:43.876Z">
+<meta property="article:modified_time" content="2026-06-10T09:01:00.254Z">
 <meta property="article:author" content="Japan Dynamics ERP Support Japan">
 <meta property="article:tag" content="FinOps-SCM">
 <meta property="article:tag" content="Master Planning">
@@ -38,7 +38,7 @@
 <link rel="stylesheet" href="../../css/style.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 8.1.1"></head>
 
 <body>
   <div id="container">
@@ -56,7 +56,7 @@
         
           <a class="main-nav-link" href="/blog/archives">Archives</a>
         
-        <a class="main-nav-link" target="_blank" rel="noopener" href="https://cssjpn.github.io/">サポート情報</a>
+        <a class="main-nav-link" href="https://cssjpn.github.io/">サポート情報</a>
       </nav>
       <nav id="sub-nav">
         
@@ -146,7 +146,7 @@
     $("#update-time").text(localDate);
     $("#update-time").href = commit.html_url;
     Array.from(contributors, ([_, value]) => value).reverse().forEach(function (contributor) {
-      $("#contributors").append(`<li class="contributor-avatar"><a target="_blank" rel="noopener" href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
+      $("#contributors").append(`<li class="contributor-avatar"><a href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
     });
   });
 </script>
@@ -155,7 +155,7 @@
         
         <a href="https://github.com/jpd365erpsup/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+4159d812-f2f9-53dc-8f48-263db83d094b%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B10.0.32+%E4%BB%A5%E9%99%8D%E3%81%AE+MRP+%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3+%28%E8%A8%88%E7%94%BB%E6%9C%80%E9%81%A9%E5%8C%96%29+%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%5D%28https%3A%2F%2Fjpd365erpsup.github.io%2Fblog%2FFinOps-SCM%2Fchange-mrp-engine-from-32%2F%29%0A*+Content+Source%3A+%5Barticles%2FFinOps-SCM%2Fchange-mrp-engine-from-32.md%5D%28https%3A%2F%2Fgithub.com%2Fjpd365erpsup%2Fblob%2Fmain%2Farticles%2FFinOps-SCM%2Fchange-mrp-engine-from-32.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-SCM/change-mrp-engine-from-32/" data-id="cmdg1mhz4002x0noa0vem9b1z" class="article-share-link">共有</a>
+        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-SCM/change-mrp-engine-from-32/" data-id="cuidBleWBvr5xVxuqCQQduaSl" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -202,7 +202,7 @@
 <li>内部処理のカスタマイズを希望する箇所がある際には、Ideas に投稿ください<br>関連ブログ : <a href="https://jpd365erpsup.github.io/blog/information/how-to-post-ideas/">Dynamics 365 製品のフィードバックサイト Ideas について</a></li>
 </ul>
 <p><a id='anchor-po-migration'></a></p>
-<h2 id="移行について"><a href="#移行について" class="headerlink" title="移行について"></a>移行について</h2><p>既存 MRP エンジンから計画最適化への移行に際して、同一環境の法人 (Legal entity) ごとに移行することが可能となります。<br>計画最適化の検証時に法人をコピーして使用する際には、”法人へのコピー” 機能のご利用ください。<br>関連公開資料 : <a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/data-entities/copy-configuration#copy-into-a-legal-entity">法人へのコピー</a></p>
+<h2 id="移行について"><a href="#移行について" class="headerlink" title="移行について"></a>移行について</h2><p>既存 MRP エンジンから計画最適化への移行に際して、同一環境の法人 (Legal entity) ごとに移行することが可能となります。<br>計画最適化の検証時に法人をコピーして使用する際には、”法人へのコピー” 機能のご利用ください。<br>関連公開資料 : <a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/data-entities/copy-configuration#copy-into-a-legal-entity">法人へのコピー</a></p>
 <p><a id='anchor-po-exception'></a></p>
 <h2 id="例外申請"><a href="#例外申請" class="headerlink" title="例外申請"></a>例外申請</h2><p>計画最適化の例外申請が 10.0.32 以降で以下の方法および内容へ変更となります。</p>
 <ul>
@@ -213,14 +213,14 @@
 <p><a id='anchor-resource'></a></p>
 <h1 id="リソース"><a href="#リソース" class="headerlink" title="リソース"></a>リソース</h1><p>既存 MRP エンジンから計画最適化への移行に際して、以下の公開資料を必要に応じてご確認ください。  </p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/get-started">計画最適化の使用を開始する - Microsoft Learn</a></li>
-<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-differences-with-built-in">計画最適化と既存 MRP エンジンの相違点 - Microsoft Learn</a></li>
-<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/not-used-parameters">計画最適化にて考慮されないパラメーター - Microsoft Learn</a></li>
-<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/release-process">計画最適化の機能リリース予定および履歴 - Microsoft Learn</a></li>
-<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-fit-analysis">計画最適化の適合分析 (fit analysis) - Microsoft Learn</a></li>
-<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/new-master-planning-engine">既存 MRP エンジンから計画最適化への移行 - Microsoft Learn</a></li>
-<li><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-trouble-shooting">計画最適化のトラブルシューティング - Microsoft Learn</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=17348655">計画最適化に関する Yammer グループ</a></li>
+<li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/get-started">計画最適化の使用を開始する - Microsoft Learn</a></li>
+<li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-differences-with-built-in">計画最適化と既存 MRP エンジンの相違点 - Microsoft Learn</a></li>
+<li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/not-used-parameters">計画最適化にて考慮されないパラメーター - Microsoft Learn</a></li>
+<li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/release-process">計画最適化の機能リリース予定および履歴 - Microsoft Learn</a></li>
+<li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-fit-analysis">計画最適化の適合分析 (fit analysis) - Microsoft Learn</a></li>
+<li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/new-master-planning-engine">既存 MRP エンジンから計画最適化への移行 - Microsoft Learn</a></li>
+<li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-trouble-shooting">計画最適化のトラブルシューティング - Microsoft Learn</a></li>
+<li><a href="https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=17348655">計画最適化に関する Yammer グループ</a></li>
 </ul>
 <h2 id=""><a href="#" class="headerlink" title=""></a><a id='anchor-finish'></a></h2><h1 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h1><p>以上、 Dynamics 365 Finance and Operations における MRP エンジンの変更のロードマップや注意点を紹介いたしました。</p>
 
@@ -342,7 +342,7 @@
       <a href="https://privacy.microsoft.com/ja-jp/privacystatement" target="_blank" rel=”noopener”>Privacy & Cookies</a> |  
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/copyright" target="_blank" rel=”noopener”>Terms of use</a> |
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/trademarks" target="_blank" rel=”noopener”>Trademarks</a> |
-      &copy; 2025 Japan Dynamics ERP Support Japan<br>
+      &copy; 2026 Japan Dynamics ERP Support Japan<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

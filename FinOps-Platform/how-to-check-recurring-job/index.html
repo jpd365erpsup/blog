@@ -28,11 +28,11 @@
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job11.png">
 <meta property="og:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job12.png">
 <meta property="article:published_time" content="2023-06-12T15:00:00.000Z">
-<meta property="article:modified_time" content="2025-07-23T14:12:43.736Z">
+<meta property="article:modified_time" content="2026-06-10T09:01:00.121Z">
 <meta property="article:author" content="Japan Dynamics ERP Support Japan">
 <meta property="article:tag" content="FinOps-Platform">
-<meta property="article:tag" content="recurring integrations">
 <meta property="article:tag" content="REST API">
+<meta property="article:tag" content="recurring integrations">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job14.png">
   
@@ -54,7 +54,7 @@
 <link rel="stylesheet" href="../../css/style.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 8.1.1"></head>
 
 <body>
   <div id="container">
@@ -72,7 +72,7 @@
         
           <a class="main-nav-link" href="/blog/archives">Archives</a>
         
-        <a class="main-nav-link" target="_blank" rel="noopener" href="https://cssjpn.github.io/">サポート情報</a>
+        <a class="main-nav-link" href="https://cssjpn.github.io/">サポート情報</a>
       </nav>
       <nav id="sub-nav">
         
@@ -162,7 +162,7 @@
     $("#update-time").text(localDate);
     $("#update-time").href = commit.html_url;
     Array.from(contributors, ([_, value]) => value).reverse().forEach(function (contributor) {
-      $("#contributors").append(`<li class="contributor-avatar"><a target="_blank" rel="noopener" href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
+      $("#contributors").append(`<li class="contributor-avatar"><a href="https://github.com/${contributor.name}" title="${contributor.name}"><img src="${contributor.avatar}" alt="${contributor.name}"/></a></li>`);
     });
   });
 </script>
@@ -171,7 +171,7 @@
         
         <a href="https://github.com/jpd365erpsup/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+fd0dd8b3-e226-5764-8718-04d2bb990a10%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B%E5%AE%9A%E6%9C%9F%E7%B5%B1%E5%90%88%E3%81%AEREST+API%E3%81%AE%E5%AE%9F%E8%A1%8C%5D%28https%3A%2F%2Fjpd365erpsup.github.io%2Fblog%2FFinOps-Platform%2Fhow-to-check-recurring-job%2F%29%0A*+Content+Source%3A+%5Barticles%2FFinOps-Platform%2Fhow-to-check-recurring-job.md%5D%28https%3A%2F%2Fgithub.com%2Fjpd365erpsup%2Fblob%2Fmain%2Farticles%2FFinOps-Platform%2Fhow-to-check-recurring-job.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-check-recurring-job/" data-id="cmdg1mhyl001l0noa5znvdwag" class="article-share-link">共有</a>
+        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-check-recurring-job/" data-id="cuid4-2um2DdTCZyr0y3wCfky" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -182,7 +182,7 @@
 <h2 id="作成するフロー"><a href="#作成するフロー" class="headerlink" title="作成するフロー"></a>作成するフロー</h2><p>最終的なフローとしては、下記のフローを作成します。</p>
 <p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job14.png"></p>
 <h2 id="定期的なデータ-ジョブの管理に必要な値"><a href="#定期的なデータ-ジョブの管理に必要な値" class="headerlink" title="定期的なデータ ジョブの管理に必要な値"></a>定期的なデータ ジョブの管理に必要な値</h2><p>以下の手順は、下記の docs に記載されている内容を参照とした手順となっております。</p>
-<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/data-entities/recurring-integrations">定期統合</a></p>
+<p><a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/data-entities/recurring-integrations">定期統合</a></p>
 <p>後ほど使用するため、以下の ２ つの値においては、変数を設定しておきます。</p>
 <p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job13.png"></p>
 <p>Tenant ID : </p>
@@ -195,7 +195,7 @@
 <ol>
 <li>アクセスする Azure Active Directory にアプリケーションを登録し、そのアプリケーションの各値を用います。</li>
 </ol>
-<p>アプリケーションは <a target="_blank" rel="noopener" href="https://portal.azure.com/">Azure Portal</a> で [Azure Active Directory] を選択して[アプリの登録] から作成できます。<br><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job03.png"></p>
+<p>アプリケーションは <a href="https://portal.azure.com/">Azure Portal</a> で [Azure Active Directory] を選択して[アプリの登録] から作成できます。<br><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job03.png"></p>
 <p>アプリケーションを登録したら [概要] から “アプリケーション ID” をコピーしておきます。</p>
 <p>また、[証明書とシークレット] から新しいクライアント シークレットを作成し、値をコピーします。シークレット IDではないため、注意してください。</p>
 <p>[APIのアクセス許可] が下記のように [Microsoft Graph] が設定されていることを確認します。<br><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job04.png"></p>
@@ -204,7 +204,7 @@
 </ol>
 <p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job05.png"></p>
 <p>client_id には Application ID、 client_secret にはシークレット値を入力します。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">URI : </span><br><span class="line">https:<span class="comment">//login.microsoftonline.com/&lt;Tenant ID&gt;/oauth2/token</span></span><br><span class="line"></span><br><span class="line">Header : </span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;Content-Type&quot;</span>: <span class="string">&quot;application/x-www-form-urlencoded&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="attr">Body</span> : </span><br><span class="line">client_id=***&amp;client_secret=***&amp;resource=<span class="xml"><span class="tag">&lt;<span class="name">Environment</span> <span class="attr">URL</span>&gt;</span>&amp;grant_type=client_credentials</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">URI</span> : </span><br><span class="line"><span class="attr">https</span>:<span class="comment">//login.microsoftonline.com/&lt;Tenant ID&gt;/oauth2/token</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Header</span> : </span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;Content-Type&quot;</span>: <span class="string">&quot;application/x-www-form-urlencoded&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Body</span> : </span><br><span class="line">client_id=***&amp;client_secret=***&amp;resource=<span class="language-xml"><span class="tag">&lt;<span class="name">Environment</span> <span class="attr">URL</span>&gt;</span>&amp;grant_type=client_credentials</span></span><br></pre></td></tr></table></figure>
 
 <ol start="3">
 <li>Power Automate の画面で [JSONの解析] アクションを選択し、下記のように設定します。</li>
@@ -217,7 +217,7 @@
 <h2 id="キューから削除-Deque"><a href="#キューから削除-Deque" class="headerlink" title="キューから削除 (Deque)"></a>キューから削除 (Deque)</h2><p>ステータスを “キューから削除” にするためのアクションになります。</p>
 <p>以降は [HTTP with Azure AD] コネクタの [HTTP要求を呼び出します] アクションを使用します。<br>そのため下記の接続設定画面で、[BaseResourceURL] と [AzureADResourceURI] に接続先の環境URLを入力します。<br><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job07.png"></p>
 <p>方法にGETを設定し、各値を設定します。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">GET</span><br><span class="line"></span><br><span class="line">Request URL : </span><br><span class="line">&lt;Environment URL&gt;/api/connector/dequeue/&lt;Activity ID&gt;</span><br><span class="line"></span><br><span class="line">Header : </span><br><span class="line">&#123;</span><br><span class="line">  &quot;Authorization&quot;: &quot;Bearer @&#123;body(&#x27;JSON_の解析_(HTTP)&#x27;)?[&#x27;access_token&#x27;]&#125;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">GET</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Request</span> <span class="variable constant_">URL</span> : </span><br><span class="line">&lt;Environment URL&gt;/api/connector/dequeue/&lt;Activity ID&gt;</span><br><span class="line"></span><br><span class="line">Header : </span><br><span class="line">&#123;</span><br><span class="line">  &quot;Authorization&quot;: &quot;Bearer @&#123;body(&#x27;JSON_の解析_(HTTP)&#x27;)?[&#x27;access_token&#x27;]&#125;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job08.png"></p>
 <h2 id="ダウンロード"><a href="#ダウンロード" class="headerlink" title="ダウンロード"></a>ダウンロード</h2><p>ステータスを “ダウンロード済み” にするためのアクションになります。</p>
 <p><a href="#%E3%82%AD%E3%83%A5%E3%83%BC%E3%81%AE%E5%89%8A%E9%99%A4deque">キューの削除(Deque)</a>で出力されたボディから、ダウンロード リンクを取得します。</p>
@@ -231,7 +231,7 @@
 <li>[JSONの解析] アクション後、[HTTP with Azure AD] コネクタの [HTTP要求を呼び出します] アクションを使用します。</li>
 </ol>
 <p>Request URL には、先ほどの [JSONの解析] アクションで出力される DownloadLocation を入力します。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">GET</span><br><span class="line"></span><br><span class="line">Request URL :</span><br><span class="line">@&#123;body(<span class="string">&#x27;JSON_の解析&#x27;</span>)?[<span class="string">&#x27;DownloadLocation&#x27;</span>]&#125;</span><br><span class="line"></span><br><span class="line"><span class="attr">Header</span> : </span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;Authorization&quot;</span>: <span class="string">&quot;Bearer @&#123;body(&#x27;JSON_の解析_(HTTP)&#x27;)?[&#x27;access_token&#x27;]&#125;&quot;</span>,</span><br><span class="line">  <span class="string">&quot;content_type&quot;</span>: <span class="string">&quot;application/json&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">GET</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Request</span> <span class="variable constant_">URL</span> :</span><br><span class="line">@&#123;<span class="title function_">body</span>(<span class="string">&#x27;JSON_の解析&#x27;</span>)?[<span class="string">&#x27;DownloadLocation&#x27;</span>]&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Header</span> : </span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;Authorization&quot;</span>: <span class="string">&quot;Bearer @&#123;body(&#x27;JSON_の解析_(HTTP)&#x27;)?[&#x27;access_token&#x27;]&#125;&quot;</span>,</span><br><span class="line">  <span class="string">&quot;content_type&quot;</span>: <span class="string">&quot;application/json&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job10.png"></p>
 <p>ダウンロードしたファイルは例として、下記のようなアクションを続けることで、メールにて送付することもできます。</p>
@@ -239,7 +239,7 @@
 <p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job11.png"></p>
 <h2 id="確認-Acknowledge"><a href="#確認-Acknowledge" class="headerlink" title="確認 (Acknowledge)"></a>確認 (Acknowledge)</h2><p>ステータスを “確認済み” にするためのアクションになります。</p>
 <p>[HTTP with Azure AD] コネクタの [HTTP要求を呼び出します] アクションを使用します。<br>要求の本文には、<a href="#%E3%82%AD%E3%83%A5%E3%83%BC%E3%81%AE%E5%89%8A%E9%99%A4deque">キューの削除(Deque)</a> で出力されたボディをそのまま入力します。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">POST</span><br><span class="line"></span><br><span class="line">Request URL :</span><br><span class="line">&lt;Environment URL&gt;/api/connector/ack/&lt;ActivityID&gt;</span><br><span class="line"></span><br><span class="line">Header : </span><br><span class="line">&#123;</span><br><span class="line">  &quot;Authorization&quot;: &quot;Bearer @&#123;body(&#x27;JSON_の解析_(HTTP)&#x27;)?[&#x27;access_token&#x27;]&#125;&quot;,</span><br><span class="line">  &quot;Content-Type&quot;: &quot;application/json&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Request Body : </span><br><span class="line">@&#123;body(&#x27;HTTP_要求を呼び出します_(deque)&#x27;)&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">POST</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Request</span> <span class="variable constant_">URL</span> :</span><br><span class="line">&lt;Environment URL&gt;/api/connector/ack/&lt;ActivityID&gt;</span><br><span class="line"></span><br><span class="line">Header : </span><br><span class="line">&#123;</span><br><span class="line">  &quot;Authorization&quot;: &quot;Bearer @&#123;body(&#x27;JSON_の解析_(HTTP)&#x27;)?[&#x27;access_token&#x27;]&#125;&quot;,</span><br><span class="line">  &quot;Content-Type&quot;: &quot;application/json&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Request Body : </span><br><span class="line">@&#123;body(&#x27;HTTP_要求を呼び出します_(deque)&#x27;)&#125;</span><br></pre></td></tr></table></figure>
 
 <p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job12.png"></p>
 <hr>
@@ -363,7 +363,7 @@
       <a href="https://privacy.microsoft.com/ja-jp/privacystatement" target="_blank" rel=”noopener”>Privacy & Cookies</a> |  
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/copyright" target="_blank" rel=”noopener”>Terms of use</a> |
       <a href="https://www.microsoft.com/ja-jp/legal/intellectualproperty/trademarks" target="_blank" rel=”noopener”>Trademarks</a> |
-      &copy; 2025 Japan Dynamics ERP Support Japan<br>
+      &copy; 2026 Japan Dynamics ERP Support Japan<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
