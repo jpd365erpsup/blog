@@ -1,17 +1,17 @@
-> NOTE: This document is cloned from [cssjpn/blog-example](https://github.com/cssjpn/blog-example/blob/main/docs/getting-started.md)
-
 # Getting Started
 
-This guide covers getting started with the `blog-example`.
+このガイドは、本リポジトリで記事を執筆・プレビュー・公開するための手順をまとめたものです。
 
-## Installation
+記事を追加して `main` へマージすると、GitHub Actions がサイトをビルドし `gh-pages` ブランチへ配信します。公開サイトは https://jpd365erpsup.github.io/blog/ で確認できます。
 
-In this _Getting Started_, you need `git`, `docker` and `docker-compose`.
+## Prerequisites
+
+このガイドでは `git`、`docker`、`docker-compose` を使用します。
 
 ### Git
 
-* Windows: Download & install [git](https://git-scm.com/download/win).
-* Mac: Install it with [Homebrew](https://brew.sh/), [MacPorts](http://www.macports.org/) or [installer](http://sourceforge.net/projects/git-osx-installer/).
+* Windows: [git](https://git-scm.com/download/win) をインストールします。
+* Mac: [Homebrew](https://brew.sh/)、[MacPorts](http://www.macports.org/)、または [インストーラー](http://sourceforge.net/projects/git-osx-installer/) でインストールします。
 * Linux (Ubuntu): `sudo apt-get install git-core`
 
 ### Docker
@@ -22,7 +22,7 @@ In this _Getting Started_, you need `git`, `docker` and `docker-compose`.
   * `docker`: https://docs.docker.com/engine/install/ubuntu/
   * `docker-compose`: https://docs.docker.com/compose/install/
 
-Make sure the following commands are successful:
+次のコマンドが実行できることを確認します。
 
 ```shell
 $ git
@@ -30,178 +30,87 @@ $ docker
 $ docker-compose
 ```
 
-## Setup a new CSS Blog
-
-### Creating a blog repository from a template
-
-Navigate to the [cssjpn/blog-example](https://github.com/cssjpn/blog-example) page. Above the file list, click **Use this template**.
-
-<img src="./images/getting-started01.png" width="600" />
-
-Select your organization from **Owner** menu, and type a name for your blog repository (ex. blog).
-Click **Create repository from template**.
-
-<img src="./images/getting-started02.png" width="600" />
-
-### Cloning a repository
+## Clone the repository
 
 ```shell
-# Move to your working directory
+# 作業ディレクトリへ移動
 $ cd {YOUR_WORKING_DIR}
 
-# Cloning a blog repository
-$ git clone git@github.com:${YOUR_ORGANIZATION}/blog.git
-$ cd blog
+# リポジトリをクローン
+$ git clone <repository-url>
+$ cd <repository>
 ```
 
-### Initialize blog theme
+### Initialize the blog theme
 
-Blog theme (.css, .js, etc...) is configured as git submodule. This example is using [jpazureid/hexo-theme-jpazure](https://github.com/jpazureid/hexo-theme-jpazure)
+テーマ（.css, .js など）は git submodule で管理しています。本ブログは [jpazureid/hexo-theme-jpazure](https://github.com/jpazureid/hexo-theme-jpazure) を使用しています。
 
 ```shell
-# Initialize and Update themes
+# テーマの初期化・更新
 $ git submodule update -i
 ```
 
-### Customize site configuration file
+## Site configuration
 
-You can configure most settings here.
+サイト全体の設定は [_config.yml](../_config.yml) で管理しています。主な項目は次のとおりです。すでに本ブログ向けに設定済みのため、通常は変更不要です。
 
-```shell
-# edit config with your favorite editor
-$ code _config.yml
-$ vim _config.yml
-...
-```
+- `title` / `subtitle`: サイト上部に表示されるタイトルとサブタイトル
+- `url` / `github`: 公開 URL（`https://jpd365erpsup.github.io/blog/`）と GitHub リポジトリ
+- `root`: サブディレクトリ公開時のルート（`/blog/`）
+- `disclaimer`: 各記事末尾に表示される注意書き（記事 front matter で `disableDisclaimer: true` を指定すると非表示）
 
-If you want to modify the blog from the template design to fit your team, you need to change the following settings.
+## Writing articles
 
-- title and subtitle
-- url and github
-- root
-- disclaimer
-
-### title and subtitle:
-
-By changing the title and subtitle, you can change the wording of the top of the blog as shown in the image
-
-![](./images/blog-walkthrough_2021-05-13-21-21-02.png)
-
-### url and github:
-
-Write the URL of the Github Pages of your blog in "url:".
-Also, in "github:", Describe the github repository of your blog.
-
-![](./images/blog-walkthrough_2021-05-13-21-33-10.png)
-
-The Github Pages URL you would specify as "url:" is normally https://\<organization or account name\>.github.io/\<repo name\>/.
-
-The Github repo name you would specify as "github:" is normally https://github.com/\<organization or account name\>/\<repo name\>/
-
-### root:
-
-If the repo name is not /blog, specify that name for root. repo name and root must be the same.
-
-![](./images/blog-walkthrough_2021-05-13-21-50-59.png)
-
-### disclaimer
-
-A disclaimer will be placed at the end of every article, which can be disabled by setting disableDisclaimer: true.
-
-
-## Writing blog articles
-
-Now you can start writing articles!
+記事は `articles/{root-tag}/{slug}.md` に作成します。画像は同名フォルダ `articles/{root-tag}/{slug}/` に置き、相対パスで参照します。
 
 ```shell
-# Create new branch
+# 新しいブランチを作成
 $ git checkout -b add_article
 
-# Create or Edit articles with your favorite editor
-$ vim articles/information/test.md
+# 記事を作成・編集
+$ vim articles/FinOps-Platform/your-article.md
 ```
 
-### Start / Stop local-preview server
+### Start / Stop the local preview server
 
-Do you want to preview your article? You can start a local-preview server using following command. This is at `http://localhost:4000/`.
-
-The server will reload files automatically if you make new changes. Please reload your browser.
+ローカルプレビューは次のコマンドで起動します。`http://localhost:4000/` で確認できます。ファイルを変更すると自動でリロードされます（ブラウザは手動で再読み込みしてください）。
 
 ```shell
-# Run server
+# サーバー起動
 $ docker-compose up
  ...
-blog_1  | INFO  Start processing
 blog_1  | INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 ```
 
-To stop server, press `Ctrl+C` and `docker-compose down`.
+停止するには `Ctrl+C` のあと `docker-compose down` を実行します。
 
 ```shell
-# Stop server
-^CGracefully stopping... (press Ctrl+C again to force)
-Stopping example_blog_1 ... done
-
 $ docker-compose down
 ```
 
-## Publish Blog with GitHub Pages
+## Publish
 
-In this tutorial, we use [GitHub Actions](https://docs.github.com/en/actions) to deploy [GitHub Pages](https://pages.github.com/).
-
-The repository already has a workflow for GitHub Pages ([.github/workflows/upload-gh-pages.yml](https://github.com/cssjpn/blog-example/blob/main/.github/workflows/upload-gh-pages.yml)).
-
-You can achieve publishing your blog easily with following steps.
-
-### Commit your changes and Create Pull Request
+### Commit and create a pull request
 
 ```shell
-# Commit changes
+# 変更をコミット
 $ git add .
 $ git commit -m 'Add article'
-```
 
-```shell
-# Push 'add_article' branch to remote repository
+# ブランチを push
 $ git push origin add_article
-  ...
-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-remote:
-remote: Create a pull request for 'add_article' on GitHub by visiting:
-remote:      https://github.com/${ORG_NAME}/blog/pull/new/add_article
-remote:
-To github.com:${ORG_NAME}/blog.git
- * [new branch]      add_article -> add_article
 ```
 
-You can open new Pull Request from `https://github.com/${ORG_NAME}/blog/pull/new/${BRANCH_NAME}`.
+push 後、`add_article` から `main` への Pull Request を作成します。
 
-### Merge Pull Request
+### Merge and deploy
 
-When new changes is merged to `main` branch, the workflow jobs will be triggered.
-The jobs automatically builds blog pages and uploads generated files to `gh-pages` branch.
+`main` にマージされると、GitHub Actions が記事をビルドし、生成されたサイトを `gh-pages` ブランチへアップロードします。ワークフローの実行状況は `Actions` タブで確認できます。
 
-You can check workflow runs at `Actions` section on GitHub.
-`https://github.com/{ORG_NAME}/blog/actions`
+### Result
 
-### Configure GitHub Pages
+配信が完了すると、サイトに反映されます。
 
-Once the workflow is finished, the generated pages can be found in the `gh-pages` branch of the repository.
+`https://jpd365erpsup.github.io/blog/`
 
-To configure GitHub Pages, navigate **Settings** > **Pages** section. Select `gh-pages` branch as source and click **Save**.
-
-<img src="./images/getting-started03.png" width="600" />
-
-Now you can access your blog! :tada:
-`https://${ORG_NAME}.github.io/blog/`
-
-It could be takes few minutes. If you got 404 page, please try to access later.
-
-## Next steps
-
-In this guide, you created a blog repository and then deployed site to GitHub Pages using GitHub Actions workflow.
-
-For more information about GitHub Actions for CSS Blog, see the [cssjpn/blog-gh-actions](https://github.com/cssjpn/blog-gh-actions) End-to-End Sample Workflows.
-
-* [Build blog and Publish to GitHub Pages](https://github.com/cssjpn/blog-gh-actions/blob/main/docs/upload-gh-pages.md)
-* [Deploy preview site for Pull Requests](https://github.com/cssjpn/blog-gh-actions/blob/main/docs/deploy-preview.md)
+反映には数分かかる場合があります。404 が表示される場合は、しばらく待ってから再度アクセスしてください。
