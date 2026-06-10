@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jpd365erpsup.github.io/blog/information/what-is-repro-steps/</loc>
+    
+    <lastmod>2026-06-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpd365erpsup.github.io/blog/information/information/</loc>
+    
+    <lastmod>2026-06-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jpd365erpsup.github.io/blog/information/ideas-list/</loc>
     
     <lastmod>2026-06-10</lastmod>
@@ -20,15 +38,6 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/information/information/</loc>
-    
-    <lastmod>2026-06-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://jpd365erpsup.github.io/blog/information/viva-engage-list/</loc>
     
     <lastmod>2026-06-10</lastmod>
@@ -39,15 +48,6 @@
   
   <url>
     <loc>https://jpd365erpsup.github.io/blog/information/what-is-business-impact/</loc>
-    
-    <lastmod>2026-06-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpd365erpsup.github.io/blog/information/what-is-repro-steps/</loc>
     
     <lastmod>2026-06-10</lastmod>
     
@@ -191,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/how-to-change-purchase-order-status/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/change-mrp-engine-from-32/</loc>
     
     <lastmod>2026-06-10</lastmod>
     
@@ -200,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/change-mrp-engine-from-32/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/how-to-change-purchase-order-status/</loc>
     
     <lastmod>2026-06-10</lastmod>
     
@@ -227,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/what-is-flight/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/update-subscription-estimator/</loc>
     
     <lastmod>2026-06-10</lastmod>
     
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/update-subscription-estimator/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/what-is-flight/</loc>
     
     <lastmod>2026-06-10</lastmod>
     
@@ -290,6 +290,15 @@
   </url>
   
   <url>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/secure-one-box-development-environments/</loc>
+    
+    <lastmod>2026-06-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/notes-on-updating-d365fo/</loc>
     
     <lastmod>2026-06-10</lastmod>
@@ -308,15 +317,6 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/proactive-quality-updates/</loc>
-    
-    <lastmod>2026-06-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/powerbi-feature-difference/</loc>
     
     <lastmod>2026-06-10</lastmod>
@@ -326,7 +326,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/secure-one-box-development-environments/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/proactive-quality-updates/</loc>
     
     <lastmod>2026-06-10</lastmod>
     
@@ -808,14 +808,14 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/D365FO-Fixed-Assets-issue/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/tags/Invoice/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/Invoice/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/tags/D365FO-Fixed-Assets-issue/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -892,14 +892,14 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/Information/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/tags/%E6%83%85%E5%A0%B1%E6%8E%A1%E5%8F%96/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/%E6%83%85%E5%A0%B1%E6%8E%A1%E5%8F%96/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/tags/Information/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -976,13 +976,6 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/Data-event/</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://jpd365erpsup.github.io/blog/tags/Trace-parser/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -990,7 +983,21 @@
   </url>
   
   <url>
+    <loc>https://jpd365erpsup.github.io/blog/tags/Data-event/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://jpd365erpsup.github.io/blog/tags/Azure-DevOps/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpd365erpsup.github.io/blog/tags/Data-fix/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1018,21 +1025,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/Data-fix/</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://jpd365erpsup.github.io/blog/tags/PEAP/</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/%E9%87%8D%E8%A6%81%E3%81%AA%E5%A4%89%E6%9B%B4%E7%82%B9/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1047,6 +1040,13 @@
   
   <url>
     <loc>https://jpd365erpsup.github.io/blog/tags/Power-BI-Embedded/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpd365erpsup.github.io/blog/tags/%E9%87%8D%E8%A6%81%E3%81%AA%E5%A4%89%E6%9B%B4%E7%82%B9/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1081,14 +1081,14 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/Flight/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/tags/Subscription-estimator/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/Subscription-estimator/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/tags/Flight/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1116,6 +1116,13 @@
   </url>
   
   <url>
+    <loc>https://jpd365erpsup.github.io/blog/tags/Master-Planning/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://jpd365erpsup.github.io/blog/tags/Sales-order/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -1131,13 +1138,6 @@
   
   <url>
     <loc>https://jpd365erpsup.github.io/blog/tags/Draft/</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/Master-Planning/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1186,14 +1186,14 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/D365FO/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/tags/Accounts-receivable-parameters/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/Accounts-receivable-parameters/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/tags/D365FO/</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
