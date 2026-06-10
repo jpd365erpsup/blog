@@ -10,7 +10,7 @@
   <rights>All rights reserved 2026, Japan Dynamics ERP Support Japan</rights>
   <subtitle>日本マイクロソフトの Dynamics ERP テクニカル サポート チームより、様々な情報をお届けします。</subtitle>
   <title>Japan Dynamics ERP Support Team Blog</title>
-  <updated>2026-06-10T09:32:45.606Z</updated>
+  <updated>2026-06-10T10:23:41.622Z</updated>
   <entry>
     <author>
       <name>Japan Dynamics ERP Support Japan</name>
@@ -28,7 +28,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの木村です。<br>この記事では、弊社コンポーネント開発元にて公開している Viva Engage のリンクについて紹介いたします。</p>]]>
     </summary>
     <title>各モジュールの Viva Engage のリスト</title>
-    <updated>2026-06-10T09:32:45.606Z</updated>
+    <updated>2026-06-10T10:23:41.622Z</updated>
   </entry>
   <entry>
     <author>
@@ -46,7 +46,27 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポート チームの永吉です。<br>この記事では、固定資産の帳簿で減価償却プロファイルを変更する方法についてご案内いたします。  </p>]]>
     </summary>
     <title>固定資産の減価償却プロファイルを変更する方法</title>
-    <updated>2026-06-10T09:32:45.229Z</updated>
+    <updated>2026-06-10T10:23:41.253Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Japan Dynamics ERP Support Japan</name>
+    </author>
+    <category term="FinOps-Finance" scheme="https://jpd365erpsup.github.io/blog/tags/FinOps-Finance/"/>
+    <category term="Japan localization" scheme="https://jpd365erpsup.github.io/blog/tags/Japan-localization/"/>
+    <category term="New Invoicing system requirements" scheme="https://jpd365erpsup.github.io/blog/tags/New-Invoicing-system-requirements/"/>
+    <content>
+      <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、 2023 年 10 月 1 日より開始される適格請求書等保存方式 (インボイス制度) において生じる<br>免税事業者などに対する経過措置について Dynamics 365 Finance and Operations (D365FO) における登録方法をご紹介します。<br>こちらの記事でご紹介する登録方法では消費税コードに非控除割合を設定することで、経過措置期間中の仕入税額控除とみなすことのできる割合を管理します。非控除割合を登録していただくことで、非控除分の金額が費用科目として転記されるようになります。</p><p>なお制度の詳細については国税庁ホームページをご確認ください。<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm">No.6498 適格請求書等保存方式（インボイス制度）</a><br><a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice.htm">国税庁 インボイス制度 特設サイト</a></p><span id="more"></span><h2 id="更新履歴"><a href="#更新履歴" class="headerlink" title="更新履歴"></a>更新履歴</h2><p>2023 年 2 月 15 日 : ブログ公開しました。<br>2025 年 6 月 9 日 : 最新バージョンでの検証及び、手順など追記しました。</p><h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version : 10.0.43<br>Platform version : PU 67<br>Legal entity : JPMF</p><h2 id="消費税コードの設定"><a href="#消費税コードの設定" class="headerlink" title="消費税コードの設定"></a>消費税コードの設定</h2><ol><li><p>[税] &gt; [間接税] &gt; [消費税] &gt; [消費税コード] を順に押下する</p></li><li><p>非控除割合を設定するためのの消費税コードを新規作成する</p></li><li><p>コード、名称、決済期間、元帳転記グループなどに任意の値を登録する<br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-transitional-measures/new-invoicing-system-requirements-transitional-measures1.png"></p></li><li><p>[消費税コード] &gt; [値] を順に押下する<br><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-transitional-measures/new-invoicing-system-requirements-transitional-measures2.png"></p></li><li><p>仕入税額とみなすことのできない割合を非控除に登録します。</p></li><li><p>登録した消費税コードを呼出可能にするため、消費税グループおよび品目消費税グループにおいて追加設定します。</p></li></ol><h2 id="設定結果"><a href="#設定結果" class="headerlink" title="設定結果"></a>設定結果</h2><p>上記設定を元に仕入先請求書を転記した結果、伝票は以下のようになります。<br>非控除に設定した割合が費用として転記されていることをご確認いただけます。</p><p><img src="/blog/FinOps-Finance/new-invoicing-system-requirements-transitional-measures/new-invoicing-system-requirements-transitional-measures3.png"></p><h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、免税事業者などに対する経過措置について Dynamics 365 Finance and Operations (D365FO) における登録方法についてご案内いたしました。</p>]]>
+    </content>
+    <id>https://jpd365erpsup.github.io/blog/FinOps-Finance/new-invoicing-system-requirements-transitional-measures/</id>
+    <link href="https://jpd365erpsup.github.io/blog/FinOps-Finance/new-invoicing-system-requirements-transitional-measures/"/>
+    <published>2025-06-08T15:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、 2023 年 10 月 1 日より開始される適格請求書等保存方式 (インボイス制度) において生じる<br>免税事業者などに対する経過措置について Dynamics 365 Finance and Operations (D365FO) における登録方法をご紹介します。<br>こちらの記事でご紹介する登録方法では消費税コードに非控除割合を設定することで、経過措置期間中の仕入税額控除とみなすことのできる割合を管理します。非控除割合を登録していただくことで、非控除分の金額が費用科目として転記されるようになります。</p>
+<p>なお制度の詳細については国税庁ホームページをご確認ください。<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm">No.6498 適格請求書等保存方式（インボイス制度）</a><br><a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice.htm">国税庁 インボイス制度 特設サイト</a></p>]]>
+    </summary>
+    <title>適格請求書等保存方式 (インボイス制度) における経過措置の対応方法について</title>
+    <updated>2026-06-10T10:23:41.327Z</updated>
   </entry>
   <entry>
     <author>
@@ -65,7 +85,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、Dynamics 365 Finance (D365FO) の日本向けローカライゼーション機能である月次締め請求書作成手順を紹介します。  </p>]]>
     </summary>
     <title>月次締め請求書の作成手順</title>
-    <updated>2026-06-10T09:32:45.235Z</updated>
+    <updated>2026-06-10T10:23:41.258Z</updated>
   </entry>
   <entry>
     <author>
@@ -85,7 +105,7 @@
 <p>ご不明点はサポート チームまでお問い合わせください。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operationsのライセンス管理の簡素化：ユーザーライセンス検証の改善</title>
-    <updated>2026-06-10T09:32:45.456Z</updated>
+    <updated>2026-06-10T10:23:41.474Z</updated>
   </entry>
   <entry>
     <author>
@@ -102,7 +122,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームです。<br>Dynamics 365 Business Central のサポート体制につきましてご案内となります。</p>]]>
     </summary>
     <title>Dynamics 365 Business Central のサポート体制につきまして</title>
-    <updated>2026-06-10T09:32:45.605Z</updated>
+    <updated>2026-06-10T10:23:41.621Z</updated>
   </entry>
   <entry>
     <author>
@@ -120,7 +140,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、Dynamics 365 Finance and Operations にて、 発注書を作成する際の一連の流れ (購買処理) について紹介します。  </p>]]>
     </summary>
     <title>発注書作成の一連の流れ</title>
-    <updated>2026-06-10T09:32:45.472Z</updated>
+    <updated>2026-06-10T10:23:41.489Z</updated>
   </entry>
   <entry>
     <author>
@@ -138,7 +158,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの福原です。<br>この記事では、 Dynamics 365 Finance and Operations (D365FO) の環境ごとの違いについてご案内します。<br>クラウドホスト環境、サンドボックス環境、Tier2環境、本番環境等、様々な呼び方の環境があり、また、それぞれの環境で使える機能も異なるので、分かりづらいというお声をいただくことがありますので、そのような場合には本記事をご参考ください。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operations の環境ごとの違い</title>
-    <updated>2026-06-10T09:32:45.320Z</updated>
+    <updated>2026-06-10T10:23:41.341Z</updated>
   </entry>
   <entry>
     <author>
@@ -156,7 +176,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフトの福原です。<br>Dynamics 365 Finance and Operations のバージョン 10.0.39 より導入されたサービス更新 (Service Update) の自動更新ウィンドウ (autoupdate window) のオプションについてご案内いたします。<br>このオプションにより自動更新の日程をより柔軟に選択できることができます。</p>]]>
     </summary>
     <title>サービス更新の自動更新ウィンドウのオプションについて</title>
-    <updated>2026-06-10T09:32:45.316Z</updated>
+    <updated>2026-06-10T10:23:41.337Z</updated>
   </entry>
   <entry>
     <author>
@@ -175,15 +195,15 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、LCS にて Dynamics 365 Finance and Operations に関するサポートリクエストを起票する方法を紹介します。</p>]]>
     </summary>
     <title>LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法</title>
-    <updated>2026-06-10T09:32:45.463Z</updated>
+    <updated>2026-06-10T10:23:41.481Z</updated>
   </entry>
   <entry>
     <author>
       <name>Japan Dynamics ERP Support Japan</name>
     </author>
     <category term="FinOps-Finance" scheme="https://jpd365erpsup.github.io/blog/tags/FinOps-Finance/"/>
-    <category term="Japan localization" scheme="https://jpd365erpsup.github.io/blog/tags/Japan-localization/"/>
     <category term="Fixed assets" scheme="https://jpd365erpsup.github.io/blog/tags/Fixed-assets/"/>
+    <category term="Japan localization" scheme="https://jpd365erpsup.github.io/blog/tags/Japan-localization/"/>
     <content>
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、 Dynamics 365 Finance にて、申告 26: 償却資産税の元帳レポート (償却資産申告書 (償却資産課税台帳)) における電話番号の設定について JPMF のデモ データを利用して紹介します。</p><span id="more"></span><h2 id="目次"><a href="#目次" class="headerlink" title="目次"></a>目次</h2><ol><li><a href="#anchor-version">検証に用いた製品・バージョン</a></li><li><a href="#how-to-setup-certified-tax-accountant">手順 - 税理士等の氏名</a></li><li><a href="#how-to-setup-external-legal-representative">手順 - 法人にあってはその名称及び代表者の氏名</a></li><li><a href="#how-to-setup-contact-person">手順 - この申告に応答する者の係及び氏名</a></li></ol><p><a id='anchor-version'></a></p><h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン:"></a>検証に用いた製品・バージョン:</h2><p>Dynamics 365 Finance and Operations<br>Application version : 10.0.37<br>Platform version : PU 61<br>Legal entity : JPMF  </p><p><a id='how-to-setup-certified-tax-accountant'></a></p><h2 id="手順-税理士等の氏名"><a href="#手順-税理士等の氏名" class="headerlink" title="手順 - 税理士等の氏名"></a>手順 - 税理士等の氏名</h2><ol><li>[組織管理] &gt; [組織] &gt; [法人] を押下する  </li><li>対象の法人を選択 (デモ データの JPMF)<br><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-1.png">  </li><li>[連絡先情報] タブにて [+追加] を押下し、任意のデータを登録する<br><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-2.png">  </li><li>[登録番号] タブの [税理士等の氏名] に上記で作成した連絡先を登録する<br><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-3.png">  </li><li>[固定資産] &gt; [照会およびレポート] &gt; [減価償却資産申告レポート ] &gt; [申告 26: 償却資産税の元帳レポート] を押下する  </li><li>出力したいデータを入力し、出力する<br><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-4.png"></li></ol><h3 id="税理士等の氏名-に連絡先情報で登録した内容が出力される"><a href="#税理士等の氏名-に連絡先情報で登録した内容が出力される" class="headerlink" title="[税理士等の氏名] に連絡先情報で登録した内容が出力される"></a>[税理士等の氏名] に連絡先情報で登録した内容が出力される</h3><p><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-5.png">  </p><p><a id='how-to-setup-external-legal-representative'></a></p><h2 id="手順-法人にあってはその名称及び代表者の氏名"><a href="#手順-法人にあってはその名称及び代表者の氏名" class="headerlink" title="手順 - 法人にあってはその名称及び代表者の氏名"></a>手順 - 法人にあってはその名称及び代表者の氏名</h2><ol><li>[組織管理] &gt; [組織] &gt; [法人] を押下する  </li><li>対象の法人を選択 (デモ データの JPMF)<br><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-1.png">  </li><li>[連絡先情報] タブにて [+追加] を押下し、任意のデータを登録する<br><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-6.png">  </li><li>[登録番号] タブの [法人にあってはその名称及び代表者の氏名] に上記で作成した連絡先を登録する<br><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-7.png">  </li><li>[固定資産] &gt; [照会およびレポート] &gt; [減価償却資産申告レポート ] &gt; [申告 26: 償却資産税の元帳レポート] を押下する  </li><li>出力したいデータを入力し、出力する<br><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-4.png"></li></ol><h3 id="法人にあってはその名称及び代表者の氏名-及び電話番号に連絡先情報で登録した内容が出力される"><a href="#法人にあってはその名称及び代表者の氏名-及び電話番号に連絡先情報で登録した内容が出力される" class="headerlink" title="[法人にあってはその名称及び代表者の氏名] 及び電話番号に連絡先情報で登録した内容が出力される"></a>[法人にあってはその名称及び代表者の氏名] 及び電話番号に連絡先情報で登録した内容が出力される</h3><p><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-8.png">  </p><p><a id='how-to-setup-contact-person'></a></p><h2 id="手順-この申告に応答する者の係及び氏名"><a href="#手順-この申告に応答する者の係及び氏名" class="headerlink" title="手順 - この申告に応答する者の係及び氏名"></a>手順 - この申告に応答する者の係及び氏名</h2><ol><li>[組織管理] &gt; [組織] &gt; [法人] を押下する  </li><li>対象の法人を選択 (デモ データの JPMF)<br><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-1.png">  </li><li>[連絡先情報] タブにて [+追加] を押下し、任意のデータを登録する<br><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-9.png">  </li><li>[登録番号] タブの [この申告に応答する者の係及び氏名] に上記で作成した連絡先を登録する<br><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-10.png">  </li><li>[固定資産] &gt; [照会およびレポート] &gt; [減価償却資産申告レポート ] &gt; [申告 26: 償却資産税の元帳レポート] を押下する  </li><li>出力したいデータを入力し、出力する<br><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-4.png"></li></ol><h3 id="この申告に応答する者の係及び氏名-に連絡先情報で登録した内容が出力される"><a href="#この申告に応答する者の係及び氏名-に連絡先情報で登録した内容が出力される" class="headerlink" title="[この申告に応答する者の係及び氏名] に連絡先情報で登録した内容が出力される"></a>[この申告に応答する者の係及び氏名] に連絡先情報で登録した内容が出力される</h3><p><img src="/blog/FinOps-Finance/form26-contactnumber-setting/form26-contactnumber-setting-11.png">  </p><hr><h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、申告 26: 償却資産税の元帳レポート (償却資産申告書 (償却資産課税台帳)) における電話番号などを出力する手順についてご紹介しました。</p>]]>
     </content>
@@ -194,7 +214,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、 Dynamics 365 Finance にて、申告 26: 償却資産税の元帳レポート (償却資産申告書 (償却資産課税台帳)) における電話番号の設定について JPMF のデモ データを利用して紹介します。</p>]]>
     </summary>
     <title>申告 26:償却資産税の元帳レポートに対して電話番号を出力する方法</title>
-    <updated>2026-06-10T09:32:45.238Z</updated>
+    <updated>2026-06-10T10:23:41.261Z</updated>
   </entry>
   <entry>
     <author>
@@ -213,7 +233,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフトの佐藤です。<br>この記事では、新規で配置したクラウドホスト環境で以下のような証明書のエラーが発生した際の対処法をご案内します。<br>“Cannot Find Thumbprint by Certificatename”</p>]]>
     </summary>
     <title>新規で配置したクラウドホスト環境で証明書のエラーが発生した際の対処法</title>
-    <updated>2026-06-10T09:32:45.449Z</updated>
+    <updated>2026-06-10T10:23:41.467Z</updated>
   </entry>
   <entry>
     <author>
@@ -232,7 +252,7 @@
 <p>この記事では、Dynamics 365 Finance and Operations の Issue Search についてご案内いたします。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operations の Issue Search について</title>
-    <updated>2026-06-10T09:32:45.467Z</updated>
+    <updated>2026-06-10T10:23:41.485Z</updated>
   </entry>
   <entry>
     <author>
@@ -251,7 +271,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、お客様からサポート リクエストにてお寄せいただいた Ideas を紹介いたします。</p>]]>
     </summary>
     <title>Ideas のリスト</title>
-    <updated>2026-06-10T09:32:45.606Z</updated>
+    <updated>2026-06-10T10:23:41.622Z</updated>
   </entry>
   <entry>
     <author>
@@ -269,7 +289,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、テクニカル サポート チームが本ブログでの Ideas の投稿の紹介についてご案内いたします。</p>]]>
     </summary>
     <title>本ブログでの Ideas の投稿の紹介について</title>
-    <updated>2026-06-10T09:32:45.606Z</updated>
+    <updated>2026-06-10T10:23:41.622Z</updated>
   </entry>
   <entry>
     <author>
@@ -287,7 +307,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、テクニカル サポート チームがサポート リクエストにてご依頼いただく「データの作成経緯」の必要な情報について紹介します。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operations の本番環境のデータの作成経緯に関して</title>
-    <updated>2026-06-10T09:32:45.604Z</updated>
+    <updated>2026-06-10T10:23:41.620Z</updated>
   </entry>
   <entry>
     <author>
@@ -305,7 +325,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介します。  </p>]]>
     </summary>
     <title>D365FOのアップデートに関する注意事項</title>
-    <updated>2026-06-10T09:32:45.448Z</updated>
+    <updated>2026-06-10T10:23:41.467Z</updated>
   </entry>
   <entry>
     <author>
@@ -323,7 +343,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、テクニカル サポート チームがサポート リクエストの中で依頼する「再現手順」について紹介します。</p>]]>
     </summary>
     <title>テクニカル サポートにて提供を依頼する「再現手順」について</title>
-    <updated>2026-06-10T09:32:45.607Z</updated>
+    <updated>2026-06-10T10:23:41.622Z</updated>
   </entry>
   <entry>
     <author>
@@ -341,7 +361,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、 Dynamics 365 Finance and Operations にて、 Trace Parser を使用したトレースの実行手順を紹介します。</p>]]>
     </summary>
     <title>Trace Parserを使用したトレースの実行方法</title>
-    <updated>2026-06-10T09:32:45.345Z</updated>
+    <updated>2026-06-10T10:23:41.366Z</updated>
   </entry>
   <entry>
     <author>
@@ -361,25 +381,6 @@
 <p>バッチ ジョブの通常の処理時間が分かっている場合、この手順により、通常よりも長い時間 Executing のままになっているバッチ ジョブを検知することができます。  </p>]]>
     </summary>
     <title>Power Automate と Business Event を使用した Executing のままになっているバッチジョブの検知方法</title>
-    <updated>2026-06-10T09:32:45.340Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Japan Dynamics ERP Support Japan</name>
-    </author>
-    <category term="FinOps-Platform" scheme="https://jpd365erpsup.github.io/blog/tags/FinOps-Platform/"/>
-    <category term="recurring integrations" scheme="https://jpd365erpsup.github.io/blog/tags/recurring-integrations/"/>
-    <category term="REST API" scheme="https://jpd365erpsup.github.io/blog/tags/REST-API/"/>
-    <content>
-      <![CDATA[<p>こんにちは、日本マイクロソフトの佐藤です。<br>この記事では、定期統合の REST API の実行をご案内します。<br>この手順により、定期的なデータジョブを実行した際にそのジョブに関するメッセージ状態を “キューから削除”、”ダウンロード済み”、”確認済み” のステータスに変更し、管理することができます。<br>今回は Power Automate を使用して、一連のフローを説明します。</p><span id="more"></span><h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.33<br>Platform version: PU57</p><h2 id="作成するフロー"><a href="#作成するフロー" class="headerlink" title="作成するフロー"></a>作成するフロー</h2><p>最終的なフローとしては、下記のフローを作成します。</p><p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job14.png"></p><h2 id="定期的なデータ-ジョブの管理に必要な値"><a href="#定期的なデータ-ジョブの管理に必要な値" class="headerlink" title="定期的なデータ ジョブの管理に必要な値"></a>定期的なデータ ジョブの管理に必要な値</h2><p>以下の手順は、下記の docs に記載されている内容を参照とした手順となっております。</p><p><a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/data-entities/recurring-integrations">定期統合</a></p><p>後ほど使用するため、以下の ２ つの値においては、変数を設定しておきます。</p><p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job13.png"></p><p>Tenant ID : </p><p>接続先のテナント ID</p><p>Activity ID : </p><p>[データ管理]　ワーク スペースからの[すべてのプロジェクト]から対象のプロジェクトを選択し、[管理] タブの [定期的なデータジョブの管理] から、IDより確認できます。</p><p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job01.png"></p><p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job02.png"></p><h2 id="アクセス-トークンの取得"><a href="#アクセス-トークンの取得" class="headerlink" title="アクセス トークンの取得"></a>アクセス トークンの取得</h2><p>Power Automate からアクセス トークンを取得します。</p><ol><li>アクセスする Azure Active Directory にアプリケーションを登録し、そのアプリケーションの各値を用います。</li></ol><p>アプリケーションは <a href="https://portal.azure.com/">Azure Portal</a> で [Azure Active Directory] を選択して[アプリの登録] から作成できます。<br><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job03.png"></p><p>アプリケーションを登録したら [概要] から “アプリケーション ID” をコピーしておきます。</p><p>また、[証明書とシークレット] から新しいクライアント シークレットを作成し、値をコピーします。シークレット IDではないため、注意してください。</p><p>[APIのアクセス許可] が下記のように [Microsoft Graph] が設定されていることを確認します。<br><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job04.png"></p><ol start="2"><li>Power Automateの画面で [HTTP] コネクタの [HTTP] アクションを選択し、下記のように設定します。</li></ol><p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job05.png"></p><p>client_id には Application ID、 client_secret にはシークレット値を入力します。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">URI</span> : </span><br><span class="line"><span class="attr">https</span>:<span class="comment">//login.microsoftonline.com/&lt;Tenant ID&gt;/oauth2/token</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Header</span> : </span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;Content-Type&quot;</span>: <span class="string">&quot;application/x-www-form-urlencoded&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Body</span> : </span><br><span class="line">client_id=***&amp;client_secret=***&amp;resource=<span class="language-xml"><span class="tag">&lt;<span class="name">Environment</span> <span class="attr">URL</span>&gt;</span>&amp;grant_type=client_credentials</span></span><br></pre></td></tr></table></figure><ol start="3"><li>Power Automate の画面で [JSONの解析] アクションを選択し、下記のように設定します。</li></ol><p>コンテンツは [HTTP] アクションの本文を指定し、スキーマは下記を入力します。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;type&quot;</span>: <span class="string">&quot;object&quot;</span>,</span><br><span class="line">    <span class="string">&quot;properties&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;token_type&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;string&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&quot;expires_in&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;string&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&quot;ext_expires_in&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;string&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&quot;expires_on&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;string&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&quot;not_before&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;string&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&quot;resource&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;string&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&quot;access_token&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;string&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job06.png"></p><h2 id="定期的なデータ-ジョブの-REST-API"><a href="#定期的なデータ-ジョブの-REST-API" class="headerlink" title="定期的なデータ ジョブの REST API"></a>定期的なデータ ジョブの REST API</h2><p>メッセージ 状態を “キューから削除”、”ダウンロード済み”、”確認済み” のステータスに変更する手順をご案内します。</p><h2 id="キューから削除-Deque"><a href="#キューから削除-Deque" class="headerlink" title="キューから削除 (Deque)"></a>キューから削除 (Deque)</h2><p>ステータスを “キューから削除” にするためのアクションになります。</p><p>以降は [HTTP with Azure AD] コネクタの [HTTP要求を呼び出します] アクションを使用します。<br>そのため下記の接続設定画面で、[BaseResourceURL] と [AzureADResourceURI] に接続先の環境URLを入力します。<br><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job07.png"></p><p>方法にGETを設定し、各値を設定します。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">GET</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Request</span> <span class="variable constant_">URL</span> : </span><br><span class="line">&lt;Environment URL&gt;/api/connector/dequeue/&lt;Activity ID&gt;</span><br><span class="line"></span><br><span class="line">Header : </span><br><span class="line">&#123;</span><br><span class="line">  &quot;Authorization&quot;: &quot;Bearer @&#123;body(&#x27;JSON_の解析_(HTTP)&#x27;)?[&#x27;access_token&#x27;]&#125;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job08.png"></p><h2 id="ダウンロード"><a href="#ダウンロード" class="headerlink" title="ダウンロード"></a>ダウンロード</h2><p>ステータスを “ダウンロード済み” にするためのアクションになります。</p><p><a href="#%E3%82%AD%E3%83%A5%E3%83%BC%E3%81%AE%E5%89%8A%E9%99%A4deque">キューの削除(Deque)</a>で出力されたボディから、ダウンロード リンクを取得します。</p><ol><li>[JSONの解析] アクションを選択し、コンテンツは <a href="#%E3%82%AD%E3%83%A5%E3%83%BC%E3%81%AE%E5%89%8A%E9%99%A4deque">キューの削除(Deque)</a>の [HTTP] アクションの本文を指定し、スキーマは下記を入力します。</li></ol><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;type&quot;</span>: <span class="string">&quot;object&quot;</span>,</span><br><span class="line">    <span class="string">&quot;properties&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;CorrelationId&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;string&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&quot;PopReceipt&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;string&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&quot;DownloadLocation&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;string&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&quot;IsDownLoadFileExist&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;type&quot;</span>: <span class="string">&quot;boolean&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job09.png"></p><ol start="2"><li>[JSONの解析] アクション後、[HTTP with Azure AD] コネクタの [HTTP要求を呼び出します] アクションを使用します。</li></ol><p>Request URL には、先ほどの [JSONの解析] アクションで出力される DownloadLocation を入力します。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">GET</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Request</span> <span class="variable constant_">URL</span> :</span><br><span class="line">@&#123;<span class="title function_">body</span>(<span class="string">&#x27;JSON_の解析&#x27;</span>)?[<span class="string">&#x27;DownloadLocation&#x27;</span>]&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Header</span> : </span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;Authorization&quot;</span>: <span class="string">&quot;Bearer @&#123;body(&#x27;JSON_の解析_(HTTP)&#x27;)?[&#x27;access_token&#x27;]&#125;&quot;</span>,</span><br><span class="line">  <span class="string">&quot;content_type&quot;</span>: <span class="string">&quot;application/json&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job10.png"></p><p>ダウンロードしたファイルは例として、下記のようなアクションを続けることで、メールにて送付することもできます。</p><p>添付ファイル名は ***.zip と zip ファイルの形式に設定することに注意してください。<br>添付ファイル コンテンツは ダウンロードの [HTTP要求を呼び出します] アクションで出力されるボディを設定します。</p><p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job11.png"></p><h2 id="確認-Acknowledge"><a href="#確認-Acknowledge" class="headerlink" title="確認 (Acknowledge)"></a>確認 (Acknowledge)</h2><p>ステータスを “確認済み” にするためのアクションになります。</p><p>[HTTP with Azure AD] コネクタの [HTTP要求を呼び出します] アクションを使用します。<br>要求の本文には、<a href="#%E3%82%AD%E3%83%A5%E3%83%BC%E3%81%AE%E5%89%8A%E9%99%A4deque">キューの削除(Deque)</a> で出力されたボディをそのまま入力します。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">POST</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Request</span> <span class="variable constant_">URL</span> :</span><br><span class="line">&lt;Environment URL&gt;/api/connector/ack/&lt;ActivityID&gt;</span><br><span class="line"></span><br><span class="line">Header : </span><br><span class="line">&#123;</span><br><span class="line">  &quot;Authorization&quot;: &quot;Bearer @&#123;body(&#x27;JSON_の解析_(HTTP)&#x27;)?[&#x27;access_token&#x27;]&#125;&quot;,</span><br><span class="line">  &quot;Content-Type&quot;: &quot;application/json&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Request Body : </span><br><span class="line">@&#123;body(&#x27;HTTP_要求を呼び出します_(deque)&#x27;)&#125;</span><br></pre></td></tr></table></figure><p><img src="/blog/FinOps-Platform/how-to-check-recurring-job/how-to-check-recurring-job12.png"></p><hr><h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、定期統合のREST APIの実行手順をご紹介させていただきました。</p>]]>
-    </content>
-    <id>https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-check-recurring-job/</id>
-    <link href="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-check-recurring-job/"/>
-    <published>2023-06-12T15:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>こんにちは、日本マイクロソフトの佐藤です。<br>この記事では、定期統合の REST API の実行をご案内します。<br>この手順により、定期的なデータジョブを実行した際にそのジョブに関するメッセージ状態を “キューから削除”、”ダウンロード済み”、”確認済み” のステータスに変更し、管理することができます。<br>今回は Power Automate を使用して、一連のフローを説明します。</p>]]>
-    </summary>
-    <title>定期統合のREST APIの実行</title>
-    <updated>2026-06-10T09:32:45.334Z</updated>
+    <updated>2026-06-10T10:23:41.361Z</updated>
   </entry>
 </feed>
