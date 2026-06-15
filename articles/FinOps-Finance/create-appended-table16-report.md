@@ -4,7 +4,6 @@ date: 2022-09-09
 tags:
   - FinOps-Finance
   - Fixed assets
-  - Appended table 16 series
   - Japan localization
 disableDisclaimer: false
 ---

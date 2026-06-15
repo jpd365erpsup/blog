@@ -4,7 +4,6 @@ date: 2023-01-16
 tags:
   - FinOps-Platform
   - Power Automate
-  - OData
 
 disableDisclaimer: false
 ---

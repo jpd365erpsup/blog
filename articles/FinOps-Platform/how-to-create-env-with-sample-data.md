@@ -3,8 +3,6 @@ title: D365FO でデモデータを含んだ環境の構築方法と検証シナ
 date: 2023-03-13
 tags:
   - FinOps-Platform
-  - Demo data
-  - Standard
 disableDisclaimer: false
 ---
 

@@ -27,13 +27,8 @@ root_tag_generator:
   - FinOps-Platform
   - FinOps-SCM
   - FinOps-Finance
-  - FinOps-Commerce
   - BusCen-Platform
-  - BusCen-SCM
-  - BusCen-Finance
   - Information
-  - 重要な変更点
-  - Bug Info
   sub_tag_limit: 20
 
 # URL

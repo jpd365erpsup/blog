@@ -3,7 +3,6 @@ title: 購買要求から作成された発注書が自動的に "ドラフト" 
 date: 2023-1-30
 tags:
   - FinOps-SCM
-  - Draft
 
 disableDisclaimer: false
 ---

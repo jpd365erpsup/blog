@@ -3,7 +3,6 @@ title: D365BC でテーブルの変更ログを記録する方法
 date: 2022-11-16
 tags:
   - BusCen-Platform
-  - Change Log Setup
 disableDisclaimer: false
 ---
 
