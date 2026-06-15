@@ -3,7 +3,6 @@ title: 会計年度の追加方法について
 date: 2023-01-05
 tags:
   - FinOps-Finance
-  - General Ledger
   
 disableDisclaimer: false
 ---

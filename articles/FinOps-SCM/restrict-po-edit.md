@@ -4,7 +4,6 @@ date: 2022-05-24
 tags: 
     - FinOps-SCM
     - Purchase order
-    - Procurement and sourcing parameters
 disableDisclaimer: false
 ---
 

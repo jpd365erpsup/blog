@@ -3,7 +3,6 @@ title: Azure Pipelines と Microsoft-hosted agents を使用したビルドの�
 date: 2022-09-06
 tags:
   - FinOps-Platform
-  - Azure DevOps
 disableDisclaimer: false
 ---
 

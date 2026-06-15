@@ -3,7 +3,7 @@ title: 固定資産の耐用年数の変更方法について
 date: 2023-1-5
 tags:
   - FinOps-Finance
-  - Fixed Assets
+  - Fixed assets
   - Japan localization
 
 disableDisclaimer: false

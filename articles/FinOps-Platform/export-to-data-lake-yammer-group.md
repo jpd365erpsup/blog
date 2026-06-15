@@ -3,7 +3,6 @@ title: Export to Data Lake の Yammer group について
 date: 2022-04-04
 tags:
   - FinOps-Platform
-  - Export to Data Lake
 disableDisclaimer: false
 ---
 

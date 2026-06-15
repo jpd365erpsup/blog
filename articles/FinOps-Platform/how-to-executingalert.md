@@ -4,7 +4,6 @@ date: 2023-08-09
 tags:
   - FinOps-Platform
   - Power Automate
-  - Business Event
 
 disableDisclaimer: false
 ---

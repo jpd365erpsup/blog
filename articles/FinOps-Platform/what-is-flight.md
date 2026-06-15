@@ -3,7 +3,6 @@ title: D365FO で用いられるフライト (flight) について
 date: 2023-04-24
 tags:
   - Information
-  - Flight
 disableDisclaimer: false
 ---
 

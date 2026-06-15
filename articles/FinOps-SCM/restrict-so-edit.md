@@ -4,7 +4,6 @@ date: 2022-06-14
 tags: 
     - FinOps-SCM
     - Sales order
-    - Accounts receivable parameters
 disableDisclaimer: false
 ---
 

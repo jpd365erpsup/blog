@@ -4,7 +4,6 @@ date: 2022-05-12
 tags:
   - FinOps-Platform
   - LCS
-  - Subscription estimator
 disableDisclaimer: false
 ---
 

@@ -3,8 +3,7 @@ title: 一括償却資産の減価償却手順について
 date: 2022-09-09
 tags:
   - FinOps-Finance
-  - Bug Info
-  - D365FO Fixed Assets issue
+  - Fixed assets
 disableDisclaimer: false
 ---
 

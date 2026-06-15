@@ -3,7 +3,6 @@ title: D365FO のブラウザーセッション ID の取得方法
 date: 2022-11-16
 tags:
   - FinOps-Platform
-  - 情報採取
 disableDisclaimer: false
 ---
 

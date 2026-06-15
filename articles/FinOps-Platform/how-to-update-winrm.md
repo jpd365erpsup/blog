@@ -4,7 +4,6 @@ date: 2022-07-04
 tags:
   - FinOps-Platform
   - LCS
-  - WinRM
 disableDisclaimer: false
 ---
 
