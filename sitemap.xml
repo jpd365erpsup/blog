@@ -2,7 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jpd365erpsup.github.io/blog/information/ideas-list/</loc>
+    
+    <lastmod>2026-06-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpd365erpsup.github.io/blog/information/information/</loc>
+    
+    <lastmod>2026-06-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jpd365erpsup.github.io/blog/information/introducing-ideas-on-this-blog/</loc>
+    
+    <lastmod>2026-06-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpd365erpsup.github.io/blog/information/what-is-business-impact/</loc>
     
     <lastmod>2026-06-15</lastmod>
     
@@ -29,15 +56,6 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/information/what-is-business-impact/</loc>
-    
-    <lastmod>2026-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://jpd365erpsup.github.io/blog/information/business-centra-support-case-handling/</loc>
     
     <lastmod>2026-06-15</lastmod>
@@ -48,24 +66,6 @@
   
   <url>
     <loc>https://jpd365erpsup.github.io/blog/information/how-to-post-ideas/</loc>
-    
-    <lastmod>2026-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpd365erpsup.github.io/blog/information/information/</loc>
-    
-    <lastmod>2026-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpd365erpsup.github.io/blog/information/ideas-list/</loc>
     
     <lastmod>2026-06-15</lastmod>
     
@@ -173,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/how-to-correct-deliverycontroldata/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/how-to-create-purchase-order/</loc>
     
     <lastmod>2026-06-15</lastmod>
     
@@ -182,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/how-to-create-purchase-order/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/how-to-correct-deliverycontroldata/</loc>
     
     <lastmod>2026-06-15</lastmod>
     
@@ -201,15 +201,6 @@
   
   <url>
     <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/how-to-change-purchase-order-status/</loc>
-    
-    <lastmod>2026-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/cancel-productreceipt-linkso/</loc>
     
     <lastmod>2026-06-15</lastmod>
     
@@ -237,6 +228,15 @@
   
   <url>
     <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/what-is-issue-search-in-lcs/</loc>
+    
+    <lastmod>2026-06-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-SCM/cancel-productreceipt-linkso/</loc>
     
     <lastmod>2026-06-15</lastmod>
     
@@ -290,6 +290,15 @@
   </url>
   
   <url>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/peap-retire/</loc>
+    
+    <lastmod>2026-06-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/notes-on-updating-d365fo/</loc>
     
     <lastmod>2026-06-15</lastmod>
@@ -300,15 +309,6 @@
   
   <url>
     <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/powerbi-feature-difference/</loc>
-    
-    <lastmod>2026-06-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/peap-retire/</loc>
     
     <lastmod>2026-06-15</lastmod>
     
@@ -470,7 +470,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/environments/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/export-to-data-lake-yammer-group/</loc>
     
     <lastmod>2026-06-15</lastmod>
     
@@ -479,7 +479,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/export-to-data-lake-yammer-group/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-Platform/environments/</loc>
     
     <lastmod>2026-06-15</lastmod>
     
@@ -668,7 +668,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-Finance/add-new-fiscal-year/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-Finance/change-depreciation-profile/</loc>
     
     <lastmod>2026-06-15</lastmod>
     
@@ -677,7 +677,7 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/FinOps-Finance/change-depreciation-profile/</loc>
+    <loc>https://jpd365erpsup.github.io/blog/FinOps-Finance/add-new-fiscal-year/</loc>
     
     <lastmod>2026-06-15</lastmod>
     
@@ -815,13 +815,6 @@
   </url>
   
   <url>
-    <loc>https://jpd365erpsup.github.io/blog/tags/Ideas/</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://jpd365erpsup.github.io/blog/tags/FinOps-SCM/</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -844,6 +837,13 @@
   
   <url>
     <loc>https://jpd365erpsup.github.io/blog/tags/Packing-slip/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jpd365erpsup.github.io/blog/tags/Ideas/</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

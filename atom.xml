@@ -10,7 +10,24 @@
   <rights>All rights reserved 2026, Japan Dynamics ERP Support Japan</rights>
   <subtitle>日本マイクロソフトの Dynamics ERP テクニカル サポート チームより、様々な情報をお届けします。</subtitle>
   <title>Japan Dynamics ERP Support Team Blog</title>
-  <updated>2026-06-15T01:53:14.372Z</updated>
+  <updated>2026-06-15T11:25:56.199Z</updated>
+  <entry>
+    <author>
+      <name>Japan Dynamics ERP Support Japan</name>
+    </author>
+    <category term="FinOps-SCM" scheme="https://jpd365erpsup.github.io/blog/tags/FinOps-SCM/"/>
+    <content>
+      <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、 Dynamics 365 Finance and Operations における MRP エンジンの変更のロードマップや注意点をご案内します。</p><span id="more"></span><h2 id="目次"><a href="#目次" class="headerlink" title="目次"></a>目次</h2><ol><li><a href="#anchor-mrp">既存 MRP エンジンについて</a><ol><li><a href="#anchor-mrp-roadmap">ロードマップ</a>  </li><li><a href="#anchor-mrp-support">テクニカル サポートの対応について</a></li></ol></li><li><a href="#anchor-po">計画最適化 (Planning Optimization) について</a><ol><li><a href="#anchor-po-roadmap">ロードマップ</a></li><li><a href="#anchor-po-migration">移行について</a></li><li><a href="#anchor-po-exception">例外申請</a></li></ol></li><li><a href="#anchor-env">環境による実行可否（組み込み MRP と計画最適化の比較）</a></li><li><a href="#anchor-resource">リソース</a></li><li><a href="#anchor-finish">おわりに</a></li></ol><h2 id="更新履歴"><a href="#更新履歴" class="headerlink" title="更新履歴"></a>更新履歴</h2><p>2023 年 3 月 1 日 : ブログ公開<br>2023 年 3 月 24 日 : 既存 MRP エンジンのロードマップの適用日時を追記<br>2026 年 6 月 15 日 : 最新バージョンの状況に合わせて全体を更新し、「環境による実行可否（組み込み MRP と計画最適化の比較）」のセクションを追加しました。</p><p><a id='anchor-mrp'></a></p><p><a id='anchor-mrp-roadmap'></a></p><h2 id="ロードマップ"><a href="#ロードマップ" class="headerlink" title="ロードマップ"></a>ロードマップ</h2><p>既存 MRP エンジン (組み込み MRP エンジン、deprecated master planning engine) は Dynamics 365 Finance and Operations において非推奨となり、計画最適化 (Planning Optimization) に置き換えられています。以下の提供方針が適用されます。  </p><ul><li>既存 MRP エンジンに対して新しい機能の実装は予定しておりません</li><li>既存 MRP エンジンに対するサポートは、ブロッカー (計画オーダーが一切作成されない、または継続的に失敗する) およびリグレッションに限定されます (2023 年 3 月以降の方針)</li><li>バージョン 10.0.32 以降、法人で計画機能を初めて有効化する際に、計画最適化のインストールおよび有効化が必須となります</li><li>バージョン 10.0.41 以降、新規に配置した環境では既存 MRP エンジンが完全にブロックされ、お客様がご自身で有効化する方法はありません</li><li>既存 MRP エンジンの削除時期は現時点で未定です (削除する場合は 12 か月前に告知されます)</li></ul><p><a id='anchor-mrp-support'></a></p><h2 id="テクニカル-サポートの対応について"><a href="#テクニカル-サポートの対応について" class="headerlink" title="テクニカル サポートの対応について"></a>テクニカル サポートの対応について</h2><p>既存 MRP エンジンは非推奨となるため、お問い合わせを起票いただく際には以下の内容をご確認・ご理解ください。</p><ul><li>計画最適化にて事象が再現する場合のみ、再現検証および想定挙動を調査します<br>※ 計画最適化における事象の再現可否はお客様にて検証いただきますようお願いいたします。<br>※ 以下<a href="#anchor-po-migration">*</a> でもご紹介しますが、同一環境の法人ごとに計画最適化を有効化できるため、再現検証用に法人をコピーしていただき、そこで検証した結果を基にお問い合わせいただくことを推奨いたします。</li><li>マイクロソフトにて調査した結果、想定挙動ではないと判断した場合、計画最適化に対してのみ修正を提供します</li><li>お問い合わせの事象が既存 MRP エンジンにおけるクリティカルな問題の場合には、事前にビジネス インパクトも併せてご提供ください<br>関連ブログ: <a href="https://jpd365erpsup.github.io/blog/information/what-is-business-impact/">お客様のビジネスインパクトをお伺いする目的や算出について</a></li></ul><p><a id='anchor-po'></a></p><h1 id="計画最適化-Planning-Optimization-について"><a href="#計画最適化-Planning-Optimization-について" class="headerlink" title="計画最適化 (Planning Optimization) について"></a>計画最適化 (Planning Optimization) について</h1><p><a id='anchor-po-roadmap'></a></p><h2 id="ロードマップ-1"><a href="#ロードマップ-1" class="headerlink" title="ロードマップ"></a>ロードマップ</h2><p>計画最適化では以下の提供方針が 10.0.32 以降適用されます。</p><ul><li>既存 MRP エンジンとの差分機能や設定については、新規お問い合わせにて計画最適化への追加希望をご依頼いただくことで実装可否を検討するリストへ追加されます</li><li>計画最適化の内部処理へのカスタマイズは基本的に実装できないため、お客様の運用を計画最適化に合わせていただくことを検討ください</li><li>内部処理のカスタマイズを希望する箇所がある際には、Ideas に投稿ください<br>関連ブログ: <a href="https://jpd365erpsup.github.io/blog/information/how-to-post-ideas/">Dynamics 365 製品のフィードバックサイト Ideas について</a></li></ul><p><a id='anchor-po-migration'></a></p><h2 id="移行について"><a href="#移行について" class="headerlink" title="移行について"></a>移行について</h2><p>既存 MRP エンジンから計画最適化への移行は、同一環境の法人 (Legal entity) ごとに実施することが可能です。移行前には、計画の最適化フィット分析 (fit analysis) を用いて、ご利用中の機能が計画最適化でサポートされているかを評価することを推奨します。<br>計画最適化の検証時に法人をコピーして使用する際には、”法人へのコピー” 機能をご利用ください。<br>関連公開資料 : <a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/data-entities/copy-configuration#copy-into-a-legal-entity">法人へのコピー</a></p><p><a id='anchor-po-exception'></a></p><h2 id="例外申請"><a href="#例外申請" class="headerlink" title="例外申請"></a>例外申請</h2><p>Tier 2 以上の環境では既存 MRP エンジンは基本的にブロックされています。業務要件上、やむを得ず既存 MRP エンジンの継続利用が必要な場合には、Microsoft による環境ごとの例外対応が必要となり、これらはすべてサポート リクエストにて承ります。  </p><p>例外を申請いただくにあたっては、事前に以下の準備をお願いいたします。</p><ol><li><strong>公開資料の確認</strong><br>まず、計画最適化の<a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-fit-analysis">計画の最適化フィット分析</a> と、<a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-differences-with-built-in">計画の最適化と、非推奨のマスター プラン エンジンの相違点</a>に関する公開資料をご確認ください。</li><li><strong>業務要件に基づく検証</strong><br>次に、お客様の業務要件から作成したテスト データを用いて、組み込み MRP エンジンと計画最適化の挙動の違いをご確認ください。</li></ol><p>そのうえで、確認・検証の結果に応じて、例外申請の取り扱いは以下のように異なります。</p><ul><li><strong>計画の最適化フィット分析に記載があり、予想される可用性が “将来のサイクル” 等となっている機能の場合</strong><br>当該機能が計画最適化で未提供であることが公開資料上で確認できるため、その記載と検証結果を添えて申請いただくことで、例外申請が承認される場合があります。</li><li><strong>相違点に関する公開資料に記載がある挙動の場合</strong><br>それらは意図された差異となるため、例外申請は却下される場合があります。この場合は、カスタマイズの実装、または業務要件の変更をご検討ください。</li><li><strong>計画の最適化フィット分析にも相違点の資料にも記載がなく、業務要件と実際の挙動に差異があり、それが業務上許容できない場合</strong><br>サポート リクエストにて計画最適化の修正をリクエストしてください。修正が予定された場合には、その修正がリリースされるまでの間、例外申請が承認される場合があります。</li></ul><p><a id='anchor-env'></a></p><h1 id="環境による実行可否（既存-MRP-エンジンと計画最適化の比較）"><a href="#環境による実行可否（既存-MRP-エンジンと計画最適化の比較）" class="headerlink" title="環境による実行可否（既存 MRP エンジンと計画最適化の比較）"></a>環境による実行可否（既存 MRP エンジンと計画最適化の比較）</h1><p>計画最適化と既存 MRP エンジンは、実行できる環境が異なる点にご注意ください。</p><table><thead><tr><th>エンジン</th><th>実行可能な環境</th></tr></thead><tbody><tr><td>計画最適化 (Planning Optimization)</td><td>Tier 2 以上の Microsoft managed 環境 (高可用性) のほか、UDE (Unified developer environment) でも実行可能です。一方、Tier 1 環境や OneBox 環境では実行できません。</td></tr><tr><td>既存 (組み込み) MRP エンジン</td><td>Tier 1 (クラウドホスト &#x2F; OneBox) 環境などでは実行可能です。一方で、現行バージョンの Microsoft managed 環境では基本的にブロックされ、実行できません。</td></tr></tbody></table><p>このため、既存 MRP エンジンの挙動を実際に実行してご確認いただきたい場合 (例 : 計画最適化との結果差分の比較・調査) には、既存 MRP エンジンが実行可能な <strong>Tier 1 環境</strong>などをご利用いただく必要があります。<br>なお、計画最適化自体は Tier 1 環境では実行できないため、両エンジンの結果を比較する際は、既存 MRP エンジンを Tier 1 環境で、計画最適化を Tier 2 以上の環境などで実行し、それぞれの結果を突き合わせていただく形となります。  </p><p>※ 計画最適化を有効化すると、既存 MRP エンジンは自動的に無効化されます。そのため、同一環境で両エンジンを同時に実行することはできません。</p><p>環境の種類 (Tier 1 &#x2F; Tier 2 以上 &#x2F; クラウドホスト &#x2F; サンドボックス &#x2F; 本番 など) の違いについては、以下の記事もあわせてご参照ください。  </p><ul><li>関連ブログ : <a href="https://jpd365erpsup.github.io/blog/FinOps-Platform/environments/">Dynamics 365 Finance and Operations の環境ごとの違い</a></li></ul><p><a id='anchor-resource'></a></p><h1 id="リソース"><a href="#リソース" class="headerlink" title="リソース"></a>リソース</h1><p>既存 (組み込み) MRP エンジンから計画最適化への移行に際して、以下の公開資料を必要に応じてご確認ください。  </p><ul><li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/get-started">計画最適化の使用を開始する - Microsoft Learn</a></li><li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/deprecated-master-planning-overview">非推奨のマスター プランの概要 - Microsoft Learn</a></li><li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/continue-using-deprecated-planning">既存の法人で非推奨のマスター プランを継続して使用する - Microsoft Learn</a></li><li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-differences-with-built-in">計画最適化と既存 MRP エンジンの相違点 - Microsoft Learn</a></li><li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/not-used-parameters">計画最適化にて考慮されないパラメーター - Microsoft Learn</a></li><li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/release-process">計画最適化の機能リリース予定および履歴 - Microsoft Learn</a></li><li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-fit-analysis">計画最適化の適合分析 (fit analysis) - Microsoft Learn</a></li><li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/new-master-planning-engine">既存 MRP エンジンから計画最適化への移行 - Microsoft Learn</a></li><li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-trouble-shooting">計画最適化のトラブルシューティング - Microsoft Learn</a></li><li>関連ブログ : <a href="https://jpd365erpsup.github.io/blog/information/viva-engage-list/">各モジュールの Viva Engage のリスト</a></li></ul><h2 id=""><a href="#" class="headerlink" title=""></a><a id='anchor-finish'></a></h2><h1 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h1><p>以上、 Dynamics 365 Finance and Operations における MRP エンジンの変更のロードマップや注意点を紹介いたしました。</p>]]>
+    </content>
+    <id>https://jpd365erpsup.github.io/blog/FinOps-SCM/change-mrp-engine-from-32/</id>
+    <link href="https://jpd365erpsup.github.io/blog/FinOps-SCM/change-mrp-engine-from-32/"/>
+    <published>2026-06-14T15:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、 Dynamics 365 Finance and Operations における MRP エンジンの変更のロードマップや注意点をご案内します。</p>]]>
+    </summary>
+    <title>10.0.32 以降の MRP エンジン (計画最適化) について</title>
+    <updated>2026-06-15T11:25:56.199Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Japan Dynamics ERP Support Japan</name>
@@ -28,7 +45,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの木村です。<br>この記事では、弊社コンポーネント開発元にて公開している Viva Engage のリンクについて紹介いたします。</p>]]>
     </summary>
     <title>各モジュールの Viva Engage のリスト</title>
-    <updated>2026-06-15T01:53:14.372Z</updated>
+    <updated>2026-06-15T11:25:56.334Z</updated>
   </entry>
   <entry>
     <author>
@@ -46,7 +63,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポート チームの永吉です。<br>この記事では、固定資産の帳簿で減価償却プロファイルを変更する方法についてご案内いたします。  </p>]]>
     </summary>
     <title>固定資産の減価償却プロファイルを変更する方法</title>
-    <updated>2026-06-15T01:53:13.962Z</updated>
+    <updated>2026-06-15T11:25:55.964Z</updated>
   </entry>
   <entry>
     <author>
@@ -66,7 +83,7 @@
 <p>なお制度の詳細については国税庁ホームページをご確認ください。<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm">No.6498 適格請求書等保存方式（インボイス制度）</a><br><a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice.htm">国税庁 インボイス制度 特設サイト</a></p>]]>
     </summary>
     <title>適格請求書等保存方式 (インボイス制度) における経過措置の対応方法について</title>
-    <updated>2026-06-15T01:53:14.046Z</updated>
+    <updated>2026-06-15T11:25:56.039Z</updated>
   </entry>
   <entry>
     <author>
@@ -85,7 +102,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、Dynamics 365 Finance (D365FO) の日本向けローカライゼーション機能である月次締め請求書作成手順を紹介します。  </p>]]>
     </summary>
     <title>月次締め請求書の作成手順</title>
-    <updated>2026-06-15T01:53:13.968Z</updated>
+    <updated>2026-06-15T11:25:55.969Z</updated>
   </entry>
   <entry>
     <author>
@@ -105,7 +122,7 @@
 <p>ご不明点はサポート チームまでお問い合わせください。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operationsのライセンス管理の簡素化：ユーザーライセンス検証の改善</title>
-    <updated>2026-06-15T01:53:14.207Z</updated>
+    <updated>2026-06-15T11:25:56.185Z</updated>
   </entry>
   <entry>
     <author>
@@ -122,7 +139,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームです。<br>Dynamics 365 Business Central のサポート体制につきましてご案内となります。</p>]]>
     </summary>
     <title>Dynamics 365 Business Central のサポート体制につきまして</title>
-    <updated>2026-06-15T01:53:14.371Z</updated>
+    <updated>2026-06-15T11:25:56.333Z</updated>
   </entry>
   <entry>
     <author>
@@ -140,7 +157,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、Dynamics 365 Finance and Operations にて、 発注書を作成する際の一連の流れ (購買処理) について紹介します。  </p>]]>
     </summary>
     <title>発注書作成の一連の流れ</title>
-    <updated>2026-06-15T01:53:14.224Z</updated>
+    <updated>2026-06-15T11:25:56.201Z</updated>
   </entry>
   <entry>
     <author>
@@ -158,7 +175,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの福原です。<br>この記事では、 Dynamics 365 Finance and Operations (D365FO) の環境ごとの違いについてご案内します。<br>クラウドホスト環境、サンドボックス環境、Tier2環境、本番環境等、様々な呼び方の環境があり、また、それぞれの環境で使える機能も異なるので、分かりづらいというお声をいただくことがありますので、そのような場合には本記事をご参考ください。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operations の環境ごとの違い</title>
-    <updated>2026-06-15T01:53:14.061Z</updated>
+    <updated>2026-06-15T11:25:56.052Z</updated>
   </entry>
   <entry>
     <author>
@@ -176,7 +193,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフトの福原です。<br>Dynamics 365 Finance and Operations のバージョン 10.0.39 より導入されたサービス更新 (Service Update) の自動更新ウィンドウ (autoupdate window) のオプションについてご案内いたします。<br>このオプションにより自動更新の日程をより柔軟に選択できることができます。</p>]]>
     </summary>
     <title>サービス更新の自動更新ウィンドウのオプションについて</title>
-    <updated>2026-06-15T01:53:14.056Z</updated>
+    <updated>2026-06-15T11:25:56.048Z</updated>
   </entry>
   <entry>
     <author>
@@ -194,7 +211,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、LCS にて Dynamics 365 Finance and Operations に関するサポートリクエストを起票する方法を紹介します。</p>]]>
     </summary>
     <title>LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法</title>
-    <updated>2026-06-15T01:53:14.216Z</updated>
+    <updated>2026-06-15T11:25:56.193Z</updated>
   </entry>
   <entry>
     <author>
@@ -213,7 +230,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、 Dynamics 365 Finance にて、申告 26: 償却資産税の元帳レポート (償却資産申告書 (償却資産課税台帳)) における電話番号の設定について JPMF のデモ データを利用して紹介します。</p>]]>
     </summary>
     <title>申告 26:償却資産税の元帳レポートに対して電話番号を出力する方法</title>
-    <updated>2026-06-15T01:53:13.972Z</updated>
+    <updated>2026-06-15T11:25:55.973Z</updated>
   </entry>
   <entry>
     <author>
@@ -230,7 +247,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフトの佐藤です。<br>この記事では、新規で配置したクラウドホスト環境で以下のような証明書のエラーが発生した際の対処法をご案内します。<br>“Cannot Find Thumbprint by Certificatename”</p>]]>
     </summary>
     <title>新規で配置したクラウドホスト環境で証明書のエラーが発生した際の対処法</title>
-    <updated>2026-06-15T01:53:14.200Z</updated>
+    <updated>2026-06-15T11:25:56.179Z</updated>
   </entry>
   <entry>
     <author>
@@ -248,7 +265,7 @@
 <p>この記事では、Dynamics 365 Finance and Operations の Issue Search についてご案内いたします。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operations の Issue Search について</title>
-    <updated>2026-06-15T01:53:14.220Z</updated>
+    <updated>2026-06-15T11:25:56.197Z</updated>
   </entry>
   <entry>
     <author>
@@ -267,7 +284,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、お客様からサポート リクエストにてお寄せいただいた Ideas を紹介いたします。</p>]]>
     </summary>
     <title>Ideas のリスト</title>
-    <updated>2026-06-15T01:53:14.371Z</updated>
+    <updated>2026-06-15T11:25:56.334Z</updated>
   </entry>
   <entry>
     <author>
@@ -285,7 +302,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、テクニカル サポート チームが本ブログでの Ideas の投稿の紹介についてご案内いたします。</p>]]>
     </summary>
     <title>本ブログでの Ideas の投稿の紹介について</title>
-    <updated>2026-06-15T01:53:14.372Z</updated>
+    <updated>2026-06-15T11:25:56.334Z</updated>
   </entry>
   <entry>
     <author>
@@ -302,7 +319,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、テクニカル サポート チームがサポート リクエストにてご依頼いただく「データの作成経緯」の必要な情報について紹介します。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operations の本番環境のデータの作成経緯に関して</title>
-    <updated>2026-06-15T01:53:14.370Z</updated>
+    <updated>2026-06-15T11:25:56.332Z</updated>
   </entry>
   <entry>
     <author>
@@ -320,7 +337,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介します。  </p>]]>
     </summary>
     <title>D365FOのアップデートに関する注意事項</title>
-    <updated>2026-06-15T01:53:14.200Z</updated>
+    <updated>2026-06-15T11:25:56.179Z</updated>
   </entry>
   <entry>
     <author>
@@ -337,7 +354,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、テクニカル サポート チームがサポート リクエストの中で依頼する「再現手順」について紹介します。</p>]]>
     </summary>
     <title>テクニカル サポートにて提供を依頼する「再現手順」について</title>
-    <updated>2026-06-15T01:53:14.372Z</updated>
+    <updated>2026-06-15T11:25:56.334Z</updated>
   </entry>
   <entry>
     <author>
@@ -354,25 +371,6 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、 Dynamics 365 Finance and Operations にて、 Trace Parser を使用したトレースの実行手順を紹介します。</p>]]>
     </summary>
     <title>Trace Parserを使用したトレースの実行方法</title>
-    <updated>2026-06-15T01:53:14.088Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Japan Dynamics ERP Support Japan</name>
-    </author>
-    <category term="FinOps-Platform" scheme="https://jpd365erpsup.github.io/blog/tags/FinOps-Platform/"/>
-    <category term="Power Automate" scheme="https://jpd365erpsup.github.io/blog/tags/Power-Automate/"/>
-    <content>
-      <![CDATA[<p>こんにちは、日本マイクロソフトの佐藤です。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) の Business Event の機能を用いて、Power Automate で Executing のままになっているバッチ　ジョブを検知する方法をご案内します。</p><p>バッチ ジョブの通常の処理時間が分かっている場合、この手順により、通常よりも長い時間 Executing のままになっているバッチ ジョブを検知することができます。  </p><span id="more"></span><h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.33<br>Platform version: PU57</p><h2 id="D365FO-のバッチ-ジョブにおける-Business-Event-の有効化"><a href="#D365FO-のバッチ-ジョブにおける-Business-Event-の有効化" class="headerlink" title="D365FO のバッチ ジョブにおける Business Event の有効化"></a>D365FO のバッチ ジョブにおける Business Event の有効化</h2><p>下記の操作で、 D365FO のバッチ ジョブにおける Business Event を有効化します。</p><p>[システム管理] &gt; [照会] &gt; [バッチ ジョブ] から、対象のバッチ ジョブに関しまして、Business Event を有効化します。</p><p>[Business Event] タブから [開始済] を ”はい” に設定し、[OK] を選択します。</p><p><img src="/blog/FinOps-Platform/how-to-executingalert/executingalert01.png"></p><p>この設定により、対象のバッチ ジョブが開始した際に Business Event が発生します。</p><h2 id="Power-Automate-のフロー作成"><a href="#Power-Automate-のフロー作成" class="headerlink" title="Power Automate のフロー作成"></a>Power Automate のフロー作成</h2><p><a href="https://make.powerautomate.com/">Power Automate</a> からフローを作成します。サインインの際は、 FO 環境に登録されているユーザーを使用します。今回は例として、”Executing” のままのバッチ ジョブがあった場合、任意のユーザーにメールを送信するフローを作成します。</p><p>最終的なフローの形は以下になります。<br><img src="/blog/FinOps-Platform/how-to-executingalert/executingalert12.png"></p><ol><li><p>右上に表示されている環境は、お客様の FO の環境が <a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration">PowerPlatform統合</a> が設定されている環境を指定します。</p></li><li><p>[作成] &gt; [自動化したクラウド フロー] を選択します。その後、任意のフロー名を設定し、検索に “Fin” と入力して [ビジネス イベントが発生したとき] のトリガーを選択します。[作成] を選択します。<br><img src="/blog/FinOps-Platform/how-to-executingalert/executingalert02.png"></p></li><li><p>フローの作成画面が開きます。 [ビジネス イベントが発生したとき] のトリガーにて、インスタンスに対象の環境、カテゴリに “Batch”、ビジネス イベントに “Batch job started” を選択します。<br>※ FO 環境の言語設定が日本語の場合、設定が正しく読み取られませんので、英語に設定して、当フローは作成してください。<br><img src="/blog/FinOps-Platform/how-to-executingalert/executingalert03.png"></p></li><li><p>[新しいステップ] から [JSONの解析] アクションを選択します。コンテンツに [ビジネス イベントが発生したとき] の body を選択します。スキーマを [サンプルから作成] します。<br><img src="/blog/FinOps-Platform/how-to-executingalert/executingalert04.png"></p></li></ol><p>サンプルのJSONを入力し、完了を選択します。このアクションにより、トリガーで取得した出力を、動的に後のフローで使用することができます。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="string">&quot;AdminEmailId&quot;</span>:<span class="string">&quot;&quot;</span>,<span class="string">&quot;BusinessEventId&quot;</span>:<span class="string">&quot;&quot;</span>,<span class="string">&quot;BusinessEventLegalEntity&quot;</span>:<span class="string">&quot;&quot;</span>,<span class="string">&quot;ContextRecordSubject&quot;</span>:<span class="string">&quot;&quot;</span>,<span class="string">&quot;ControlNumber&quot;</span>:<span class="number">0</span>,<span class="string">&quot;EventId&quot;</span>:<span class="string">&quot;&quot;</span>,<span class="string">&quot;EventTime&quot;</span>:<span class="string">&quot;/Date(-2208988800000)/&quot;</span>,<span class="string">&quot;EventTimeIso8601&quot;</span>:<span class="string">&quot;1900-01-01T00:00:00Z&quot;</span>,<span class="string">&quot;InitiatingUserAADObjectId&quot;</span>:<span class="string">&quot;&#123;00000000-0000-0000-0000-000000000000&#125;&quot;</span>,<span class="string">&quot;JobDescription&quot;</span>:<span class="string">&quot;&quot;</span>,<span class="string">&quot;JobEndUtcDateTime&quot;</span>:<span class="string">&quot;/Date(-2208988800000)/&quot;</span>,<span class="string">&quot;JobExecutedByEmailId&quot;</span>:<span class="string">&quot;&quot;</span>,<span class="string">&quot;JobId&quot;</span>:<span class="number">0</span>,<span class="string">&quot;JobOwnerEmailId&quot;</span>:<span class="string">&quot;&quot;</span>,<span class="string">&quot;JobStatus&quot;</span>:<span class="string">&quot;&quot;</span>,<span class="string">&quot;MajorVersion&quot;</span>:<span class="number">0</span>,<span class="string">&quot;MinorVersion&quot;</span>:<span class="number">0</span>,<span class="string">&quot;ParentContextRecordSubjects&quot;</span>:<span class="literal">null</span>&#125;</span><br></pre></td></tr></table></figure><p><img src="/blog/FinOps-Platform/how-to-executingalert/executingalert05.png"></p><p>上記のサンプルに関しましては、FO の [システム管理] &gt; [設定] &gt; [ビジネス イベント] &gt; [ビジネス イベント カタログ] 画面から、[バッチ ジョブの開始] イベントの [スキーマのダウンロード] を選択すると、ダウンロードできます。<br><img src="/blog/FinOps-Platform/how-to-executingalert/executingalert06.png"></p><ol start="5"><li><p>[新しいステップ] から [レコードの取得] アクションを選択します (アクション名は [レコードの取得 1] とします) 。インスタンスに対象の環境、エンティティ名に”BatchJobs”、オブジェクト名に [JSONの解析] アクションの出力の [JobId] を選択します。このアクションにより、開始直後のバッチ ジョブのステータスを確認できます。<br><img src="/blog/FinOps-Platform/how-to-executingalert/executingalert07.png"></p></li><li><p>[新しいステップ] から [待ち時間] アクションを選択します。カウントと単位を設定できますので、通常の処理時間が分かっている場合、処理が完了しているはずの時間を入力します。このアクションにより、次のアクションを開始するまで、待機することができます。<br><img src="/blog/FinOps-Platform/how-to-executingalert/executingalert08.png"></p></li><li><p>[新しいステップ] から [レコードの取得] アクションを選択します (アクション名は [レコードの取得 2] とします) 。インスタンスに対象の環境、エンティティ名に”BatchJobs”、オブジェクト名に [JSONの解析] アクションの出力の [JobId] を選択します。このアクションにより、待ち時間後のバッチ ジョブのステータスを確認できます。<br><img src="/blog/FinOps-Platform/how-to-executingalert/executingalert09.png"></p></li><li><p>[新しいステップ] から [条件] コントロールを選択します。[追加] &gt; [行の追加] からANDの条件式を2つ設定します。</p></li></ol><p>１つ目の条件式は、値の選択に [レコードの取得 2] アクションの出力の [ステータス] を選択し、条件に [次の値に等しい]、値に “Executing” を設定します。このコントロールにより、待ち時間後も “Executing” のままのバッチジョブを検知することができます。</p><p>2つ目の条件式は、値の選択に [レコードの取得 1] アクションの出力の [Start Time] を選択し、条件に [次の値に等しい]、値に [レコードの取得 2] アクションの出力の [Start Time] を設定します。このコントロールにより、待ち時間前と [Start Time] が同じバッチジョブを検知することができます。<br><img src="/blog/FinOps-Platform/how-to-executingalert/executingalert10.png"></p><ol start="9"><li>“はいの場合” の [アクションの追加] から [メールの送信(V2)] アクションを選択します。宛先に任意のユーザー、件名と本文に任意の文章を入力します。また、その際に動的な値として、今までのフローの出力を設定することができます。このアクションにより、”Executing” のままのバッチ ジョブがあった場合、任意のユーザーにメールを送信し、バッチジョブの内容を通知できます。<br><img src="/blog/FinOps-Platform/how-to-executingalert/executingalert11.png"></li></ol><p>ビジネス イベントの詳細に関しましては、下記の公開資料に情報がございますので、参照ください。</p><p><a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/business-events/business-events-flow">Microsoft Power Automate 内のビジネス イベント</a></p><hr><h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、D365FO の Business Event の機能を用いて、Power Automate で Executing のままになっているバッチジョブを検知する方法をご紹介させていただきました。</p>]]>
-    </content>
-    <id>https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-executingalert/</id>
-    <link href="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-executingalert/"/>
-    <published>2023-08-08T15:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>こんにちは、日本マイクロソフトの佐藤です。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) の Business Event の機能を用いて、Power Automate で Executing のままになっているバッチ　ジョブを検知する方法をご案内します。</p>
-<p>バッチ ジョブの通常の処理時間が分かっている場合、この手順により、通常よりも長い時間 Executing のままになっているバッチ ジョブを検知することができます。  </p>]]>
-    </summary>
-    <title>Power Automate と Business Event を使用した Executing のままになっているバッチジョブの検知方法</title>
-    <updated>2026-06-15T01:53:14.083Z</updated>
+    <updated>2026-06-15T11:25:56.077Z</updated>
   </entry>
 </feed>

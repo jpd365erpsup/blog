@@ -13,8 +13,8 @@
 <meta property="og:site_name" content="Japan Dynamics ERP Support Team Blog">
 <meta property="og:description" content="こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。この記事では、 Dynamics 365 Finance and Operations における MRP エンジンの変更のロードマップや注意点をご案内します。">
 <meta property="og:locale" content="ja_JP">
-<meta property="article:published_time" content="2023-02-28T15:00:00.000Z">
-<meta property="article:modified_time" content="2026-06-15T01:53:14.222Z">
+<meta property="article:published_time" content="2026-06-14T15:00:00.000Z">
+<meta property="article:modified_time" content="2026-06-15T11:25:56.199Z">
 <meta property="article:author" content="Japan Dynamics ERP Support Japan">
 <meta property="article:tag" content="FinOps-SCM">
 <meta name="twitter:card" content="summary">
@@ -97,7 +97,7 @@
       <div class="article-share">
         Published: 
         <a href="" class="article-date-single">
-  <time datetime="2023-02-28T15:00:00.000Z" itemprop="datePublished">2023-03-01</time>
+  <time datetime="2026-06-14T15:00:00.000Z" itemprop="datePublished">2026-06-15</time>
 </a>
         
           / Last update: <a id="update-time" class="article-date-single"></a>
@@ -154,7 +154,7 @@
         
         <a href="https://github.com/jpd365erpsup/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+4159d812-f2f9-53dc-8f48-263db83d094b%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B10.0.32+%E4%BB%A5%E9%99%8D%E3%81%AE+MRP+%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3+%28%E8%A8%88%E7%94%BB%E6%9C%80%E9%81%A9%E5%8C%96%29+%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%5D%28https%3A%2F%2Fjpd365erpsup.github.io%2Fblog%2FFinOps-SCM%2Fchange-mrp-engine-from-32%2F%29%0A*+Content+Source%3A+%5Barticles%2FFinOps-SCM%2Fchange-mrp-engine-from-32.md%5D%28https%3A%2F%2Fgithub.com%2Fjpd365erpsup%2Fblob%2Fmain%2Farticles%2FFinOps-SCM%2Fchange-mrp-engine-from-32.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-SCM/change-mrp-engine-from-32/" data-id="cuidqGijFNA8YfYiRAsB0LG4A" class="article-share-link">共有</a>
+        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-SCM/change-mrp-engine-from-32/" data-id="cuidsJ5N0OxdTOyYiZoFNBZMl" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -173,24 +173,27 @@
 <li><a href="#anchor-po-exception">例外申請</a></li>
 </ol>
 </li>
+<li><a href="#anchor-env">環境による実行可否（組み込み MRP と計画最適化の比較）</a></li>
 <li><a href="#anchor-resource">リソース</a></li>
 <li><a href="#anchor-finish">おわりに</a></li>
 </ol>
-<h2 id="更新履歴"><a href="#更新履歴" class="headerlink" title="更新履歴"></a>更新履歴</h2><p>2023 年 3 月 1 日 : ブログ公開<br>2023 年 3 月 24 日 : 既存 MRP エンジンのロードマップの適用日時を追記</p>
+<h2 id="更新履歴"><a href="#更新履歴" class="headerlink" title="更新履歴"></a>更新履歴</h2><p>2023 年 3 月 1 日 : ブログ公開<br>2023 年 3 月 24 日 : 既存 MRP エンジンのロードマップの適用日時を追記<br>2026 年 6 月 15 日 : 最新バージョンの状況に合わせて全体を更新し、「環境による実行可否（組み込み MRP と計画最適化の比較）」のセクションを追加しました。</p>
 <p><a id='anchor-mrp'></a></p>
 <p><a id='anchor-mrp-roadmap'></a></p>
-<h2 id="ロードマップ"><a href="#ロードマップ" class="headerlink" title="ロードマップ"></a>ロードマップ</h2><p>既存 MRP エンジンは Dynamics 365 Finance and Operations として非推奨となり、以下の提供方針が 10.0.32 以降および 2023 年 3 月 20 日より適用されます。  </p>
+<h2 id="ロードマップ"><a href="#ロードマップ" class="headerlink" title="ロードマップ"></a>ロードマップ</h2><p>既存 MRP エンジン (組み込み MRP エンジン、deprecated master planning engine) は Dynamics 365 Finance and Operations において非推奨となり、計画最適化 (Planning Optimization) に置き換えられています。以下の提供方針が適用されます。  </p>
 <ul>
 <li>既存 MRP エンジンに対して新しい機能の実装は予定しておりません</li>
-<li>既存 MRP エンジンに対して基本的にはバグ修正は実施されません (ブロッカーおよびセキュリティ関連を除く)</li>
-<li>既存 MRP エンジンを Dynamics 365 Finance and Operations からの排除は予定しておりません</li>
+<li>既存 MRP エンジンに対するサポートは、ブロッカー (計画オーダーが一切作成されない、または継続的に失敗する) およびリグレッションに限定されます (2023 年 3 月以降の方針)</li>
+<li>バージョン 10.0.32 以降、法人で計画機能を初めて有効化する際に、計画最適化のインストールおよび有効化が必須となります</li>
+<li>バージョン 10.0.41 以降、新規に配置した環境では既存 MRP エンジンが完全にブロックされ、お客様がご自身で有効化する方法はありません</li>
+<li>既存 MRP エンジンの削除時期は現時点で未定です (削除する場合は 12 か月前に告知されます)</li>
 </ul>
 <p><a id='anchor-mrp-support'></a></p>
 <h2 id="テクニカル-サポートの対応について"><a href="#テクニカル-サポートの対応について" class="headerlink" title="テクニカル サポートの対応について"></a>テクニカル サポートの対応について</h2><p>既存 MRP エンジンは非推奨となるため、お問い合わせを起票いただく際には以下の内容をご確認・ご理解ください。</p>
 <ul>
-<li>計画最適化 (Planning Optimization : 以下 計画最適化) にて事象が再現する場合のみ、再現検証および想定挙動を調査します<br>※ 計画最適化における事象の再現可否はお客様にて検証いただきますようお願いいたします。<br>※ 以下<a href="#anchor-po-migration">*</a> でもご紹介しますが、同一環境の法人ごとに計画最適化を有効化できるため、再現検証用に法人をコピーしていただき、そこで検証した結果を基にお問い合わせいただくことを推奨いたします。</li>
+<li>計画最適化にて事象が再現する場合のみ、再現検証および想定挙動を調査します<br>※ 計画最適化における事象の再現可否はお客様にて検証いただきますようお願いいたします。<br>※ 以下<a href="#anchor-po-migration">*</a> でもご紹介しますが、同一環境の法人ごとに計画最適化を有効化できるため、再現検証用に法人をコピーしていただき、そこで検証した結果を基にお問い合わせいただくことを推奨いたします。</li>
 <li>マイクロソフトにて調査した結果、想定挙動ではないと判断した場合、計画最適化に対してのみ修正を提供します</li>
-<li>お問い合わせの事象が既存 MRP エンジンにおけるクリティカルな問題の場合には、事前にビジネス インパクトも併せてご提供ください<br>関連ブログ : <a href="https://jpd365erpsup.github.io/blog/information/what-is-business-impact/">お客様のビジネスインパクトをお伺いする目的や算出について</a></li>
+<li>お問い合わせの事象が既存 MRP エンジンにおけるクリティカルな問題の場合には、事前にビジネス インパクトも併せてご提供ください<br>関連ブログ: <a href="https://jpd365erpsup.github.io/blog/information/what-is-business-impact/">お客様のビジネスインパクトをお伺いする目的や算出について</a></li>
 </ul>
 <p><a id='anchor-po'></a></p>
 <h1 id="計画最適化-Planning-Optimization-について"><a href="#計画最適化-Planning-Optimization-について" class="headerlink" title="計画最適化 (Planning Optimization) について"></a>計画最適化 (Planning Optimization) について</h1><p><a id='anchor-po-roadmap'></a></p>
@@ -198,28 +201,60 @@
 <ul>
 <li>既存 MRP エンジンとの差分機能や設定については、新規お問い合わせにて計画最適化への追加希望をご依頼いただくことで実装可否を検討するリストへ追加されます</li>
 <li>計画最適化の内部処理へのカスタマイズは基本的に実装できないため、お客様の運用を計画最適化に合わせていただくことを検討ください</li>
-<li>内部処理のカスタマイズを希望する箇所がある際には、Ideas に投稿ください<br>関連ブログ : <a href="https://jpd365erpsup.github.io/blog/information/how-to-post-ideas/">Dynamics 365 製品のフィードバックサイト Ideas について</a></li>
+<li>内部処理のカスタマイズを希望する箇所がある際には、Ideas に投稿ください<br>関連ブログ: <a href="https://jpd365erpsup.github.io/blog/information/how-to-post-ideas/">Dynamics 365 製品のフィードバックサイト Ideas について</a></li>
 </ul>
 <p><a id='anchor-po-migration'></a></p>
-<h2 id="移行について"><a href="#移行について" class="headerlink" title="移行について"></a>移行について</h2><p>既存 MRP エンジンから計画最適化への移行に際して、同一環境の法人 (Legal entity) ごとに移行することが可能となります。<br>計画最適化の検証時に法人をコピーして使用する際には、”法人へのコピー” 機能のご利用ください。<br>関連公開資料 : <a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/data-entities/copy-configuration#copy-into-a-legal-entity">法人へのコピー</a></p>
+<h2 id="移行について"><a href="#移行について" class="headerlink" title="移行について"></a>移行について</h2><p>既存 MRP エンジンから計画最適化への移行は、同一環境の法人 (Legal entity) ごとに実施することが可能です。移行前には、計画の最適化フィット分析 (fit analysis) を用いて、ご利用中の機能が計画最適化でサポートされているかを評価することを推奨します。<br>計画最適化の検証時に法人をコピーして使用する際には、”法人へのコピー” 機能をご利用ください。<br>関連公開資料 : <a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/data-entities/copy-configuration#copy-into-a-legal-entity">法人へのコピー</a></p>
 <p><a id='anchor-po-exception'></a></p>
-<h2 id="例外申請"><a href="#例外申請" class="headerlink" title="例外申請"></a>例外申請</h2><p>計画最適化の例外申請が 10.0.32 以降で以下の方法および内容へ変更となります。</p>
+<h2 id="例外申請"><a href="#例外申請" class="headerlink" title="例外申請"></a>例外申請</h2><p>Tier 2 以上の環境では既存 MRP エンジンは基本的にブロックされています。業務要件上、やむを得ず既存 MRP エンジンの継続利用が必要な場合には、Microsoft による環境ごとの例外対応が必要となり、これらはすべてサポート リクエストにて承ります。  </p>
+<p>例外を申請いただくにあたっては、事前に以下の準備をお願いいたします。</p>
+<ol>
+<li><strong>公開資料の確認</strong><br>まず、計画最適化の<a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-fit-analysis">計画の最適化フィット分析</a> と、<a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-differences-with-built-in">計画の最適化と、非推奨のマスター プラン エンジンの相違点</a>に関する公開資料をご確認ください。</li>
+<li><strong>業務要件に基づく検証</strong><br>次に、お客様の業務要件から作成したテスト データを用いて、組み込み MRP エンジンと計画最適化の挙動の違いをご確認ください。</li>
+</ol>
+<p>そのうえで、確認・検証の結果に応じて、例外申請の取り扱いは以下のように異なります。</p>
 <ul>
-<li>Microsoft Managed ではない環境では、計画最適化へ移行を促すメッセージが表示されません</li>
-<li>Microsoft Managed 環境にて既存 MRP エンジンを用いて手動で MRP を実行した際に、例外申請の案内が表示されるため、内容に沿って項目を選択し、申請ください<br>※ バッチ ジョブにて実行した際には案内は表示されず、また実行結果に影響もありません</li>
-<li>検証等で複数回手動で MRP を実行する際に都度案内が表示されることが煩わしい場合は、”Customizations” の項目を “Yes” と設定ください</li>
+<li><strong>計画の最適化フィット分析に記載があり、予想される可用性が “将来のサイクル” 等となっている機能の場合</strong><br>当該機能が計画最適化で未提供であることが公開資料上で確認できるため、その記載と検証結果を添えて申請いただくことで、例外申請が承認される場合があります。</li>
+<li><strong>相違点に関する公開資料に記載がある挙動の場合</strong><br>それらは意図された差異となるため、例外申請は却下される場合があります。この場合は、カスタマイズの実装、または業務要件の変更をご検討ください。</li>
+<li><strong>計画の最適化フィット分析にも相違点の資料にも記載がなく、業務要件と実際の挙動に差異があり、それが業務上許容できない場合</strong><br>サポート リクエストにて計画最適化の修正をリクエストしてください。修正が予定された場合には、その修正がリリースされるまでの間、例外申請が承認される場合があります。</li>
+</ul>
+<p><a id='anchor-env'></a></p>
+<h1 id="環境による実行可否（既存-MRP-エンジンと計画最適化の比較）"><a href="#環境による実行可否（既存-MRP-エンジンと計画最適化の比較）" class="headerlink" title="環境による実行可否（既存 MRP エンジンと計画最適化の比較）"></a>環境による実行可否（既存 MRP エンジンと計画最適化の比較）</h1><p>計画最適化と既存 MRP エンジンは、実行できる環境が異なる点にご注意ください。</p>
+<table>
+<thead>
+<tr>
+<th>エンジン</th>
+<th>実行可能な環境</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>計画最適化 (Planning Optimization)</td>
+<td>Tier 2 以上の Microsoft managed 環境 (高可用性) のほか、UDE (Unified developer environment) でも実行可能です。一方、Tier 1 環境や OneBox 環境では実行できません。</td>
+</tr>
+<tr>
+<td>既存 (組み込み) MRP エンジン</td>
+<td>Tier 1 (クラウドホスト &#x2F; OneBox) 環境などでは実行可能です。一方で、現行バージョンの Microsoft managed 環境では基本的にブロックされ、実行できません。</td>
+</tr>
+</tbody></table>
+<p>このため、既存 MRP エンジンの挙動を実際に実行してご確認いただきたい場合 (例 : 計画最適化との結果差分の比較・調査) には、既存 MRP エンジンが実行可能な <strong>Tier 1 環境</strong>などをご利用いただく必要があります。<br>なお、計画最適化自体は Tier 1 環境では実行できないため、両エンジンの結果を比較する際は、既存 MRP エンジンを Tier 1 環境で、計画最適化を Tier 2 以上の環境などで実行し、それぞれの結果を突き合わせていただく形となります。  </p>
+<p>※ 計画最適化を有効化すると、既存 MRP エンジンは自動的に無効化されます。そのため、同一環境で両エンジンを同時に実行することはできません。</p>
+<p>環境の種類 (Tier 1 &#x2F; Tier 2 以上 &#x2F; クラウドホスト &#x2F; サンドボックス &#x2F; 本番 など) の違いについては、以下の記事もあわせてご参照ください。  </p>
+<ul>
+<li>関連ブログ : <a href="https://jpd365erpsup.github.io/blog/FinOps-Platform/environments/">Dynamics 365 Finance and Operations の環境ごとの違い</a></li>
 </ul>
 <p><a id='anchor-resource'></a></p>
-<h1 id="リソース"><a href="#リソース" class="headerlink" title="リソース"></a>リソース</h1><p>既存 MRP エンジンから計画最適化への移行に際して、以下の公開資料を必要に応じてご確認ください。  </p>
+<h1 id="リソース"><a href="#リソース" class="headerlink" title="リソース"></a>リソース</h1><p>既存 (組み込み) MRP エンジンから計画最適化への移行に際して、以下の公開資料を必要に応じてご確認ください。  </p>
 <ul>
 <li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/get-started">計画最適化の使用を開始する - Microsoft Learn</a></li>
+<li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/deprecated-master-planning-overview">非推奨のマスター プランの概要 - Microsoft Learn</a></li>
+<li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/continue-using-deprecated-planning">既存の法人で非推奨のマスター プランを継続して使用する - Microsoft Learn</a></li>
 <li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-differences-with-built-in">計画最適化と既存 MRP エンジンの相違点 - Microsoft Learn</a></li>
 <li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/not-used-parameters">計画最適化にて考慮されないパラメーター - Microsoft Learn</a></li>
 <li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/release-process">計画最適化の機能リリース予定および履歴 - Microsoft Learn</a></li>
 <li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-fit-analysis">計画最適化の適合分析 (fit analysis) - Microsoft Learn</a></li>
 <li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/new-master-planning-engine">既存 MRP エンジンから計画最適化への移行 - Microsoft Learn</a></li>
 <li><a href="https://learn.microsoft.com/ja-jp/dynamics365/supply-chain/master-planning/planning-optimization/planning-optimization-trouble-shooting">計画最適化のトラブルシューティング - Microsoft Learn</a></li>
-<li><a href="https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=17348655">計画最適化に関する Yammer グループ</a></li>
+<li>関連ブログ : <a href="https://jpd365erpsup.github.io/blog/information/viva-engage-list/">各モジュールの Viva Engage のリスト</a></li>
 </ul>
 <h2 id=""><a href="#" class="headerlink" title=""></a><a id='anchor-finish'></a></h2><h1 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h1><p>以上、 Dynamics 365 Finance and Operations における MRP エンジンの変更のロードマップや注意点を紹介いたしました。</p>
 
@@ -246,19 +281,10 @@
     
 <nav id="article-nav">
   
-    <a href="../../FinOps-Platform/how-to-create-env-with-sample-data/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">次の記事</strong>
-      <div class="article-nav-title">
-        
-          D365FO でデモデータを含んだ環境の構築方法と検証シナリオ毎のおすすめ法人
-        
-      </div>
-    </a>
   
-  
-    <a href="../../FinOps-Finance/White-paper-that-the-Act-on-Book-and-Record-Keeping-through-Electronic-Method/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../../information/viva-engage-list/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前の記事</strong>
-      <div class="article-nav-title">電子帳簿保存法に関する Dynamics 365 Finance and Operations のホワイトペーパー</div>
+      <div class="article-nav-title">各モジュールの Viva Engage のリスト</div>
     </a>
   
 </nav>
@@ -277,6 +303,10 @@
       <ul>
         
           <li>
+            <a href="">10.0.32 以降の MRP エンジン (計画最適化) について</a>
+          </li>
+        
+          <li>
             <a href="../../information/viva-engage-list/">各モジュールの Viva Engage のリスト</a>
           </li>
         
@@ -290,10 +320,6 @@
         
           <li>
             <a href="../../FinOps-Finance/create-consolidated-invoice/">月次締め請求書の作成手順</a>
-          </li>
-        
-          <li>
-            <a href="../../FinOps-Platform/simplifying-license-management-dynamics-365/">Dynamics 365 Finance and Operationsのライセンス管理の簡素化：ユーザーライセンス検証の改善</a>
           </li>
         
       </ul>
@@ -316,7 +342,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">アーカイブ</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2025/07/">2025 / 07</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2025/06/">2025 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2025/04/">2025 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2024/08/">2024 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2024/07/">2024 / 07</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2024/03/">2024 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/12/">2023 / 12</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/11/">2023 / 11</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/10/">2023 / 10</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/08/">2023 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/06/">2023 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/04/">2023 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/03/">2023 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/02/">2023 / 02</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/01/">2023 / 01</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/11/">2022 / 11</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/10/">2022 / 10</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/09/">2022 / 09</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/08/">2022 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/07/">2022 / 07</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/06/">2022 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/05/">2022 / 05</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/04/">2022 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/03/">2022 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/02/">2022 / 02</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2026/06/">2026 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2025/07/">2025 / 07</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2025/06/">2025 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2025/04/">2025 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2024/08/">2024 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2024/07/">2024 / 07</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2024/03/">2024 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/12/">2023 / 12</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/11/">2023 / 11</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/10/">2023 / 10</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/08/">2023 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/06/">2023 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/04/">2023 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/03/">2023 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/02/">2023 / 02</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2023/01/">2023 / 01</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/11/">2022 / 11</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/10/">2022 / 10</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/09/">2022 / 09</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/08/">2022 / 08</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/07/">2022 / 07</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/06/">2022 / 06</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/05/">2022 / 05</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/04/">2022 / 04</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/03/">2022 / 03</a></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2022/02/">2022 / 02</a></li></ul>
     </div>
   </div>
 
