@@ -14,7 +14,7 @@
 <meta property="og:description" content="こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。この記事では、 Dynamics 365 Finance and Operations における MRP エンジンの変更のロードマップや注意点をご案内します。">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2026-06-14T15:00:00.000Z">
-<meta property="article:modified_time" content="2026-06-15T11:25:56.199Z">
+<meta property="article:modified_time" content="2026-06-16T02:20:35.958Z">
 <meta property="article:author" content="Japan Dynamics ERP Support Japan">
 <meta property="article:tag" content="FinOps-SCM">
 <meta name="twitter:card" content="summary">
@@ -154,7 +154,7 @@
         
         <a href="https://github.com/jpd365erpsup/issues/new?title=&body=%0A%0A---%0A%0A%23%23%23%23+Document+Details%0A%0A%E2%9A%A0+*Do+not+edit+this+section.%0A%0A*+ID%3A+4159d812-f2f9-53dc-8f48-263db83d094b%0A*+%E5%AF%BE%E8%B1%A1%E8%A8%98%E4%BA%8B%3A+%5B10.0.32+%E4%BB%A5%E9%99%8D%E3%81%AE+MRP+%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3+%28%E8%A8%88%E7%94%BB%E6%9C%80%E9%81%A9%E5%8C%96%29+%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%5D%28https%3A%2F%2Fjpd365erpsup.github.io%2Fblog%2FFinOps-SCM%2Fchange-mrp-engine-from-32%2F%29%0A*+Content+Source%3A+%5Barticles%2FFinOps-SCM%2Fchange-mrp-engine-from-32.md%5D%28https%3A%2F%2Fgithub.com%2Fjpd365erpsup%2Fblob%2Fmain%2Farticles%2FFinOps-SCM%2Fchange-mrp-engine-from-32.md%29%0A*+Author%3A+" class="article-github-issue-link" target="_blank" rel="noopener noreferrer">feedback</a>
         
-        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-SCM/change-mrp-engine-from-32/" data-id="cuidsJ5N0OxdTOyYiZoFNBZMl" class="article-share-link">共有</a>
+        <a data-url="https://jpd365erpsup.github.io/blog/FinOps-SCM/change-mrp-engine-from-32/" data-id="cuidJ0bcFGJJYr0mEm1_Y70Nv" class="article-share-link">共有</a>
       </div>
     
     <div class="article-entry" itemprop="articleBody">
@@ -217,6 +217,7 @@
 <li><strong>計画の最適化フィット分析に記載があり、予想される可用性が “将来のサイクル” 等となっている機能の場合</strong><br>当該機能が計画最適化で未提供であることが公開資料上で確認できるため、その記載と検証結果を添えて申請いただくことで、例外申請が承認される場合があります。</li>
 <li><strong>相違点に関する公開資料に記載がある挙動の場合</strong><br>それらは意図された差異となるため、例外申請は却下される場合があります。この場合は、カスタマイズの実装、または業務要件の変更をご検討ください。</li>
 <li><strong>計画の最適化フィット分析にも相違点の資料にも記載がなく、業務要件と実際の挙動に差異があり、それが業務上許容できない場合</strong><br>サポート リクエストにて計画最適化の修正をリクエストしてください。修正が予定された場合には、その修正がリリースされるまでの間、例外申請が承認される場合があります。</li>
+<li><strong>既に組み込み MRP エンジンを利用していて、組み込み MRP エンジン内に実装したカスタマイズを計画最適化用に再実装する必要がある場合</strong><br>サポート リクエストにて再実装のタイムラインを含め例外申請を提出してください。タイムライン期間中は例外申請が承認される場合があります。</li>
 </ul>
 <p><a id='anchor-env'></a></p>
 <h1 id="環境による実行可否（既存-MRP-エンジンと計画最適化の比較）"><a href="#環境による実行可否（既存-MRP-エンジンと計画最適化の比較）" class="headerlink" title="環境による実行可否（既存 MRP エンジンと計画最適化の比較）"></a>環境による実行可否（既存 MRP エンジンと計画最適化の比較）</h1><p>計画最適化と既存 MRP エンジンは、実行できる環境が異なる点にご注意ください。</p>
