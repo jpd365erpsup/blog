@@ -10,7 +10,7 @@
   <rights>All rights reserved 2026, Japan Dynamics ERP Support Japan</rights>
   <subtitle>日本マイクロソフトの Dynamics ERP テクニカル サポート チームより、様々な情報をお届けします。</subtitle>
   <title>Japan Dynamics ERP Support Team Blog</title>
-  <updated>2026-06-16T02:20:35.958Z</updated>
+  <updated>2026-06-20T08:04:01.543Z</updated>
   <entry>
     <author>
       <name>Japan Dynamics ERP Support Japan</name>
@@ -26,7 +26,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、 Dynamics 365 Finance and Operations における MRP エンジンの変更のロードマップや注意点をご案内します。</p>]]>
     </summary>
     <title>10.0.32 以降の MRP エンジン (計画最適化) について</title>
-    <updated>2026-06-16T02:20:35.958Z</updated>
+    <updated>2026-06-20T08:04:01.543Z</updated>
   </entry>
   <entry>
     <author>
@@ -45,7 +45,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの木村です。<br>この記事では、弊社コンポーネント開発元にて公開している Viva Engage のリンクについて紹介いたします。</p>]]>
     </summary>
     <title>各モジュールの Viva Engage のリスト</title>
-    <updated>2026-06-16T02:20:36.085Z</updated>
+    <updated>2026-06-20T08:04:01.677Z</updated>
   </entry>
   <entry>
     <author>
@@ -63,7 +63,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポート チームの永吉です。<br>この記事では、固定資産の帳簿で減価償却プロファイルを変更する方法についてご案内いたします。  </p>]]>
     </summary>
     <title>固定資産の減価償却プロファイルを変更する方法</title>
-    <updated>2026-06-16T02:20:35.728Z</updated>
+    <updated>2026-06-20T08:04:01.308Z</updated>
   </entry>
   <entry>
     <author>
@@ -83,7 +83,7 @@
 <p>なお制度の詳細については国税庁ホームページをご確認ください。<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm">No.6498 適格請求書等保存方式（インボイス制度）</a><br><a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice.htm">国税庁 インボイス制度 特設サイト</a></p>]]>
     </summary>
     <title>適格請求書等保存方式 (インボイス制度) における経過措置の対応方法について</title>
-    <updated>2026-06-16T02:20:35.803Z</updated>
+    <updated>2026-06-20T08:04:01.383Z</updated>
   </entry>
   <entry>
     <author>
@@ -102,7 +102,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、Dynamics 365 Finance (D365FO) の日本向けローカライゼーション機能である月次締め請求書作成手順を紹介します。  </p>]]>
     </summary>
     <title>月次締め請求書の作成手順</title>
-    <updated>2026-06-16T02:20:35.733Z</updated>
+    <updated>2026-06-20T08:04:01.313Z</updated>
   </entry>
   <entry>
     <author>
@@ -122,7 +122,7 @@
 <p>ご不明点はサポート チームまでお問い合わせください。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operationsのライセンス管理の簡素化：ユーザーライセンス検証の改善</title>
-    <updated>2026-06-16T02:20:35.945Z</updated>
+    <updated>2026-06-20T08:04:01.529Z</updated>
   </entry>
   <entry>
     <author>
@@ -139,7 +139,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームです。<br>Dynamics 365 Business Central のサポート体制につきましてご案内となります。</p>]]>
     </summary>
     <title>Dynamics 365 Business Central のサポート体制につきまして</title>
-    <updated>2026-06-16T02:20:36.084Z</updated>
+    <updated>2026-06-20T08:04:01.676Z</updated>
   </entry>
   <entry>
     <author>
@@ -157,7 +157,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、Dynamics 365 Finance and Operations にて、 発注書を作成する際の一連の流れ (購買処理) について紹介します。  </p>]]>
     </summary>
     <title>発注書作成の一連の流れ</title>
-    <updated>2026-06-16T02:20:35.960Z</updated>
+    <updated>2026-06-20T08:04:01.545Z</updated>
   </entry>
   <entry>
     <author>
@@ -175,7 +175,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの福原です。<br>この記事では、 Dynamics 365 Finance and Operations (D365FO) の環境ごとの違いについてご案内します。<br>クラウドホスト環境、サンドボックス環境、Tier2環境、本番環境等、様々な呼び方の環境があり、また、それぞれの環境で使える機能も異なるので、分かりづらいというお声をいただくことがありますので、そのような場合には本記事をご参考ください。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operations の環境ごとの違い</title>
-    <updated>2026-06-16T02:20:35.816Z</updated>
+    <updated>2026-06-20T08:04:01.397Z</updated>
   </entry>
   <entry>
     <author>
@@ -193,7 +193,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフトの福原です。<br>Dynamics 365 Finance and Operations のバージョン 10.0.39 より導入されたサービス更新 (Service Update) の自動更新ウィンドウ (autoupdate window) のオプションについてご案内いたします。<br>このオプションにより自動更新の日程をより柔軟に選択できることができます。</p>]]>
     </summary>
     <title>サービス更新の自動更新ウィンドウのオプションについて</title>
-    <updated>2026-06-16T02:20:35.812Z</updated>
+    <updated>2026-06-20T08:04:01.393Z</updated>
   </entry>
   <entry>
     <author>
@@ -211,7 +211,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、LCS にて Dynamics 365 Finance and Operations に関するサポートリクエストを起票する方法を紹介します。</p>]]>
     </summary>
     <title>LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法</title>
-    <updated>2026-06-16T02:20:35.952Z</updated>
+    <updated>2026-06-20T08:04:01.537Z</updated>
   </entry>
   <entry>
     <author>
@@ -230,7 +230,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、 Dynamics 365 Finance にて、申告 26: 償却資産税の元帳レポート (償却資産申告書 (償却資産課税台帳)) における電話番号の設定について JPMF のデモ データを利用して紹介します。</p>]]>
     </summary>
     <title>申告 26:償却資産税の元帳レポートに対して電話番号を出力する方法</title>
-    <updated>2026-06-16T02:20:35.736Z</updated>
+    <updated>2026-06-20T08:04:01.317Z</updated>
   </entry>
   <entry>
     <author>
@@ -247,7 +247,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフトの佐藤です。<br>この記事では、新規で配置したクラウドホスト環境で以下のような証明書のエラーが発生した際の対処法をご案内します。<br>“Cannot Find Thumbprint by Certificatename”</p>]]>
     </summary>
     <title>新規で配置したクラウドホスト環境で証明書のエラーが発生した際の対処法</title>
-    <updated>2026-06-16T02:20:35.939Z</updated>
+    <updated>2026-06-20T08:04:01.522Z</updated>
   </entry>
   <entry>
     <author>
@@ -265,7 +265,7 @@
 <p>この記事では、Dynamics 365 Finance and Operations の Issue Search についてご案内いたします。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operations の Issue Search について</title>
-    <updated>2026-06-16T02:20:35.956Z</updated>
+    <updated>2026-06-20T08:04:01.541Z</updated>
   </entry>
   <entry>
     <author>
@@ -284,7 +284,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、お客様からサポート リクエストにてお寄せいただいた Ideas を紹介いたします。</p>]]>
     </summary>
     <title>Ideas のリスト</title>
-    <updated>2026-06-16T02:20:36.085Z</updated>
+    <updated>2026-06-20T08:04:01.677Z</updated>
   </entry>
   <entry>
     <author>
@@ -302,7 +302,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、テクニカル サポート チームが本ブログでの Ideas の投稿の紹介についてご案内いたします。</p>]]>
     </summary>
     <title>本ブログでの Ideas の投稿の紹介について</title>
-    <updated>2026-06-16T02:20:36.085Z</updated>
+    <updated>2026-06-20T08:04:01.677Z</updated>
   </entry>
   <entry>
     <author>
@@ -319,7 +319,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、テクニカル サポート チームがサポート リクエストにてご依頼いただく「データの作成経緯」の必要な情報について紹介します。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operations の本番環境のデータの作成経緯に関して</title>
-    <updated>2026-06-16T02:20:36.083Z</updated>
+    <updated>2026-06-20T08:04:01.676Z</updated>
   </entry>
   <entry>
     <author>
@@ -337,7 +337,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介します。  </p>]]>
     </summary>
     <title>D365FOのアップデートに関する注意事項</title>
-    <updated>2026-06-16T02:20:35.939Z</updated>
+    <updated>2026-06-20T08:04:01.522Z</updated>
   </entry>
   <entry>
     <author>
@@ -354,7 +354,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、テクニカル サポート チームがサポート リクエストの中で依頼する「再現手順」について紹介します。</p>]]>
     </summary>
     <title>テクニカル サポートにて提供を依頼する「再現手順」について</title>
-    <updated>2026-06-16T02:20:36.086Z</updated>
+    <updated>2026-06-20T08:04:01.678Z</updated>
   </entry>
   <entry>
     <author>
@@ -371,6 +371,6 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、 Dynamics 365 Finance and Operations にて、 Trace Parser を使用したトレースの実行手順を紹介します。</p>]]>
     </summary>
     <title>Trace Parserを使用したトレースの実行方法</title>
-    <updated>2026-06-16T02:20:35.841Z</updated>
+    <updated>2026-06-20T08:04:01.421Z</updated>
   </entry>
 </feed>
