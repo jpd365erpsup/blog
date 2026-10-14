@@ -21,7 +21,7 @@ LCS プロジェクトにアクセスするためには、予めLCS プロジェ
 
 ---
 ## 手順
-(1) テナントの管理者アカウントにてhttps://lcs.dynamics.com/v2 にログインします。
+(1) テナントの管理者アカウントにて [Lifecycle Services](https://lcs.dynamics.com/v2) にログインします。
 (2) ページ右上のアカウントマークをクリックし、アカウントのタイプが管理者であることを確認します。
 (3) "最近のプロジェクト"、"全てのプロジェクト"の隣に、組織名がありますので、そちらをクリックします。
 (4) テナント内のLCS プロジェクトが表示されますので、所有者となりたいLCS プロジェクトを選択します。
@@ -36,10 +36,10 @@ LCS プロジェクトにアクセスするためには、予めLCS プロジェ
 以上の手順を実施して頂くことで、管理者アカウントがLCS プロジェクトにアクセスできるようになりましたら、LCS プロジェクトにユーザーアカウントを招待(*1)して頂くことが可能となります。
 
 なお、以下の弊社公開資料でも一部同様の内容をご案内致しておりますのでご参考にして頂けますと幸いでございます。
-https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-lcs-security#organization-admin
+[Lifecycle Services の組織の管理者](https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-lcs-security#organization-admin)
 
 *1: (LCS プロジェクトにユーザーアカウントを招待する方法) 
-https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-lcs-security#invite-a-user-to-an-lcs-project
+[Lifecycle Services プロジェクトへのユーザーの招待](https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configure-lcs-security#invite-a-user-to-a-lifecycle-services-project)
 
 
 ---

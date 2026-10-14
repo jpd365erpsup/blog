@@ -49,13 +49,13 @@ Legal entity : USMF
     ![](./how-to-create-sales-order/step7.png) 
 
 1. [ピッキングと梱包] > [生成] > [ピッキング リスト登録] の順にクリックする
-    ![](./hou-to-create-sales-order/step7-2.png)
+    ![](./how-to-create-sales-order/step7-2.png)
 
 1. [更新] > [すべて更新] の順にクリックする
-    ![](./hou-to-create-sales-order/step7-3.png)
+    ![](./how-to-create-sales-order/step7-3.png)
 
 1. [明細行] に表示されている全ての明細行の [処理ステータス] が "完了" になっていることを確認し、販売注文に戻る
-    ![](./hou-to-create-sales-order/step7-4.png)
+    ![](./how-to-create-sales-order/step7-4.png)
 
 1. [ピッキングと梱包] > [生成] > [梱包明細の転記] の順にクリックする
     ![](./how-to-create-sales-order/step8.png) 

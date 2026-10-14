@@ -23,16 +23,16 @@ Dynamics 365 Finance and Operations では、稼働中一時的に接続が失�
 - Dynamics 365 Finance and Operations の AOS サーバー の自動再起動。 Dynamics 365 Finance and Operations の AOS サーバー の負荷が高いことを検知した場合、サーバーの使用率が低い時間帯に限って、負荷を下げるために、サーバーの再起動をする場合がございます。
 
 再試行処理の例としましては、以下の公開資料にてバッチジョブの再試行処理をご案内していますのでご参考にしていただけますと幸いでございます。
-https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch
+[バッチ ジョブの再試行](https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch)
 
 
 
 以下の公開資料にてバッチジョブの再起動例をご案内していますのでご参考にしていただけますと幸いでございます。
-https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-server-overview#understanding-batch-server-restarts
+[バッチ サーバーの再起動について](https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-server-overview#understanding-batch-server-restarts)
 
 
 また、セキュリティ、可用性、信頼性を確保するため計画メンテナンスも実施致しております。メンテナンスが実施される日時につきましては以下の公開資料をご確認お願いします。
-https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#windows
+[計画されたメンテナンス ウィンドウ](https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#windows)
 
 
 ---

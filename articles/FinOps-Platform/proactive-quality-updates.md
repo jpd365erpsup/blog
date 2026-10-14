@@ -17,8 +17,8 @@ disableDisclaimer: false
 ---
 
 下記公開情報を基にご説明いたします。各項目について公開情報内にも詳細を記載しておりますのでご参照ください。
-https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/quality-updates?context=%2Fdynamics365%2Fcontext%2Ffinance
-https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-is-the-schedule-for-proactive-quality-updates
+[プロアクティブな品質更新プログラム (PQU)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/quality-updates?context=%2Fdynamics365%2Fcontext%2Ffinance)  
+[プロアクティブな品質更新のスケジュール](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-is-the-schedule-for-proactive-quality-updates)
 
 ## 更新履歴
 2022 年 10 月 26 日 (水) : 上記の公開資料の内容の変更に伴い一部内容を修正しました。
@@ -28,7 +28,7 @@ https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/
 
 ## 今まで
 今までは、セキュリティ、プライバシー、信頼性、可用性、パフォーマンスなどの基本的な要素に対する修正プログラム (Hotfix) の累積である品質更新プログラム (Quality update program) は、LCS にて公開されるごとに、以下のブログの手順よりお客様が手動でサンドボックス環境、本番環境に適用して頂く必要がございました。
-https://jpd365erpsup.github.io/blog/FinOps-Platform/apply-quality-update-d365fo/
+[D365FOで品質更新プログラムを適用する方法](https://jpd365erpsup.github.io/blog/FinOps-Platform/apply-quality-update-d365fo/)
 そのため、公開された品質更新プログラムを手動で適用していない環境では、修正プログラムにて対処されているはずの問題が発生するということが発生しておりました。
 
 ## 今後
@@ -45,16 +45,16 @@ https://jpd365erpsup.github.io/blog/FinOps-Platform/apply-quality-update-d365fo/
 
 2. **Near-zero downtime updating (ゼロに近いダウンタイム更新)**
 以下の公開資料の最小限のダウンタイムで自動適用は実施されますので、自動適用時の影響は最小限なものとなります。
-https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-does-near-zero-downtime-maintenance-mean
+[ゼロに近いダウンタイムのメンテナンス](https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-does-near-zero-downtime-maintenance-mean)
 以下の公開資料の優先順位に基づくバッチ スケジューリングにより、自動適用の際のバッチジョブ実行を対策することができ、バッチのスケジューリングと処理は自動適用直後に復旧し、再開されます。 
-https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/sysadmin/priority-based-batch-scheduling
-https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#priority-based-scheduling
+[優先順位に基づくバッチ スケジューリング](https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/sysadmin/priority-based-batch-scheduling)  
+[メンテナンス時の優先順位に基づくスケジューリング](https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#priority-based-scheduling)
 
 2. **自動適用スケジュールの公開**
 以下の公開資料の通り、各リージョンごとに自動適用が実施される4 日間のウィンドウが決定され、5 日前には通知いたします。そのウィンドウ内にて自動適用を実施致します。
-https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-is-the-schedule-for-proactive-quality-updates
-2023 年のプロアクティブな品質更新プログラムの適用のスケジュールについて公開されましたので、現時点でのスケジュールを以下のリンクのページにてご確認いただくことが可能です。
-https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/quality-updates?context=%2Fdynamics365%2Fcontext%2Ffinance#Stations-Regions
+[プロアクティブな品質更新のスケジュール](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-is-the-schedule-for-proactive-quality-updates)
+プロアクティブな品質更新プログラムの適用スケジュールについては、以下の公開資料をご確認ください。
+[プロアクティブな品質更新のスケジュール](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-is-the-schedule-for-proactive-quality-updates)
 なお、Microsoft 365 Message Center にて対象環境に対しまして通知致しております。
 また、対象環境に対しまして、プロアクティブな品質更新プログラムの適用についてのメールでの通知を開始いたしました。
 
@@ -62,11 +62,11 @@ https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/q
 4. **Dark hours (暗い時間帯)**
 以下の公開資料の通り、環境が配置されているリージョンごとに、深夜から早朝のDark hours (暗い時間帯、営業時間外)が定義されており、そのDark hours 内で自動適用が実施されますので、自動適用時の環境のご利用に対する影響は最小限となります。
 日本リージョンは 1:00 AM ~ 7:00 AM (日本時間) となります。
-https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#what-are-the-planned-maintenance-windows
+[計画されたメンテナンス ウィンドウ](https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/deployment/plannedmaintenance-selfservice#windows)
 
 
 また、以下の公開資料の下部にQ&Aがございますので、こちらもご確認して頂けますと幸いでございます。
-https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/quality-updates?context=%2Fdynamics365%2Fcontext%2Ffinance
+[品質更新プログラムに関するよくある質問](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/quality-updates?context=%2Fdynamics365%2Fcontext%2Ffinance)
 
 ---
 ## おわりに  

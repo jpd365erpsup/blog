@@ -58,7 +58,7 @@ Version: W2 21.0
 ## 公開資料
 本機能については、以下の公開資料においても紹介がございます。
 あわせてご確認いただけますと幸いです。
-https://learn.microsoft.com/en-us/dynamics365/business-central/across-log-changes
+[Business Central の変更ログによる変更の追跡](https://learn.microsoft.com/en-us/dynamics365/business-central/across-log-changes)
 
 ---
 ## おわりに  

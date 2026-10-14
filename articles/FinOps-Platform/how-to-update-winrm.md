@@ -57,10 +57,8 @@ WinRM SSL 証明書の名前は、デプロイされた VM の名前と同じに
 2. 管理者として PowerShell を開く  
 3. 解凍したファイルがあるフォルダを選択する  
 4. 最新の Azure PowerShell がインストールされていることを確認し、次の手順に従います。  
-   Azure PowerShell のインストール手順は以下のリンクにあります。    
-   （README.txt 記載の URL のリンクが切れているため、別の URL を下記に記載しています）  
-
-　　https://learn.microsoft.com/ja-jp/powershell/azure/azurerm/install-azurerm-ps?view=azurermps-6.13.0
+   Azure PowerShell の現行のインストール手順は、[Azure PowerShell をインストールする方法](https://learn.microsoft.com/ja-jp/powershell/azure/install-azure-powershell) をご参照ください。  
+   ※ 現行の資料は Az モジュールを対象としています。本節は 2022 年 7 月時点の README.txt の翻訳です。実行前に、ダウンロードしたパッケージの README.txt で必要なモジュールとバージョンをご確認ください。AzureRM 用スクリプトが Az でそのまま動作するとは限りません。詳細は [Azure PowerShell スクリプトを AzureRM から Az に移行する](https://learn.microsoft.com/ja-jp/powershell/azure/migrate-from-azurerm-to-az) をご参照ください。
 
 5. PowerShell のスクリプトを実行するための入力データを準備する。  
    a. VM が配置されている Azure Subscription ID  
@@ -69,7 +67,7 @@ WinRM SSL 証明書の名前は、デプロイされた VM の名前と同じに
    .\RenewWinRMCertificate.ps1 -AzureSubscriptionId <SubscriptionId> -ResourceGroupNameForVM <ResourceGroupName>  
 
 上記手順にて WinRM SSL 証明書の有効期限が作業日から 1 年後に設定されます。  
-WinRM SSL 証明書が正しく入れ替えられたことを確認するには、[有効期限の確認方法](#有効期限の確認方法)を参照ください。  
+WinRM SSL 証明書が正しく入れ替えられたことを確認するには、[有効期限の確認方法](#WinRM-SSL-証明書の有効期限の確認方法)を参照ください。  
 WinRM SSL 証明書の有効期限が切れていない状態になった後、[シークレットの入れ替え方法](#シークレットの入れ替え方法)にてシークレットを入れ替えることが可能です。
 
 ## 履歴の確認

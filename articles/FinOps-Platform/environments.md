@@ -16,7 +16,7 @@ disableDisclaimer: false
 
 ## 更新履歴
 2023 年 9 月 8 日 : ブログ公開しました。
-2024 年 7 月 1 日 : UDE (Unified developer environment) の GA に合わせ UDE を追加しました。 UDE の詳細は https://devblogs.microsoft.com/powerplatform/the-unified-development-environment-is-ga/ をご確認ください。
+2024 年 7 月 1 日 : UDE (Unified developer environment) の GA に合わせ UDE を追加しました。 UDE の詳細は [UDE の一般提供に関する発表](https://devblogs.microsoft.com/powerplatform/the-unified-development-environment-is-ga/) をご確認ください。
 
 
 
@@ -56,9 +56,9 @@ disableDisclaimer: false
 > ・開発環境にはビジネス クリティカルなデータを含めるべきではなく、破棄可能と見なされます。
 > ・120 の環境だけがテナントごとのサポートです。 特定のテナント下のクラウド ホスト環境数を制限して、サンドボックスおよび運用環境を配置できる十分なキャパシティを許可することをお勧めします。
 
-(*2): https://jpd365erpsup.github.io/blog/FinOps-Platform/database-just-in-time-jit-access/ の手順となります。
-(*3): https://learn.microsoft.com/ja-jp/power-platform/developer/unified-experience/finance-operations-product-db-access の手順となります。
-(*4): 本番環境、サンドボックス環境、クラウドホスト環境のフライトの管理方法の違いは https://jpd365erpsup.github.io/blog/FinOps-Platform/what-is-flight/ にてご案内しております。
+(*2): [サンドボックス環境のデータベースへの JIT アクセス](https://jpd365erpsup.github.io/blog/FinOps-Platform/database-just-in-time-jit-access/) の手順となります。
+(*3): [統合開発環境のデータベースへのアクセス](https://learn.microsoft.com/ja-jp/power-platform/developer/unified-experience/finance-operations-product-db-access) の手順となります。
+(*4): 本番環境、サンドボックス環境、クラウドホスト環境のフライトの管理方法の違いは [Dynamics 365 Finance and Operations のフライトについて](https://jpd365erpsup.github.io/blog/FinOps-Platform/what-is-flight/) にてご案内しております。
 
 
 (*): 本記事は2024 年 7 月 1 日時点での情報です。

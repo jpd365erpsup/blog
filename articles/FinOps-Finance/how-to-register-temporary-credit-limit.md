@@ -70,7 +70,7 @@ Platform version: PU53
     ![](./how-to-register-temporary-credit-limit/warning1.png)
 
 警告の解消方法については下記のリンクをご参照ください。  
-https://jpd365erpsup.github.io/blog/FinOps-SCM/how-to-resolve-warning-when-confirm-sales-order/#more
+[販売注文の確認時に表示される警告の解消方法](https://jpd365erpsup.github.io/blog/FinOps-SCM/how-to-resolve-warning-when-confirm-sales-order/#more)
 
 
 ---

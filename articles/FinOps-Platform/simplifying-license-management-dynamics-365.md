@@ -9,7 +9,10 @@ disableDisclaimer: false
 
 
 こんにちは、Dynamics 365 ERP サポートチームです。
-本記事は、2025 年 3 月 28 日に Dynamics 365 Blog で公開された英語記事 [Simplifying License Management for Dynamics 365 Finance and Operations: Improved User License Validation](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) を基にしたものです。
+本記事は、2025 年 3 月 28 日に Dynamics 365 Blog で公開された英語記事 [Simplifying License Management for Dynamics 365 Finance and Operations: Improved User License Validation](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/09/23/simplifying-license-management-dynamics-365/) を基にしたものです。
+
+> [!NOTE]
+> 参照元の英語記事は移転・更新されています。本記事の本文は 2025 年 5 月 20 日までの情報に基づいています。最新の通知・ライセンス検証の日程は、リンク先の更新情報をご確認ください。
 
 今までは、ライセンスが付与されていないユーザーでも Dynamics 365 Finance and Operations アプリケーションにアクセスできていましたが、
 今後、ライセンスが付与されていないユーザーは Dynamics 365 Finance and Operations アプリケーションにアクセスできなくなりますのでご注意ください。
@@ -34,7 +37,7 @@ Dynamics 365 Finance and Operations のユーザーライセンス管理を一�
 > [!NOTE]
 > 以下の弊社公開資料にて、よくある質問 (FAQ) を公開しましたので、ぜひご確認ください。
 > 
-> https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/user-security-report-technical-validation-faq
+> [ユーザー ライセンスの技術的検証に関する FAQ](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/sysadmin/user-security-report-technical-validation-faq)
 
 2025 年 4 月 30 日以降、まだライセンスが割り当てられていないユーザーには、ライセンス割り当てをリクエストするために管理者に連絡するよう求める製品内通知が表示されるようになる予定です。
 
@@ -60,5 +63,5 @@ Dynamics 365 Finance and Operations のユーザーライセンス管理を一�
 ---
 ## おわりに  
 
-以上、 2025 年 3 月 28 日に Dynamics 365 Blog で公開された英語記事 [Simplifying License Management for Dynamics 365 Finance and Operations: Improved User License Validation](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/03/28/simplifying-license-management-dynamics-365/) を基にした、Dynamics 365 Finance and Operations のライセンスの重要な変更点についてお知らせしました。
+以上、 2025 年 3 月 28 日に Dynamics 365 Blog で公開された英語記事 [Simplifying License Management for Dynamics 365 Finance and Operations: Improved User License Validation](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2025/09/23/simplifying-license-management-dynamics-365/) を基にした、Dynamics 365 Finance and Operations のライセンスの重要な変更点についてお知らせしました。
 なお、上記の通知やアクセス不可が適用される日付はあくまで現時点での予定となり、予告なしに変更されることがございます。

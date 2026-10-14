@@ -20,13 +20,13 @@ Microsoft Entra ID Premium P2 ライセンス
 ## はじめに
 以下の弊社 FastTrack の記事及び公開資料にも、 Microsoft Entra ID 条件付きアクセスによる D365FO へのアクセス制御の手順が同様にご案内致しておりますのでご参考にして頂けますと幸いでございます。  
 FastTrack の記事:  
-https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/CloudSecurity/ConditionalAccess  
+[Conditional Access - FastTrack Implementation Assets](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Administration/CloudSecurity/ConditionalAccess)  
 公開資料:  
-https://learn.microsoft.com/ja-jp/power-platform/admin/restrict-access-online-trusted-ip-rules?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json  
+[条件付きアクセスによる IP アドレスの制限](https://learn.microsoft.com/ja-jp/power-platform/admin/restrict-access-online-trusted-ip-rules?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json)  
 
 
 ## 注意点
-- Microsoft Entra ID 条件付きアクセスをご利用いただくには、Microsoft Entra ID Premium (https://azure.microsoft.com/ja-jp/pricing/details/active-directory/) の ライセンスが必要となります。
+- Microsoft Entra ID 条件付きアクセスをご利用いただくには、[Microsoft Entra ID Premium](https://azure.microsoft.com/ja-jp/pricing/details/active-directory/) の ライセンスが必要となります。
 - Microsoft Entra ID 条件付きアクセスにより設定されるアクセス制御は Microsoft Entra ID テナント内の全ての D365FO の環境 (本番環境、サンドボックス環境、クラウドホスト環境等) に適用されます。個別の環境のみに限ったアクセス制御を設定することはできません。
 
 ## 手順
