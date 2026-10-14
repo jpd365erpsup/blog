@@ -46,7 +46,7 @@ Platform version: PU55
 ８．最新のライセンスガイドにてProduction supervisorが必要なロールを確認します。SCMライセンスが必要です。
 ※ライセンスガイドにつきましては、以下のリンクからダウンロード頂けます。
 
-https://go.microsoft.com/fwlink/p/?LinkId=866544
+[Dynamics 365 ライセンス ガイド](https://go.microsoft.com/fwlink/p/?LinkId=866544)
 ![](./how-to-check-necessary-role-and-license/6.png)
 
 ９．FOの画面上からSecurity configurationでも確認できます。

@@ -35,7 +35,7 @@ Ideas の投稿への Vote は、ページの右上の "Sign in" をクリック
 <a id="post-new-ideas"></a>  
 
 # 新規 Ideas の投稿手順  
-1. https://experience.dynamics.com/ を開きます。  
+1. [Dynamics 365 Experience](https://experience.dynamics.com/) を開きます。  
 1. Ideas をクリックします。  
 ![](./how-to-post-ideas/ideas1.png)  
 1. [Suggest a new Idea] をクリックします。  

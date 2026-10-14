@@ -15,7 +15,7 @@ disableDisclaimer: false
 > 今後、サポートリクエストは LCS からではなく Power Platform 管理センターから起票いただくよう変更されます。当初、2023 年 11 月中には移行される予定でしたが予定は変更されました。移行に関しましては以下の公開資料をご確認いただきますようお願いいたします。
 > [Migration of the Lifecycle Services Support experience to Power Platform admin center - Finance & Operations | Dynamics 365 | Microsoft Learn](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/support-migration-to-ppac)
 > また、以下の Yammer でもご案内しておりますのでご参考にしていただけますと幸いでございます。
-> https://www.yammer.com/dynamicsaxfeedbackprograms/threads/2690219038474240
+> [サポート起票先の移行に関する Yammer の案内](https://www.yammer.com/dynamicsaxfeedbackprograms/threads/2690219038474240)
 
 
 ## 更新履歴
@@ -60,7 +60,7 @@ disableDisclaimer: false
 
 
 （関連情報）  
-https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident  
+[Lifecycle Services での新しいサポート インシデントの作成](https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident)  
   
   
 ---

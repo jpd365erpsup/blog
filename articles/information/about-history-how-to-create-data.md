@@ -15,7 +15,7 @@ disableDisclaimer: false
 1. [はじめに](#overview)
 1. [過去事例の調査](#past-case)
 1. [再現手順の確認](#repro-steps)
-1. [データが作成された日時の確認](#create-datatime)
+1. [データが作成された日時の確認](#create-datetime)
 1. [作成経緯が判明しなかった場合](#after-follow)
 1. [データ修正に向けて](#data-fix)
 1. [おわりに](#last)

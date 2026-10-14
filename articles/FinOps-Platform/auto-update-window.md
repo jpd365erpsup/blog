@@ -50,7 +50,7 @@ LCS のサービス更新の一時停止のページにて一時停止するこ�
 
 
 また、以下の公開資料でも、サービス更新の日程の表にて、First autoupdate schedule for production start date と Second autoupdate schedule for production start date の 2 つの列が追加されました。
-https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases?context=%2Fdynamics365%2Fcontext%2Fcommerce
+[サービス更新プログラムのリリース日程](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases?context=%2Fdynamics365%2Fcontext%2Fcommerce)
 ![](./auto-update-window/image2.png)
 
 ---

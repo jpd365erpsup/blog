@@ -16,7 +16,7 @@ disableDisclaimer: false
 ![](./get-environment-id/image-name1.png)
 
 # 環境名・環境IDの取得方法
-1. Lifecycle Services(https://lcs.dynamics.com/) を開き、対象の実装プロジェクトを選択
+1. [Lifecycle Services](https://lcs.dynamics.com/) を開き、対象の実装プロジェクトを選択
    ![](./get-environment-id/image-name2.png)
 
 2. 画面右上の三本線をクリックし、「クラウドホスト環境」を選択

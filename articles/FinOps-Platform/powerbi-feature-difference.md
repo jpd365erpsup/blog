@@ -30,10 +30,10 @@ D365FO のデータを Power BI レポートで表示、参照する機能は、
 | 制限事項 | | Tier2 以上の環境(*3)で使用できる機能となっております。  |
 
 (*1) Power BI レポートを D365FO へデプロイする方法と致しましては、以下弊社公式資料をご確認頂けますと幸いです。
-https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces?toc=%2Ffin-and-ops%2Ftoc.json
+[ワークスペースへの分析タブの追加](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces?toc=%2Ffin-and-ops%2Ftoc.json)
 
 (*2) PowerBI.com で、 Power BI レポートを共有ワークスペースへ公開しない場合、Power BI レポートを個人のワークスペースに<br>持っているユーザーでしか、D365FO 上で Power BI レポートを参照できません。<br>複数のユーザー間でレポートを参照されたい場合、Power BI レポートを共有ワークスペースへ公開する必要があります。<br>共有ワークスペースへのレポートの公開は、Power BI Pro のライセンスが必要となります。詳細は以下の弊社公式資料をご確認頂けますと幸いです。
-https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports
+[Power BI のレポートとダッシュボードの共有](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports#share-reports-and-dashboards)
 
 (*3) Power BI Embedded は、Azure SQL DB で使用できる機能となっておりますので、DB が SQL server となっている Cloud-hosted 環境では使用できない機能となっております。
 

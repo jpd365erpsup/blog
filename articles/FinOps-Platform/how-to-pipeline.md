@@ -103,13 +103,13 @@ Source Control Explorer から Workspace を作成し、Azure DevOps と連携�
     <img src="./CreateFeed5.png" style="border: 1px black solid;">
     
 4. VM フォルダ（Nugets）に下記のリンクから nuget.exe をダウンロードします。
-    https://www.nuget.org/downloads
+    [NuGet のダウンロード](https://www.nuget.org/downloads)
 
     <img src="./CreateFeed6.png" style="border: 1px black solid;">
 
 5. 下記の github から installcredprovider.ps1 を作成し、ローカルの Powershell で実行します。スクリプトが資格情報を要求し続けて失敗する場合は、パラメーターとして -AddNetfx を追加してみてください。
 
-	https://github.com/Microsoft/artifacts-credprovider/blob/master/helpers/installcredprovider.ps1
+    [Azure Artifacts Credential Provider のインストール スクリプト](https://github.com/Microsoft/artifacts-credprovider/blob/master/helpers/installcredprovider.ps1)
 
     <img src="./CreateFeed1-2.png" style="border: 1px black solid;">
 
@@ -150,7 +150,7 @@ UserName とPassword を求められます
 
 ## AzurePipelinesの設定
 1. 下記から、定義済みのパイプラインのダウンロードを行います（xpp-classic-ci.json）
-https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples
+[Dynamics 365 X++ のパイプライン サンプル](https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pipeline-Samples)
     <img src="./CreatePipe1.png" style="border: 1px black solid;">
 
 2. Pipeline を作成します。
@@ -166,7 +166,7 @@ https://github.com/microsoft/Dynamics365-Xpp-Samples-Tools/tree/master/CI-CD/Pip
     <img src="./CreatePipe4.png" style="border: 1px black solid;">
 
 該当のタスクが見つからない場合、下記の Dynamics 365 Finance and Operations Tools のインストールを確認してください。
-https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools
+[Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools)
     <img src="./CreatePipe4-1.png" style="border: 1px black solid;">
 
 5. 各タスクを設定していきます。
@@ -226,7 +226,7 @@ MSBuild Arguments には下記を入力します
 
 1. Azure Active Directory アプリケーションを作成します
 
-    1. Azure ポータル(https://portal.azure.com/#home) > Azure Active Directory > 管理 > アプリの登録 に移動します。
+    1. [Azure ポータル](https://portal.azure.com/#home) > Azure Active Directory > 管理 > アプリの登録 に移動します。
 	2. [新規登録] をクリックし、名前を入力して [登録]をクリックします。
 	3. アプリケーションの詳細画面から、[管理] > [API のアクセス許可] > [構成されたアクセス許可] > [アクセス許可の追加] に移動します
 	4. [所属する組織で使用している API] の下の[ Dynamics Lifecycle services] を選択します。
