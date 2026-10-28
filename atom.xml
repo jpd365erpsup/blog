@@ -10,7 +10,28 @@
   <rights>All rights reserved 2026, Japan Dynamics ERP Support Japan</rights>
   <subtitle>日本マイクロソフトの Dynamics ERP テクニカル サポート チームより、様々な情報をお届けします。</subtitle>
   <title>Japan Dynamics ERP Support Team Blog</title>
-  <updated>2026-10-14T14:34:57.940Z</updated>
+  <updated>2026-10-28T06:49:25.330Z</updated>
+  <entry>
+    <author>
+      <name>Japan Dynamics ERP Support Japan</name>
+    </author>
+    <category term="FinOps-Finance" scheme="https://jpd365erpsup.github.io/blog/tags/FinOps-Finance/"/>
+    <category term="Japan localization" scheme="https://jpd365erpsup.github.io/blog/tags/Japan-localization/"/>
+    <content>
+      <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの尾崎です。</p><p>この記事では、飲食料品に係る消費税率の引下げに向けて、Dynamics 365 Finance で新しい税率用の消費税コードを追加する方法と、変更に向けた進め方のイメージをご紹介します。</p><p>制度の詳細および最新情報については、国税庁の公開情報をご確認ください。</p><p><a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/zeiritsuhikisage.htm">国税庁 消費税率引下げ特設サイト</a></p><span id="more"></span><h2 id="本記事の前提"><a href="#本記事の前提" class="headerlink" title="本記事の前提"></a>本記事の前提</h2><p>本記事は、2026 年 10 月 28 日時点で確認した公開情報に基づいています。</p><p>国税庁の特設サイトには、2026 年 9 月 15 日に閣議決定された大綱に示された改正案の説明資料が掲載されています。同サイトでは、掲載内容は、関連法案が国会で審議され、可決・成立した場合のものであると案内されています。</p><p>本記事は、この案内を踏まえ、事前準備のポイントを整理したものです。法改正の成立状況や制度の最終的な取扱いを本記事のみで判断せず、準備時および適用前に最新の公式情報をご確認ください。</p><h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><table><thead><tr><th>項目</th><th>値</th></tr></thead><tbody><tr><td>製品</td><td>Dynamics 365 Finance and Operations</td></tr><tr><td>Application version</td><td>10.0.48</td></tr><tr><td>Platform version</td><td>PU 72</td></tr><tr><td>Legal entity</td><td>JPMF</td></tr></tbody></table><h2 id="消費税コードの追加に当たっての考慮事項"><a href="#消費税コードの追加に当たっての考慮事項" class="headerlink" title="消費税コードの追加に当たっての考慮事項"></a>消費税コードの追加に当たっての考慮事項</h2><p>Microsoft Learn「日本の適格請求書システム」の「Considerations」には、次のように記載されています。</p><blockquote><p>請求書と連結請求書の税金を正確に計算、丸め、印刷するには、税率ごとに 1 つの売上税コードのみを使用します。</p></blockquote><p>出典：<a href="https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/japan/apac-jpn-qualified-invoice-system#considerations">Microsoft Learn 日本の適格請求書システム — Considerations</a></p><p>この考慮事項に沿って、本稿では、既存の 8% 用コードの税率や適用期間を変更するのではなく、新たに 1% 用の消費税コードを作成する設定例をご紹介します。</p><h2 id="消費税コードの追加方法"><a href="#消費税コードの追加方法" class="headerlink" title="消費税コードの追加方法"></a>消費税コードの追加方法</h2><p>以下は、Microsoft Learn「消費税コードを設定します」に記載された作成手順に沿って、税率を 1% とする例です。</p><ol><li><p><strong>[税] &gt; [間接税] &gt; [消費税] &gt; [消費税コード]</strong> の順に選択します。</p><p><img src="/blog/FinOps-Finance/consumption-tax-rate-reduction/01-open-sales-tax-codes.png" alt="消費税コード画面を開くためのナビゲーション"></p></li><li><p><strong>[新規]</strong> を選択し、消費税コードと名前を入力します。続いて、決済期間、元帳転記グループ、および <strong>[計算]</strong> の各項目を設定します。日本向けの設定については、Microsoft Learn「日本の適格請求書システム」の「JCT の消費税を設定します」をご参照ください。</p><p><img src="/blog/FinOps-Finance/consumption-tax-rate-reduction/02-configure-sales-tax-code.png" alt="1% 用の消費税コードを作成した設定例"></p></li><li><p>アクション ウィンドウで、<strong>[消費税コード] &gt; [値]</strong> の順に選択します。</p><p><img src="/blog/FinOps-Finance/consumption-tax-rate-reduction/03-open-sales-tax-code-values.png" alt="消費税コードの値画面を開く操作"></p></li><li><p><strong>[値]</strong> に <code>1</code> を入力します。これは、課税対象額に対する割合で税額を計算するコードの例です。</p><p><img src="/blog/FinOps-Finance/consumption-tax-rate-reduction/04-set-sales-tax-rate.png" alt="消費税コードの値に 1 を入力した設定例"></p></li><li><p><strong>[保存]</strong> を選択した後、画面を閉じて消費税コードを保存します。</p></li></ol><p>出典<br><a href="https://learn.microsoft.com/ja-jp/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-codes">Microsoft Learn 消費税コードを設定します</a><br><a href="https://learn.microsoft.com/ja-jp/dynamics365/finance/localizations/japan/apac-jpn-qualified-invoice-system#set-up-sales-tax-for-jct">Microsoft Learn JCT の消費税を設定します</a></p><h2 id="変更に向けた進め方のイメージ"><a href="#変更に向けた進め方のイメージ" class="headerlink" title="変更に向けた進め方のイメージ"></a>変更に向けた進め方のイメージ</h2><p>取引に適用される消費税コードは、その取引の消費税グループと品目消費税グループの両方に含まれるコードによって決まります。新しいコードの作成に加え、対象の取引に適用するためのグループの設定が必要です。</p><p>出典：<a href="https://learn.microsoft.com/ja-jp/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups">Microsoft Learn 売上税グループと品目売上税グループの設定</a></p><p>この仕組みを踏まえ、準備の進め方の例を示します。</p><ol><li>変更対象を確認する<br>最新の制度情報を確認し、対象の取引で使用している消費税コードを整理します。</li><li>テスト環境で 1% 用コードを作成する<br>既存の 8% 用コードとは別に、新しい消費税コードを作成します。</li><li>対象取引に適用する設定を準備する<br>適用する税率に応じたコードが使用されるよう、消費税グループと品目消費税グループの設定を準備します。同じ請求書内で同じ税率のコードを複数使用しないようにします。</li><li>動作を確認し、本番環境へ反映する<br>テスト環境での確認後、本番環境への設定反映を進めます。</li></ol><p>アドオンや帳票、外部連携などの構成はお客様ごとに異なります。これらへの影響も含め、普段ご利用の業務が想定どおり動作することを、事前にテスト環境でご確認ください。</p><h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、Dynamics 365 Finance で新しい税率用の消費税コードを追加する方法と、変更に向けた進め方のイメージをご紹介しました。<br>制度の最新情報をご確認のうえ、ご利用の環境に合わせて準備を進めていただけますと幸いです。</p>]]>
+    </content>
+    <id>https://jpd365erpsup.github.io/blog/FinOps-Finance/consumption-tax-rate-reduction/</id>
+    <link href="https://jpd365erpsup.github.io/blog/FinOps-Finance/consumption-tax-rate-reduction/"/>
+    <published>2026-10-27T15:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの尾崎です。</p>
+<p>この記事では、飲食料品に係る消費税率の引下げに向けて、Dynamics 365 Finance で新しい税率用の消費税コードを追加する方法と、変更に向けた進め方のイメージをご紹介します。</p>
+<p>制度の詳細および最新情報については、国税庁の公開情報をご確認ください。</p>
+<p><a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/zeiritsuhikisage.htm">国税庁 消費税率引下げ特設サイト</a></p>]]>
+    </summary>
+    <title>飲食料品に係る消費税率の引下げに向けた対応について</title>
+    <updated>2026-10-28T06:49:25.330Z</updated>
+  </entry>
   <entry>
     <author>
       <name>Japan Dynamics ERP Support Japan</name>
@@ -26,7 +47,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、 Dynamics 365 Finance and Operations における MRP エンジンの変更のロードマップや注意点をご案内します。</p>]]>
     </summary>
     <title>10.0.32 以降の MRP エンジン (計画最適化) について</title>
-    <updated>2026-10-14T14:34:57.940Z</updated>
+    <updated>2026-10-28T06:49:25.565Z</updated>
   </entry>
   <entry>
     <author>
@@ -45,7 +66,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの木村です。<br>この記事では、弊社コンポーネント開発元にて公開している Viva Engage のリンクについて紹介いたします。</p>]]>
     </summary>
     <title>各モジュールの Viva Engage のリスト</title>
-    <updated>2026-10-14T14:34:58.075Z</updated>
+    <updated>2026-10-28T06:49:25.701Z</updated>
   </entry>
   <entry>
     <author>
@@ -63,7 +84,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポート チームの永吉です。<br>この記事では、固定資産の帳簿で減価償却プロファイルを変更する方法についてご案内いたします。  </p>]]>
     </summary>
     <title>固定資産の減価償却プロファイルを変更する方法</title>
-    <updated>2026-10-14T14:34:57.703Z</updated>
+    <updated>2026-10-28T06:49:25.326Z</updated>
   </entry>
   <entry>
     <author>
@@ -83,7 +104,7 @@
 <p>なお制度の詳細については国税庁ホームページをご確認ください。<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm">No.6498 適格請求書等保存方式（インボイス制度）</a><br><a href="https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice.htm">国税庁 インボイス制度 特設サイト</a></p>]]>
     </summary>
     <title>適格請求書等保存方式 (インボイス制度) における経過措置の対応方法について</title>
-    <updated>2026-10-14T14:34:57.779Z</updated>
+    <updated>2026-10-28T06:49:25.404Z</updated>
   </entry>
   <entry>
     <author>
@@ -102,7 +123,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、Dynamics 365 Finance (D365FO) の日本向けローカライゼーション機能である月次締め請求書作成手順を紹介します。  </p>]]>
     </summary>
     <title>月次締め請求書の作成手順</title>
-    <updated>2026-10-14T14:34:57.708Z</updated>
+    <updated>2026-10-28T06:49:25.332Z</updated>
   </entry>
   <entry>
     <author>
@@ -125,7 +146,7 @@
 <p>ご不明点はサポート チームまでお問い合わせください。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operationsのライセンス管理の簡素化：ユーザーライセンス検証の改善</title>
-    <updated>2026-10-14T14:34:57.926Z</updated>
+    <updated>2026-10-28T06:49:25.552Z</updated>
   </entry>
   <entry>
     <author>
@@ -142,7 +163,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームです。<br>Dynamics 365 Business Central のサポート体制につきましてご案内となります。</p>]]>
     </summary>
     <title>Dynamics 365 Business Central のサポート体制につきまして</title>
-    <updated>2026-10-14T14:34:58.074Z</updated>
+    <updated>2026-10-28T06:49:25.700Z</updated>
   </entry>
   <entry>
     <author>
@@ -160,7 +181,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、Dynamics 365 Finance and Operations にて、 発注書を作成する際の一連の流れ (購買処理) について紹介します。  </p>]]>
     </summary>
     <title>発注書作成の一連の流れ</title>
-    <updated>2026-10-14T14:34:57.942Z</updated>
+    <updated>2026-10-28T06:49:25.568Z</updated>
   </entry>
   <entry>
     <author>
@@ -178,7 +199,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの福原です。<br>この記事では、 Dynamics 365 Finance and Operations (D365FO) の環境ごとの違いについてご案内します。<br>クラウドホスト環境、サンドボックス環境、Tier2環境、本番環境等、様々な呼び方の環境があり、また、それぞれの環境で使える機能も異なるので、分かりづらいというお声をいただくことがありますので、そのような場合には本記事をご参考ください。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operations の環境ごとの違い</title>
-    <updated>2026-10-14T14:34:57.793Z</updated>
+    <updated>2026-10-28T06:49:25.418Z</updated>
   </entry>
   <entry>
     <author>
@@ -196,7 +217,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフトの福原です。<br>Dynamics 365 Finance and Operations のバージョン 10.0.39 より導入されたサービス更新 (Service Update) の自動更新ウィンドウ (autoupdate window) のオプションについてご案内いたします。<br>このオプションにより自動更新の日程をより柔軟に選択できることができます。</p>]]>
     </summary>
     <title>サービス更新の自動更新ウィンドウのオプションについて</title>
-    <updated>2026-10-14T14:34:57.789Z</updated>
+    <updated>2026-10-28T06:49:25.413Z</updated>
   </entry>
   <entry>
     <author>
@@ -214,7 +235,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、LCS にて Dynamics 365 Finance and Operations に関するサポートリクエストを起票する方法を紹介します。</p>]]>
     </summary>
     <title>LCSにてDynamics 365 Finance and Operationsに関するサポートリクエストを起票する方法</title>
-    <updated>2026-10-14T14:34:57.934Z</updated>
+    <updated>2026-10-28T06:49:25.559Z</updated>
   </entry>
   <entry>
     <author>
@@ -233,7 +254,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームの木村です。<br>この記事では、 Dynamics 365 Finance にて、申告 26: 償却資産税の元帳レポート (償却資産申告書 (償却資産課税台帳)) における電話番号の設定について JPMF のデモ データを利用して紹介します。</p>]]>
     </summary>
     <title>申告 26:償却資産税の元帳レポートに対して電話番号を出力する方法</title>
-    <updated>2026-10-14T14:34:57.712Z</updated>
+    <updated>2026-10-28T06:49:25.336Z</updated>
   </entry>
   <entry>
     <author>
@@ -250,7 +271,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフトの佐藤です。<br>この記事では、新規で配置したクラウドホスト環境で以下のような証明書のエラーが発生した際の対処法をご案内します。<br>“Cannot Find Thumbprint by Certificatename”</p>]]>
     </summary>
     <title>新規で配置したクラウドホスト環境で証明書のエラーが発生した際の対処法</title>
-    <updated>2026-10-14T14:34:57.920Z</updated>
+    <updated>2026-10-28T06:49:25.545Z</updated>
   </entry>
   <entry>
     <author>
@@ -268,7 +289,7 @@
 <p>この記事では、Dynamics 365 Finance and Operations の Issue Search についてご案内いたします。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operations の Issue Search について</title>
-    <updated>2026-10-14T14:34:57.938Z</updated>
+    <updated>2026-10-28T06:49:25.563Z</updated>
   </entry>
   <entry>
     <author>
@@ -287,7 +308,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、お客様からサポート リクエストにてお寄せいただいた Ideas を紹介いたします。</p>]]>
     </summary>
     <title>Ideas のリスト</title>
-    <updated>2026-10-14T14:34:58.075Z</updated>
+    <updated>2026-10-28T06:49:25.701Z</updated>
   </entry>
   <entry>
     <author>
@@ -305,7 +326,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、テクニカル サポート チームが本ブログでの Ideas の投稿の紹介についてご案内いたします。</p>]]>
     </summary>
     <title>本ブログでの Ideas の投稿の紹介について</title>
-    <updated>2026-10-14T14:34:58.075Z</updated>
+    <updated>2026-10-28T06:49:25.701Z</updated>
   </entry>
   <entry>
     <author>
@@ -322,7 +343,7 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、テクニカル サポート チームがサポート リクエストにてご依頼いただく「データの作成経緯」の必要な情報について紹介します。</p>]]>
     </summary>
     <title>Dynamics 365 Finance and Operations の本番環境のデータの作成経緯に関して</title>
-    <updated>2026-10-14T14:34:58.073Z</updated>
+    <updated>2026-10-28T06:49:25.699Z</updated>
   </entry>
   <entry>
     <author>
@@ -340,7 +361,7 @@
       <![CDATA[<p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、Dynamics 365 Finance and Operations (D365FO) のアップデートに関する注意事項を紹介します。  </p>]]>
     </summary>
     <title>D365FOのアップデートに関する注意事項</title>
-    <updated>2026-10-14T14:34:57.920Z</updated>
+    <updated>2026-10-28T06:49:25.545Z</updated>
   </entry>
   <entry>
     <author>
@@ -357,23 +378,6 @@
       <![CDATA[<p>こんにちは、日本マイクロソフト Dynamics ERP サポート チームの永吉です。<br>この記事では、テクニカル サポート チームがサポート リクエストの中で依頼する「再現手順」について紹介します。</p>]]>
     </summary>
     <title>テクニカル サポートにて提供を依頼する「再現手順」について</title>
-    <updated>2026-10-14T14:34:58.075Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>Japan Dynamics ERP Support Japan</name>
-    </author>
-    <category term="FinOps-Platform" scheme="https://jpd365erpsup.github.io/blog/tags/FinOps-Platform/"/>
-    <content>
-      <![CDATA[<p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、 Dynamics 365 Finance and Operations にて、 Trace Parser を使用したトレースの実行手順を紹介します。</p><span id="more"></span><blockquote><p>注意点</p><ul><li>Trace Parser によりトレースを取得する際には、トレースの取得前または取得後にて、Web ブラウザーのページを更新せずに、<a href="https://jpd365erpsup.github.io/blog/FinOps-Platform/browser-session-id/">ブラウザーセッション ID の取得</a> をお願いします。</li><li>バッチサーバー上での処理はトレースに記録されませんので、バッチサーバー上での処理のトラブルシューティングに Trace Parser をご利用いただくことはできません。</li></ul></blockquote><h2 id="検証に用いた製品・バージョン"><a href="#検証に用いた製品・バージョン" class="headerlink" title="検証に用いた製品・バージョン"></a>検証に用いた製品・バージョン</h2><p>Dynamics 365 Finance and Operations<br>Application version: 10.0.34<br>Platform version: PU58</p><h2 id="Trace-Parser-を使用したトレースの実行手順"><a href="#Trace-Parser-を使用したトレースの実行手順" class="headerlink" title="Trace Parser を使用したトレースの実行手順"></a>Trace Parser を使用したトレースの実行手順</h2><ul><li><strong>Admin 権限を持っているユーザー</strong></li></ul><ol><li><p>ヘッダー部分の「?」から「追跡」を選択する</p><p> <img src="/blog/FinOps-Platform/how-to-get-trace-parser/step.png"></p></li><li><p>追跡名に任意の名称を入力し、「追跡の開始」をクリックする<br>  <img src="/blog/FinOps-Platform/how-to-get-trace-parser/step2.png"></p></li><li><p>任意の操作を行い、トレースの実行を終了する際は、「追跡の停止」をクリックする<br>  <img src="/blog/FinOps-Platform/how-to-get-trace-parser/step3.png"></p></li><li><p>実行したトレースをローカルマシーンに保存する場合は、「トレースのダウンロード」をクリックする<br> <img src="/blog/FinOps-Platform/how-to-get-trace-parser/step4.png"></p></li></ol><ul><li><strong>Admin 権限を持っていないユーザー(システムトレースユーザー権限付与済)</strong></li></ul><ol start="5"><li><p>手順 3 まで同様に進める</p></li><li><p>トレースの取得が完了したら「トレースのアップロード」をクリックする<br>トレースのアップロードが完了すると、admin 権限のあるユーザーに送信される</p><p>  <img src="/blog/FinOps-Platform/how-to-get-trace-parser/step6.png"></p></li></ol><h2 id="アップロードされたトレースの確認手順"><a href="#アップロードされたトレースの確認手順" class="headerlink" title="アップロードされたトレースの確認手順"></a>アップロードされたトレースの確認手順</h2><ol start="7"><li><p>手順 1 と同様に進め、「追跡」のメニューから「キャプチャされたトレース」をクリックする</p><p>  <img src="/blog/FinOps-Platform/how-to-get-trace-parser/step7.png"></p></li><li><p>対象の追跡名をクリックし、ダウンロードする<br>ここで、権限を持たないユーザーがアップロードしたトレースを確認することができます。</p><p>  <img src="/blog/FinOps-Platform/how-to-get-trace-parser/step8.png"></p></li></ol><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>Trace Parser を使用したトレースの実行方法は、公式ドキュメントでも公開されています。<br>下記のリンクも併せてご参照ください。<br><a href="https://learn.microsoft.com/ja-jp/dynamics365/fin-ops-core/dev-itpro/perf-test/trace-trace-tutorial">トレースの取得と Trace Parser の使用</a></p><hr><h2 id="おわりに"><a href="#おわりに" class="headerlink" title="おわりに"></a>おわりに</h2><p>以上、 Dynamics 365 Finance and Operations にて、 Trace Parser を使用したトレースの実行手順についてご紹介しました。</p>]]>
-    </content>
-    <id>https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-get-trace-parser/</id>
-    <link href="https://jpd365erpsup.github.io/blog/FinOps-Platform/how-to-get-trace-parser/"/>
-    <published>2023-08-23T15:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>こんにちは、Dynamics ERP サポートチームです。<br>この記事では、 Dynamics 365 Finance and Operations にて、 Trace Parser を使用したトレースの実行手順を紹介します。</p>]]>
-    </summary>
-    <title>Trace Parserを使用したトレースの実行方法</title>
-    <updated>2026-10-14T14:34:57.818Z</updated>
+    <updated>2026-10-28T06:49:25.702Z</updated>
   </entry>
 </feed>
